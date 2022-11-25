@@ -7,14 +7,31 @@ function CallEndPointPost(url, jsonArgs) {
 
             console.log(data);
 
-            var formData = JSON.parse(data);
+            if (data.ID === 0){
 
-            console.log(formData);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Rejected Transaction Please rectify if you have available balance',
+                    
+                })
+
+            }else{
+
+                window.location.href = URL_API_BASE;
+                location.replace("preventa.html");
+                location.href = "preventa.html";
+
+            }
 
 
         },
         error: function () {
-            alert("Ha ocurrido un error, por favor vuelva a intentarlo")
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'server under maintenance',
+            })
         }
     });
 }
