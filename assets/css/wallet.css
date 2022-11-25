@@ -1,0 +1,97 @@
+@media (max-width: 500px) {
+
+   .form-content{
+      width: 110%;
+   }
+   
+   .card{
+      width: 105%;
+      margin-left: 20px;
+   }
+   
+   .moverUser{
+      margin-left: 1px;
+   }
+
+   .correrBtn{
+      margin-left: 30px;
+      width: 50%;
+   }
+   
+   .usdt{
+      margin-left: 70%;
+      width: 20%;
+   }
+
+   .wplay{
+      margin-left: 70%;
+      width: 25%; 
+   }
+   
+   .trx{
+      margin-left: 70%;
+      width: 17%;
+   }
+
+   .moversaldosTrx{
+      margin-left: 70%;
+   }
+
+   .act{
+      font-size: 15px !important;
+   }
+   
+   .moversaldos{
+      margin-left: 43%;
+   }
+   
+   .creado{
+      margin-left: 50%;
+   }
+   
+   .moverfechas{
+      width: 100%;
+      margin-left: 50px;
+      font-size: 15px !important;
+   }
+   
+   .moverRefe{
+   
+   font-size: 14px !important;
+   
+   }
+   
+   .right2 .top{
+      position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      padding: 0 0.8rem;
+      height: 4.6rem;
+      background: var(--color-white);
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      box-shadow: 0 1rem 1rem var(--color-light);
+   
+   }
+   
+   }
+   
+   @media (min-width: 768px) {
+      .card{
+         width: 75%;
+      }
+
+      .moversaldosTrx{
+         margin-left: 80%;
+      }
+   }
+   
+   
+   @media (min-width: 1024px) {
+      .card{
+         width: 50%;
+      }
+   
+   }

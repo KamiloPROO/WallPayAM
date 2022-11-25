@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpay | Dashboard</title>
+    <!--Material Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/respoDash.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./assets/img/Logo nav gold.png">
+
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="Dash.html" class="active"><span class="material-icons-sharp">
+                        grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="wallet.html"><span class="material-icons-sharp">
+                        account_balance_wallet</span>
+                    <h3>Wallet</h3>
+                </a>
+
+                <a href="preventa.html"><span class="material-icons-sharp">
+                        point_of_sale</span>
+                    <h3>Preventas</h3>
+                </a>
+
+                <a href="staking.html"><span class="material-icons-sharp">
+                        auto_graph</span>
+                    <h3>Staking</h3>
+                </a>
+
+                <a href="mensages.html"><span class="material-icons-sharp">
+                        mail_outline</span>
+                    <h3>Mensages</h3>
+                </a>
+
+                <a href="preCompra.html"><span class="material-icons-sharp">
+                        inventory</span>
+                    <h3>Pre Compras</h3>
+                </a>
+                <a href="p2p.html"><span class="material-icons-sharp">
+                        local_atm</span>
+                    <h3>P2P</h3>
+                </a>
+
+                <a href="#"><span class="material-icons-sharp">
+                        report_gmailerrorred</span>
+                    <h3>Reportes</h3>
+                </a>
+                <a href="#"><span class="material-icons-sharp">
+                        shopping_basket</span>
+                    <h3>E-Commerce</h3>
+                </a>
+
+                <a href="#"><span class="material-icons-sharp">
+                        settings</span>
+                    <h3>Configuraciones</h3>
+                </a>
+
+                <a href="#"><span class="material-icons-sharp">
+                        history</span>
+                    <h3>Historial</h3>
+                </a>
+
+                <a href="index.html"><span class="material-icons-sharp">
+                        logout</span>
+                    <h3>Cerrar Sesion</h3>
+                </a>
+
+            </div>
+
+
+        </aside>
+
+        <!-----------End of Aside------------>
+
+        <main class="todo1">
+            <h1 style="color: #d79d13;">Dashboard</h1>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Pre Compras</h3>
+                            <h1>$21,500</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <small class="text-muted"> Last 24 hours</small>
+                </div>
+
+                <!-----------End of Sales------------>
+                <div class="income">
+                    <span class="material-icons-sharp">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Staking</h3>
+                            <h1>$15,200</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <small class="text-muted"> Last 24 hours</small>
+                </div>
+
+                <!-----------End of Expenses------------>
+
+                <div class="expenses">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Ventas E-Commerce</h3>
+                            <h1>$26,200</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <small class="text-muted"> Last 24 hours</small>
+                </div>
+
+                <!-----------End of income------------>
+            </div>
+
+            <!-- End of Insights-->
+
+            <div class="recent-orders">
+                <h2>Recent orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payments</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+
+        <!-- End of Main-->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="profile">
+                    <div class="info">
+                        <p style="width: 100%; overflow: hidden;">Hey, <b id="name" >Pedro</b></p>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./assets/img/profile-1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Fondo Particles-->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/orders.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/particles.min.js"></script>
+
+    <script src="./assets/js/logica/utils/HttpsDashboard.js"></script>
+
+</body>
+
+</html>

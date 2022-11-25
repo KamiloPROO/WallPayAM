@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpay | Wallet</title>
+    <!--Material Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./assets/css/styleDash.css">
+    <link rel="stylesheet" href="./assets/css/estiloaDash.css">
+    <link rel="stylesheet" href="./assets/css/wallet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container container_wallet">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./assets/img/Logo nav gold.png">
+
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="Dash.html" ><span class="material-icons-sharp">
+                        grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="wallet.html" class="active"><span class="material-icons-sharp">
+                        account_balance_wallet</span>
+                    <h3>Wallet</h3>
+                </a>
+
+                <a href="preventa.html"><span class="material-icons-sharp">
+                        point_of_sale</span>
+                    <h3>Preventas</h3>
+                </a>
+
+                <a href="staking.html"><span class="material-icons-sharp">
+                        auto_graph</span>
+                    <h3>Staking</h3>
+                </a>
+
+                <a href="mensages.html"><span class="material-icons-sharp">
+                        mail_outline</span>
+                    <h3>Mensages</h3>
+                </a>
+
+                <a href="preCompra.html"><span class="material-icons-sharp">
+                        inventory</span>
+                    <h3>Pre Compras</h3>
+                </a>
+                <a href="p2p.html"><span class="material-icons-sharp">
+                        local_atm</span>
+                    <h3>P2P</h3>
+                </a>
+
+                <a href="#"><span class="material-icons-sharp">
+                        report_gmailerrorred</span>
+                    <h3>Reportes</h3>
+                </a>
+                <a href="#"><span class="material-icons-sharp">
+                        shopping_basket</span>
+                    <h3>E-Commerce</h3>
+                </a>
+
+                <a href="#"><span class="material-icons-sharp">
+                        settings</span>
+                    <h3>Configuraciones</h3>
+                </a>
+
+                <a href="#"><span class="material-icons-sharp">
+                        history</span>
+                    <h3>Historial</h3>
+                </a>
+
+                <a href="index.html"><span class="material-icons-sharp">
+                        logout</span>
+                    <h3>Cerrar Sesion</h3>
+                </a>
+
+            </div>
+
+
+        </aside>
+
+        <!-----------End of Aside------------>
+        <div class="form-content">
+            <div>
+              <br>
+              <h1 id="cuentaM" style="color: #d79d13;">Cuenta Tron</h1>
+              <br>
+              <button type="button" class="btn camiloOcultar" id="crearCuentaTron2">Crear Cuenta Tron</button>
+              <br>
+              <br>
+              <h2 class="camiloOcultar" id="respuesta">
+            </div>
+
+
+              <div class="card"
+                  style="background:url(./assets/img/fondotarjeta.jpg);background-repeat: no-repeat;background-size: cover;">
+                  <!-- <img class="imgCard" src="assets/images/card chip.png" alt="Avatar" style="width:20%"> -->
+                  <div class="containerCard camiloOcultar" id="containerCardTron">
+                      <h3 id="respuestaReferencia" class="moverRefe">referencia</h3>
+                      <button type="button" class="btnCamilo correrBtn" id="copiarDireccion">Copiar Direccion</button>
+                      <br>
+                      <span id="respuestaNombreUser" class="moverUser"></span>
+                      <br>
+                      <h3 class="trx">TRX</h3>
+                      <h3 id="respuestaSaldoTRX" class="moversaldosTrx">referencia</h3>
+                      <h3 class="wplay">WPLAY</h3>
+                      <h3 id="respuestaSaldoWplay" class="moversaldos">referencia</h3>
+                      <h3 class="usdt">USDT</h3>
+                      <h3 id="respuestaSaldoUSDT" class="moversaldos">referencia</h3>
+                      <br>
+                      <br>
+                      <div style="display: flex;">
+                        <h3 id="respuestaActualizada" class="moverfechas">referencia</h3>
+                        <h3 class="act">Actualizada</h3>
+                      </div> 
+                  </div>
+              </div>
+          <div class="right">
+              <div class="top">
+                  <button id="menu-btn">
+                      <span class="material-icons-sharp">menu</span>
+                  </button>
+              </div>
+          </div>
+
+
+
+      </div>
+    </div>
+    <!-- Fondo Particles-->
+     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/orders.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/particles.min.js"></script> 
+
+    <script src="./copiar.js"></script>
+
+    <script src="./assets/js/logica/routes/routes.js"></script>
+
+    <script src="./assets/js/logica/utils/HttpsCrearCuentaTron.js"></script>
+    <script src="./assets/js/logica/business/crearCuentaTronBussiness.js"></script>
+    <script src="./assets/js/logica/controller/crearCuentaTronController.js"></script>
+    <script src="./assets/js/logica/event/crearTronEvent.js"></script>
+
+    <script src="./assets/js/logica/utils/HttpsListarCuentaTron.js"></script>
+</body>
+</html>

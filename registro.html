@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>WALLPAY | APP</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/logo_pequeño_header.png" />
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main2.css" />
+
+
+    <script src="./assets/js/registro.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/Logo nav gold.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="index.html" aria-label="Toggle navigation">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about-us.html" aria-label="Toggle navigation">Sobre nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">Servicios</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-1">
+                                            <li class="nav-item"><a href="about-us.html">Wallets</a></li>
+                                            <li class="nav-item"><a href="signin.html">Cripto</a></li>
+                                            <li class="nav-item"><a href="signup.html">Enviar Dinero</a></li>
+                                            <li class="nav-item"><a href="reset-password.html">Cambio de Divisas</a>
+                                            <li class="nav-item"><a></a>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">Blog</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-2">
+                                            <li class="nav-item"><a href="blog-grid.html">Equipo de trabajo</a>
+                                            </li>
+                                            <li class="nav-item"><a href="blog-single.html">Noticias</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <div class="button">
+                                <a href="sinIn.html" class="btn">Iniciar Sesion</a>
+                            </div>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section class="hero-area">
+
+        <div class="container2">
+            <div class="row align-items-center">
+                <div class="imgLOGOREGISTRO col-lg-12 col-md-12 col-12">
+                    <img height="200" width="auto" src="assets/images/logo/logoW.png" alt="">
+                    <div class="hero-content">
+                        <div class="container">
+                            <div class="title">Registro</div>
+                            <div class="content">
+                                <div action="#" class="form_custom">
+                                    <div class="user-details">
+                                        <div class="input-box">
+                                            <span class="details">Nombre Completo</span>
+                                            <input type="text" placeholder="Nombre y apellidos" required id="Nombres">
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Usuario</span>
+                                            <input type="text" placeholder="Ingrese un usuario" required id="NombreUsuario">
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Correo</span>
+                                            <input type="text" placeholder="Ingrese su correo" required id="Correo">
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Número de Teléfono</span>
+                                            <input type="text" placeholder="+57" required id="Celular">
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Contraseña</span>
+                                            <input type="password" placeholder="Establecer contraseña" required id="Password">
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Confirmar Contraseña</span>
+                                            <input type="password" placeholder="Confirmar contraseña" required id="confirmPass">
+                                        </div>
+                                    </div>
+                                    <div class="gender-details">
+                                        <input type="radio" name="gender" id="dot-1">
+                                        <input type="radio" name="gender" id="dot-2">
+                                        <input type="radio" name="gender" id="dot-3">
+                                        <span class="gender-title">Genero</span>
+                                        <div class="category">
+                                            <label for="dot-1">
+                                                <span class="dot one"></span>
+                                                <span class="gender">Masculino</span>
+                                            </label>
+                                            <label for="dot-2">
+                                                <span class="dot two"></span>
+                                                <span class="gender">Fememenino</span>
+                                            </label>
+                                            <label for="dot-3">
+                                                <span class="dot three"></span>
+                                                <span class="gender">Prefiero no decirlo</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="button">
+                                            <input type="submit" value="Registrarme" id="iniciarSesion" class="iniciarSesion" 
+                                            style="background-color: transparent; border-color: transparent; color: white;" />        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+    </section>
+
+
+    <!-- Start Footer Area -->
+
+    <div class="footer section" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="assets/images/logo/logo_pequeño_header.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 apartadocentro">
+                    <!-- Single Widget -->
+                    <div class="single-footer f-link">
+                        <h3>También puedes ver</h3>
+                        <ul>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Análisis</a></li>
+                            <li><a href="#">Marcas Aliadas</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 apartadocentro">
+                    <div class="single-footer f-link">
+                        <h3>Soporte</h3>
+                        <ul>
+                            <li><a href="#">Descargar</a></li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1WTQFOkzOKZ_w8XGq0UZdT-8aFM-_qgSM/view?usp=sharing">Políticas
+                                    de Privacidad</a></li>
+                            <li><a href="#">Guias PDF</a></li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 nuevo_footer_section">
+                        <div class="single-footer f-about">
+                            <h1>WALLPAY</h1>
+                            <p>Usa tu dinero con confianza, hacemos tu vida más fácil. Contamos con las mejores tarifas de cambio en
+                                el mercado. </p>
+                            <h4 class="social-title">Síguenos en:</h4>
+                            <ul class="social">
+                                <li class="logossocisal"><a href="https://www.facebook.com/profile.php?id=100087022991686">
+                                    <i class="lni lni-facebook-filled"></i></a></li>
+                                <li class="logossocisal"><a href="https://www.instagram.com/wallpay20/"><i
+                                            class="lni lni-instagram-original"></i></a>
+                                </li>
+                                <li class="logossocisal"><a href="https://twitter.com/1wallpay"><i class="lni lni-twitter-original"></i></a>
+                                </li>
+                                <li><a href="#"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+            
+                        </div>
+                </div>
+
+            </div>
+            
+    </div>
+
+ <!-- Start Copyright Area -->
+ <div class="copyright-area">
+    <div class="container">
+        <div class="inner-content">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <p class="copyright-text">© 2022 Wallpay - Todos Los Derechos Reservados</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <p class="copyright-owner">Diseñado y desarrollado por <a href="https://uideck.com/"
+                            rel="nofollow" target="_blank">AMINGENIERIAS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+
+
+   
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+
+
+    </script>
+
+<script src="assets/js/main.js"></script>
+    <script src="./registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <script src="~/js/jquery-3.4.1.js"></script>
+    <script src="./assets//js/logica/routes/routes.js"></script>
+
+    <script src="./assets//js/logica/datos//usuarioDto.js"></script>
+    <script src="./assets//js/logica/utils/HttpsClient.js"></script>
+    <script src="./assets//js/logica/business/usuarioBussiness.js"></script>
+    <script src="./assets//js/logica/controller/usuarioController.js"></script>
+    <script src="./assets//js/logica/event/loginEvent.js"></script>
+
+</body>
+
+</html>

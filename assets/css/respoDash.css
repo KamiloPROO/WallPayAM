@@ -1,0 +1,499 @@
+/* .card {
+    box-shadow: 0 6px 10px 0 rgb(117, 117, 117);
+    transition: 0.3s;
+    display: flex;
+    margin-left: 25%;
+    width: 46%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+ */
+
+
+/* ============Rigth============ */
+
+.right2 {
+    margin-top: 1.4rem;
+ }
+ 
+ .right2 .top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+ 
+ }
+ 
+ .right2 .top button {
+    display: none;
+ 
+ }
+ 
+ .right2 .theme-toggler {
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor:pointer;
+    border-radius: var(--border-radius-1);
+ }
+ 
+ .right2 .theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .right2 .theme-toggler span.active {
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+ }
+ 
+ .right2 .top .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+ }
+ 
+ /* ============Recent Updates============ */
+ 
+ .right2 .recent-updates {
+    margin-top: 1rem;
+    
+ }
+ 
+ .right2 .recent-updates h2 {
+    margin-bottom: 0.8rem;
+ }
+ 
+ 
+ .right2 .recent-updates .updates{
+     background: var(--color-white);
+     padding: var(--card-padding);
+     border-radius: var(--card-border-radius);
+     box-shadow: var(--box-shadow);
+     transition: all 300ms ease;
+     
+ }
+ 
+ 
+ .right2 .recent-updates .updates:hover {
+    box-shadow: none;
+ 
+ }
+ 
+ .right2 .recent-updates .updates .update{
+    display: grid;
+    grid-template-columns:  2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+ 
+ }
+ 
+ /* ============Sales Analytics============ */
+ 
+ .right2 .sales-analytics {
+    margin-top: 2rem;
+ }
+ 
+ .right2 .sales-analytics h2 {
+    margin-bottom: 0.8rem;
+ 
+ }
+ 
+ .right2 .sales-analytics .item {
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+ }
+ 
+ .right2 .sales-analytics .item:hover {
+    box-shadow: none;
+ 
+ }
+ 
+ .right2 .sales-analytics .item .right2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+ 
+ }
+ 
+ .right2 .sales-analytics .item .icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background:var(--color-primary);
+    display: flex;
+ 
+ }
+ 
+ .right2 .sales-analytics .item.offline .icon {
+    background: var(--color-danger);
+ 
+ }
+ .right2 .sales-analytics .item.customers .icon {
+    background: var(--color-success);
+ 
+ }
+ 
+ .right2 .sales-analytics .add-product {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .right2 .sales-analytics .add-product div {
+    display: flex;
+    align-items: center;
+    gap:0.6rem;
+ }
+ 
+ .right2 .sales-analytics .add-product div h3 {
+    font-weight: 600;
+ }
+ 
+ @media (min-width: 991px) {
+ 
+    .right2 .profile .infoR {
+       display: none;
+    }
+ 
+    .lobby{
+       display: none;
+    }
+  
+    .video{
+       width: 700px ;
+    }
+ 
+ }
+ 
+ /* dashboard */
+ 
+ 
+ 
+ @media (max-width: 450px) {
+ 
+    .cuerpo{
+       width: 100%;
+    }
+    .video{
+       width: 400px ;
+       margin-top: -150px;
+    }
+ 
+    .todo1{
+       width: 98%;
+    }
+ 
+     .insights{
+       margin-top: -120px;
+    }
+    .right2{
+       width: 96%;
+       margin-left: 4px;
+    }
+ 
+    .todo1 .cardsInversion{
+       width: 390px;
+       height: auto;
+    } 
+ 
+   .right2 .top{
+       position: fixed;
+       top: 0;
+       left: 0;
+       align-items: center;
+       padding: 0 0.8rem;
+       height: 4.6rem;
+       background: var(--color-white);
+       width: 100%;
+       margin: 0;
+       z-index: 2;
+       box-shadow: 0 1rem 1rem var(--color-light);
+   }
+   .right2 .top .theme-toggler {
+       width: 4.4rem;
+       position: absolute;
+       left: 66%;
+       display: none;
+       
+   }
+ 
+   .right2 .profile .info {
+       display: none;
+   }
+ 
+ 
+   .quitarDash{
+    display: none;
+   }
+ 
+   .right2 .top button {
+       display: inline-block;
+       background: transparent;
+       cursor: pointer;
+       color: var(--color-dark);
+       position: absolute;
+       left: 1rem;
+   }
+ 
+   .right2 .top  button span {
+       font-size: 2rem;
+ 
+   }
+ }
+ 
+ @media (max-width: 500px) {
+ 
+    .cuerpo{
+       width: 100%;
+    }
+    .video{
+       width: 440%;
+       margin-top: -150px;
+    }
+ 
+    .todo1{
+       width: 98%;
+    }
+ 
+     .insights{
+       margin-top: -120px;
+    }
+    .right2{
+       width: 96%;
+       margin-left: 4px;
+    }
+ 
+    .todo1 .cardsInversion{
+       width: 390px;
+       height: auto;
+    } 
+ 
+   .right2 .top{
+       position: fixed;
+       top: 0;
+       left: 0;
+       align-items: center;
+       padding: 0 0.8rem;
+       height: 4.6rem;
+       background: var(--color-white);
+       width: 100%;
+       margin: 0;
+       z-index: 2;
+       box-shadow: 0 1rem 1rem var(--color-light);
+   }
+   .right2 .top .theme-toggler {
+       width: 4.4rem;
+       position: absolute;
+       left: 66%;
+       display: none;
+       
+   }
+ 
+   .right2 .profile .info {
+       display: none;
+   }
+ 
+ 
+   .quitarDash{
+    display: none;
+   }
+ 
+   .right2 .top button {
+       display: inline-block;
+       background: transparent;
+       cursor: pointer;
+       color: var(--color-dark);
+       position: absolute;
+       left: 1rem;
+   }
+ 
+   .right2 .top  button span {
+       font-size: 2rem;
+ 
+   }
+ }
+ 
+ 
+ 
+ /* wallet */
+ 
+  @media (max-width: 500px) {
+ 
+ .form-content{
+    width: 110%;
+ }
+ 
+ .card{
+    width: 105%;
+    margin-left: 20px;
+ }
+ 
+ .correrBtn{
+    margin-left: -40px;
+    width: 50%;
+ }
+ 
+ .usdt{
+    margin-left: 70%;
+    width: 20%;
+ }
+ 
+ .trx{
+    margin-left: 70%;
+    width: 17%;
+ }
+ 
+ .moversaldos{
+    margin-left: 43%;
+ }
+ 
+ .creado{
+    margin-left: 50%;
+ }
+ 
+ .moverfechas{
+    width: 100%;
+    margin-left: 50px;
+    font-size: 15px !important;
+ }
+ 
+ .moverRefe{
+ 
+ font-size: 14px !important;
+ 
+ }
+ 
+ .right2 .top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    background: var(--color-white);
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem var(--color-light);
+ 
+ }
+ 
+ }
+ 
+ @media (min-width: 768px) {
+    .card{
+       width: 75%;
+    }
+ }
+ 
+ 
+ @media (min-width: 1024px) {
+    .card{
+       width: 50%;
+    }
+ 
+ }
+ 
+  /* @media (max-width: 450px) {
+    .card{
+       width: 111%;
+       margin-left: 20px;
+    }
+    
+    .correrBtn{
+       margin-left: -70px;
+    }
+    
+    .usdt{
+       margin-left: 80%;
+       width: 17%;
+    }
+    
+    .trx{
+       margin-left: 80%;
+       width: 17%;
+    }
+    
+    .moversaldos{
+       margin-left: 63%;
+    }
+    
+    .creado{
+       margin-left: 60%;
+    }
+    
+    .moverfechas{
+       width: 100%;
+       margin-left: 50px;
+       font-size: 15px !important;
+    }
+    
+    .moverRefe{
+    
+    font-size: 18px !important;
+    
+    }
+ }
+ 
+  @media (max-width: 770px) {
+    .card{
+       width: 111%;
+       margin-left: 20px;
+    }
+    
+    .correrBtn{
+       margin-left: 0px;
+    }
+    
+    .usdt{
+       margin-left: 80%;
+       width: 17%;
+    }
+    
+    .trx{
+       margin-left: 80%;
+       width: 17%;
+    }
+    
+    .moversaldos{
+       margin-left: 63%;
+    }
+    
+    .creado{
+       margin-left: 60%;
+    }
+    
+    .moverfechas{
+       width: 100%;
+       margin-left: 50px;
+       font-size: 15px !important;
+    }
+    
+    .moverRefe{
+    
+    font-size: 19px !important;
+    
+    }
+ }  */

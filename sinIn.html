@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpay | iniciar sesion</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
+</head>
+<body>
+    <!-- <div id="particles-js"></div> -->
+    <section class="form-main">
+        <div class="form-content">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="box">
+                <video height="450px" width="450px" loop autoplay muted>
+                    <source src="wallpayvideo.webm" type="video/mp4" >
+                   </video>
+                <h3>Bienvenido</h3>
+                <form action="#">
+                    <div class="input-box">
+                        <span>User</span>
+                        <input type="number" placeholder="User" id="UserLogin" class="input-control">
+                    </div>
+                    <div class="input-box">
+                        <span>Password</span>
+                        <input type="password" placeholder="Password" id="PasswordLogin" class="input-control">
+                        <div class="input-link">
+                            <a href="#" class="gradient-text">olvidé mi contraseña</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" id="IniciarSesionLogin">Iniciar Sesión</button>
+                </form>
+                <p> No tienes una cuenta?   <a href="singup.html" class="gradient-text">Crear una cuenta</a></p>  
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/logica/routes/routes.js"></script>
+
+    <script src="./assets/js/logica/utils/HttpsLogin.js"></script>
+    <script src="./assets/js/logica/business/loginBussiness.js"></script>
+    <script src="./assets/js/logica/controller/loginController.js"></script>
+    <script src="./assets/js/logica/event/LogInEvents.js"></script>
+    
+</body>
+</html>
