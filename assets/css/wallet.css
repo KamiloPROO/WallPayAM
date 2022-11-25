@@ -1,11 +1,11 @@
 @media (max-width: 500px) {
 
    .form-content{
-      width: 110%;
+      width: 100%;
    }
    
    .card{
-      width: 105%;
+      width: 115%;
       margin-left: 20px;
    }
    
@@ -34,7 +34,9 @@
    }
 
    .moversaldosTrx{
-      margin-left: 94%;
+      margin-left: 95%;
+      width: 25.1%;
+      overflow: hidden;
    }
 
    .act{
@@ -42,7 +44,9 @@
    }
    
    .moversaldos{
-      margin-left: 85%;
+      margin-left: 95%;
+      width: 25.1%;
+      overflow: hidden;
    }
    
    .creado{
