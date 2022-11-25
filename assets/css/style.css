@@ -32,7 +32,7 @@ body {
     line-height: 24px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    -font-smoothing: antialiased;
 }
 
 button {
@@ -5397,7 +5397,7 @@ a:active {
   
   .hero-area .hero-content .button .btn.btn-alt:hover {
     background-color: #fff;
-    color: #ec94ff;
+    color: #f8a304;
   }
   
   @media (max-width: 767px) {
