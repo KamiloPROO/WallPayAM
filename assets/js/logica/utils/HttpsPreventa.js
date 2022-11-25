@@ -42,7 +42,11 @@ document.addEventListener('DOMContentLoaded', e => {
 
         },
         error: function () {
-            alert("Ha ocurrido un error, por favor vuelva a intentarlo")
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'server under maintenance',
+            })
         }
     });
 
