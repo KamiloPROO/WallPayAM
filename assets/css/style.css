@@ -7951,7 +7951,7 @@ a:active {
 }
 
 .tm-green-color .tm-btn:hover {
-    color: #77d102;
+    color: #f88707;
     background-color: transparent;
 }
 
@@ -7961,7 +7961,8 @@ a:active {
 }
 
 .tm-green-color .tm-header-menu {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #020204
+    ;
 }
 
 .tm-green-color .tm-site-header.small-height .tm-header-menu {
