@@ -127,8 +127,10 @@ a {
 .form-content .box {
     border-color: var(--glass-bg-color);
     border: 1px solid var(--border-color);
-    padding: 40px 50px;
+    padding: 1px 50px;
     border-radius: 20px;
+    /* background: red; */
+    height: 30% !important;
     backdrop-filter: var(--blur);
 
 }

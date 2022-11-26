@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallpay | iniciar sesion</title>
     <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/stilosform.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -40,13 +41,17 @@
                    </video>
                 <h3>Bienvenido</h3>
                 <form action="#">
-                    <div class="input-box">
-                        <span>User</span>
-                        <input type="number" placeholder="User" id="UserLogin" class="input-control">
+                    <div class="grupo">
+                        <input type="text" name="" id="UserLogin" required><span class="barra"></span>
+                        <label for="">User</label>
+                        <!-- <span>User</span>
+                        <input type="number" placeholder="User" id="UserLogin" class="input-control"> -->
                     </div>
-                    <div class="input-box">
-                        <span>Password</span>
-                        <input type="password" placeholder="Password" id="PasswordLogin" class="input-control">
+                    <div class="grupo">
+                        <input type="password" name="" id="PasswordLogin" required><span class="barra"></span>
+                        <label for="">Password</label>
+                        <!-- <span>Password</span>
+                        <input type="password" placeholder="Password" id="PasswordLogin" class="input-control"> -->
                         <div class="input-link">
                             <a href="#" class="gradient-text">olvidé mi contraseña</a>
                         </div>
