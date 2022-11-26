@@ -173,7 +173,7 @@
  
  @media (min-width: 991px) {
  
-    .right2 .profile .infoR {
+    .right .profile .infoR {
        display: none;
     }
  
@@ -192,23 +192,38 @@
  
  
  @media (max-width: 450px) {
+
+   /* .container{
+      width: 50%;
+   } */
  
-    .cuerpo{
-       width: 100%;
-    }
-    .video{
+   .cuerpo{
+      width: 100% !important;
+   }
+    /* .cuerpo{
+       width: 50%;
+    } */
+    /* .video{
        width: 400px ;
        margin-top: -150px;
     }
- 
+  */
     .todo1{
-       width: 98%;
+       width: 100% !important;
     }
  
      .insights{
-       margin-top: -120px;
+      /* padding: 4%; */
+      width: 100%;
+      /* margin-left: 1px; */
     }
-    .right2{
+
+    /* .tablaRecents{
+      width: 20% !important;
+      margin-left: 10px;
+    } */
+
+    .right{
        width: 96%;
        margin-left: 4px;
     }
@@ -218,7 +233,7 @@
        height: auto;
     } 
  
-   .right2 .top{
+   .right .top{
        position: fixed;
        top: 0;
        left: 0;
@@ -231,7 +246,7 @@
        z-index: 2;
        box-shadow: 0 1rem 1rem var(--color-light);
    }
-   .right2 .top .theme-toggler {
+   .right .top .theme-toggler {
        width: 4.4rem;
        position: absolute;
        left: 66%;
@@ -239,7 +254,7 @@
        
    }
  
-   .right2 .profile .info {
+   .right .profile .info {
        display: none;
    }
  
@@ -248,7 +263,7 @@
     display: none;
    }
  
-   .right2 .top button {
+   .right .top button {
        display: inline-block;
        background: transparent;
        cursor: pointer;
@@ -257,7 +272,7 @@
        left: 1rem;
    }
  
-   .right2 .top  button span {
+   .right .top  button span {
        font-size: 2rem;
  
    }
