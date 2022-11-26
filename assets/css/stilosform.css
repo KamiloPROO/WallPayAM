@@ -117,5 +117,12 @@ input-group{
     form{
         width: 80%;
     }
+
+    .grupo{
+        width: 100%;
+    }
     
+    .btn{
+        margin-left: 15%;
+    }
 }
