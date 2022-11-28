@@ -16,21 +16,24 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"
+        integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
 
 </head>
 
@@ -50,7 +53,7 @@
             </div>
 
             <div class="sidebar">
-                <a href="Dash.html" ><span class="material-icons-sharp">
+                <a href="Dash.html"><span class="material-icons-sharp">
                         grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
@@ -116,55 +119,72 @@
         <!-----------End of Aside------------>
         <div class="form-content">
             <div>
-              <br>
-              <h1 id="cuentaM" style="color: #d79d13;">Cuenta Tron</h1>
-              <br>
-              <button type="button" class="btn camiloOcultar" id="crearCuentaTron2">Crear Cuenta Tron</button>
-              <br>
-              <br>
-              <h2 class="camiloOcultar" id="respuesta">
+                <br>
+                <h1 id="cuentaM" style="color: #d79d13;">Cuenta Tron</h1>
+                <br>
+                <button type="button" class="btn camiloOcultar" id="crearCuentaTron2">Crear Cuenta Tron</button>
+                <br>
+                <br>
+                <h2 class="camiloOcultar" id="respuesta">
             </div>
 
 
-              <div class="card"
-                  style="background:url(./assets/img/fondotarjeta.jpg);background-repeat: no-repeat;background-size: cover;">
-                  <div class="containerCard camiloOcultar" id="containerCardTron">
-                      <h3 id="respuestaReferencia" class="moverRefe">referencia</h3>
-                      <button type="button" class="btnCamilo correrBtn" id="copiarDireccion">Copiar Direccion</button>
-                      <br>
-                      <span id="respuestaNombreUser" class="moverUser"></span>
-                      <br>
-                      <h3 class="trx">TRX</h3>
-                      <h3 id="respuestaSaldoTRX" class="moversaldosTrx">referencia</h3>
-                      <h3 class="wplay">WPLAY</h3>
-                      <h3 id="respuestaSaldoWplay" class="moversaldos">referencia</h3>
-                      <h3 class="usdt">USDT</h3>
-                      <h3 id="respuestaSaldoUSDT" class="moversaldos">referencia</h3>
-                      <br>
-                      <br>
-                      <div style="display: flex;">
+            <div class="card"
+                style="background:url(./assets/img/fondotarjeta.jpg);background-repeat: no-repeat;background-size: cover;">
+                <div class="containerCard camiloOcultar" id="containerCardTron">
+                    <h3 id="respuestaReferencia" class="moverRefe">referencia</h3>
+                    <button class="btnCamilo correrBtn" onclick="copiarNumReferencia('respuestaReferencia')">Copiar
+                        Direccion</button>
+                    <br>
+                    <span id="respuestaNombreUser" class="moverUser"></span>
+                    <br>
+                    <h3 class="trx">TRX</h3>
+                    <h3 id="respuestaSaldoTRX" class="moversaldosTrx">referencia</h3>
+                    <h3 class="wplay">WPLAY</h3>
+                    <h3 id="respuestaSaldoWplay" class="moversaldos">referencia</h3>
+                    <h3 class="usdt">USDT</h3>
+                    <h3 id="respuestaSaldoUSDT" class="moversaldos">referencia</h3>
+                    <br>
+                    <br>
+                    <div style="display: flex;">
                         <h3 id="respuestaActualizada" class="moverfechas">referencia</h3>
                         <h3 class="act">Actualizada</h3>
-                      </div> 
-                  </div>
-              </div>
-          <div class="right">
-              <div class="top">
-                  <button id="menu-btn">
-                      <span class="material-icons-sharp">menu</span>
-                  </button>
-              </div>
-          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                </div>
+            </div>
 
 
 
-      </div>
+        </div>
     </div>
+
+    <script>
+        function copiarNumReferencia(id_elemento) {
+            var aux = document.createElement("input");
+            aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+            document.body.appendChild(aux);
+            aux.select();
+            document.execCommand("copy");
+            document.body.removeChild(aux);
+
+            Swal.fire({
+                  icon: 'success',
+                  title: 'Successfully Copied Reference',
+                })
+        }
+    </script>
     <!-- Fondo Particles-->
-     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
     <script src="./assets/js/orders.js"></script>
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/particles.min.js"></script> 
+    <script src="./assets/js/particles.min.js"></script>
 
     <script src="./copiar.js"></script>
 
@@ -177,4 +197,5 @@
 
     <script src="./assets/js/logica/utils/HttpsListarCuentaTron.js"></script>
 </body>
+
 </html>
