@@ -380,6 +380,16 @@
 
  }
  
+  /* comprar */
+
+  @media (max-width: 500px) {
+ 
+  .cardsInversion{
+   margin-left: 19px;
+  }
+
+}
+
  
  /* wallet */
  
