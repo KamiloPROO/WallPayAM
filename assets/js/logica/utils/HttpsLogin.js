@@ -7,6 +7,7 @@ function CallEndPointPost(url, jsonArgs) {
 
 
             var formData = JSON.parse(data);
+            console.log(formData);
 
 
             const idcfLogin = formData.IdCf;
