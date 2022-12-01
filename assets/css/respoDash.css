@@ -360,11 +360,11 @@
  @media (max-width: 500px) {
  
     #name {
-      margin-top: 40px;
+      display: none;
     }
     
     #cuentaM{
-      margin-left: 10%;
+      margin-left: 20%;
     }
 
     .btnCuenta{
