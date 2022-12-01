@@ -465,7 +465,7 @@ a {
     overflow: hidden;
     border-radius: 10px;
     /* margin-left: 7%; */
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 1%;
 
 }
@@ -1042,6 +1042,26 @@ STYLE OF PLANS VIEW
     z-index: 1;
     overflow: hidden;
     margin-bottom: 10px;
+}
+
+.btnComprar {
+    height: 45px;
+    width: 30%;
+    margin-top: 20%;
+    margin-right: 4%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: rgb(3, 9, 90);
+    border: none;
+    color: var(--text-white);
+    position: static;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .btnsCuenta{
