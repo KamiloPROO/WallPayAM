@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', e => {
     var idLogin = localStorage.getItem("idPersonaLogin");
     var idCfUser = localStorage.getItem("idCfLogin");
     var idToken = localStorage.getItem("tokenLogin");
-    var loading = document.getElementById('cargando')
+    // var loading = document.getElementById('cargando')
 
 
     $.ajax({

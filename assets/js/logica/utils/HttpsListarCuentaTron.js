@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', e => {
         data: { "IdCf": idcff , "Token": tokeen , "Skip": 1 , "Take":1 },
         success: function (data) {
 
-            loading.style.display = 'none'
+           
             var formData = JSON.parse(data);
-            
+            loading.style.display = 'none'
 
             if (formData != "" ) {
 
