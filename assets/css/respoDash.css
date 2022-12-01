@@ -280,31 +280,38 @@
  
  @media (max-width: 500px) {
  
-    .cuerpo{
-       width: 100%;
-    }
-    .video{
-       width: 440%;
-       margin-top: -150px;
-    }
- 
-    .todo1{
-       width: 98%;
-    }
- 
-     .insights{
-       margin-top: -120px;
-    }
-    .right2{
-       width: 96%;
-       margin-left: 4px;
-    }
- 
-    .todo1 .cardsInversion{
-       width: 390px;
-       height: auto;
-    } 
- 
+   .cardsInversionCompras {
+
+      overflow: auto;
+      display: block;
+      width: 500px ;
+      height: 550px;
+      padding: 1%;
+      margin-left: 4%;
+      /* position: relative; */
+  }
+
+  .btnPublicarCompra{
+   height: 45px;
+   width: 40%;
+   margin-right: 4%;
+   margin-top: 3%;
+   margin-left: 25% !important;
+   font-size: 16px;
+   font-weight: 500;
+   text-transform: capitalize;
+   font-family: inherit;
+   cursor: pointer;
+   border-radius: 25px;
+   user-select: none;
+   background: rgb(3, 9, 90);
+   border: none;
+   color: var(--text-white);
+   position: static;
+   z-index: 1;
+   overflow: hidden;
+}
+
    .right2 .top{
        position: fixed;
        top: 0;
@@ -350,6 +357,28 @@
    }
  }
  
+ /* cuenta */
+
+ @media (max-width: 500px) {
+ 
+    #name {
+      margin-top: 40px;
+    }
+    
+    #cuentaM{
+      margin-left: 10%;
+    }
+
+    .btnCuenta{
+      width: 100%;
+      margin-left: 34%;
+    }
+
+    .menu{
+      margin-left: 30%;
+    }
+
+ }
  
  
  /* wallet */
