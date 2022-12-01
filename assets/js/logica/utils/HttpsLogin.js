@@ -5,11 +5,9 @@ function CallEndPointPost(url, jsonArgs) {
         data: jsonArgs,
         success: function (data) {
 
-            console.log(data);
 
             var formData = JSON.parse(data);
 
-            console.log(formData);
 
             const idcfLogin = formData.IdCf;
             const tokenLogin = formData.Token;

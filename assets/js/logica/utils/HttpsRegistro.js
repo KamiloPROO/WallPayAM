@@ -4,8 +4,7 @@ function CallEndPointPost(url, jsonArgs) {
         url: url,
         data: jsonArgs,
         success: function (data) {
-            
-            console.log(data);
+
 
             var formData = JSON.parse(data);
 

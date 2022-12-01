@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', e => {
         success: function (data) {
 
 
-            console.log(data);
-
             for (const datos of data){
 
                 const productList = document.getElementById("product-list");

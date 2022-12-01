@@ -5,8 +5,6 @@ function CallEndPointPost(url, jsonArgs) {
         data: jsonArgs,
         success: function (data) {
 
-            console.log(data);
-
             if (data.approveres === false) {
 
                 Swal.fire({
@@ -21,7 +19,6 @@ function CallEndPointPost(url, jsonArgs) {
                 location.href = "staking.html";
 
             }
-
 
         },
         error: function () {

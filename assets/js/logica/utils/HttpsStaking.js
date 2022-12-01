@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', e => {
         data: { "ID_USUARIO": idLogin },
         success: function (data) {
 
-
-            console.log(data);
-
             for (const datos of data){
 
                 const productList = document.getElementById("product-list");

@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallpay | Staking</title>
+    <title>Wallpay | Mis Ventas</title>
     <!--Material Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <!--STYLESHEET-->
     <link rel="stylesheet" href="./assets/css/styleDash.css">
-    <link rel="stylesheet" href="./assets/css/estiloaDash.css">
-    <link rel="stylesheet" href="./assets/css/staking.css">
+    <link rel="stylesheet" href="./assets/css/compraventa.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -34,12 +33,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+    
 
 </head>
 
-<body>
+<body class="cuerpo">
 
-    <div class="container container_wallet">
+    <div class="container">
         <aside>
             <div class="top">
                 <div class="logo">
@@ -53,64 +53,6 @@
             </div>
 
             <div class="sidebar">
-                <!-- <a href="Dash.html"><span class="material-icons-sharp">
-                        grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-
-                <a href="wallet.html"><span class="material-icons-sharp">
-                        account_balance_wallet</span>
-                    <h3>Wallet</h3>
-                </a>
-
-                <a href="preventa.html"><span class="material-icons-sharp">
-                        point_of_sale</span>
-                    <h3>Preventas</h3>
-                </a>
-
-                <a href="staking.html" class="active"><span class="material-icons-sharp">
-                        auto_graph</span>
-                    <h3>Staking</h3>
-                </a>
-
-                <a href="mensages.html"><span class="material-icons-sharp">
-                        mail_outline</span>
-                    <h3>Mensages</h3>
-                </a>
-
-                <a href="preCompra.html"><span class="material-icons-sharp">
-                        inventory</span>
-                    <h3>Pre Compras</h3>
-                </a>
-                <a href="p2p.html"><span class="material-icons-sharp">
-                        local_atm</span>
-                    <h3>P2P</h3>
-                </a>
-
-                <a href="#"><span class="material-icons-sharp">
-                        report_gmailerrorred</span>
-                    <h3>Reportes</h3>
-                </a>
-                <a href="#"><span class="material-icons-sharp">
-                        shopping_basket</span>
-                    <h3>E-Commerce</h3>
-                </a>
-
-                <a href="#"><span class="material-icons-sharp">
-                        settings</span>
-                    <h3>Configuraciones</h3>
-                </a>
-
-                <a href="#"><span class="material-icons-sharp">
-                        history</span>
-                    <h3>Historial</h3>
-                </a>
-
-                <a href="index.html"><span class="material-icons-sharp">
-                        logout</span>
-                    <h3>Cerrar Sesion</h3>
-                </a> -->
-
                 <a href="Dash.html" ><span class="material-icons-sharp">
                     local_atm</span>
                     <h3>Comprar</h3>
@@ -121,17 +63,17 @@
                     <h3>Mis Compras</h3>
                 </a>
 
-                <a href="mis_ventas.html" ><span class="material-icons-sharp">
+                <a href="mis_ventas.html" class="active"><span class="material-icons-sharp">
                     credit_card</span>
                     <h3>Mis ventas</h3>
                 </a>
 
-                <a href="ecommerce.html" ><span class="material-icons-sharp">
+                <a href="ecommerce.html"><span class="material-icons-sharp">
                     shopping_bag</span>
                     <h3>Ecommerce</h3>
                 </a>
 
-                <a href="micuenta.html" class="active"><span class="material-icons-sharp">
+                <a href="micuenta.html"><span class="material-icons-sharp">
                     person_outline</span>
                     <h3>Cuenta</h3>
                 </a>
@@ -175,54 +117,44 @@
         </aside>
 
         <!-----------End of Aside------------>
-        <div class="form-content melocaramelo">
 
-                <h1 id="cuentaM" style="color: #d79d13;">Staking</h1>
-            <div style="padding: 2%;">
-                <br>
-                <h1 style="color: #d79d13;" class="cantidadUSDT">Cantidad a Stakear en WPAY</h1>
-                <br>
-                <div>
-                    <input type="number" placeholder="Cantidad" id="cantidadAStakear" class="inputUsdt" style="text-align: center; border-radius: 5px; width: 20%; height: 30px; color: rgb(250, 249, 249); background: rgb(87, 86, 86); font-size: 20px;">
-                    <button type="button" class="btnCrearStake correrBtn" id="stakear">Stakear</button>
-                    <br>
-                </div>
+        <div class="form-content">
+            <div>
+              <br>
+              <h1 id="cuentaM" style="color: #d79d13;">Mis Ventas</h1>
+              <br>
             </div>
 
             <div class="cardsInversion" id="product-list">
 
             </div>
 
-            <div class="right">
-                <div class="top">
-                    <button id="menu-btn">
-                        <span class="material-icons-sharp">menu</span>
-                    </button>
-                </div>
-            </div>
+          <div class="right">
+              <div class="top">
+                  <button id="menu-btn">
+                      <span class="material-icons-sharp">menu</span>
+                  </button>
+              </div>
+          </div>
 
 
 
-        </div>
+      </div>
+
+        <!-- End of Main-->
+
     </div>
+
+
+
     <!-- Fondo Particles-->
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/orders.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/particles.min.js"></script>
 
-    <!-- <script src="./copiar.js"></script>-->
+    <script src="./assets/js/logica/utils/HttpsListarVentas.js"></script>
 
-    <script src="./assets/js/logica/routes/routes.js"></script>
-
-    <script src="./assets/js/logica/utils/HttpsStaking.js"></script>
-
-    <script src="./assets/js/logica/utils/HttpsStakear.js"></script>
-    <script src="./assets/js/logica/business/stakearBussiness.js"></script>
-    <script src="./assets/js/logica/controller/stakearController.js"></script>
-    <script src="./assets/js/logica/event/stakearEvents.js"></script>
-
-     <!--<script src="./assets/js/logica/utils/HttpsListarCuentaTron.js"></script>  -->
 </body>
 
 </html>

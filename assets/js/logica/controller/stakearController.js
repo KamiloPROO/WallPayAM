@@ -7,7 +7,7 @@ function VamosAStakear() {
         
         keypriv: "",
         value: $("#cantidadAStakear").val(),
-        ownerador: "",
+        owneraddr: "",
         id_usuario: idLogin
 
     }

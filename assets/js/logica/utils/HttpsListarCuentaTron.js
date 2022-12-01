@@ -9,11 +9,7 @@ document.addEventListener('DOMContentLoaded', e => {
         data: { "IdCf": idcff , "Token": tokeen , "Skip": 1 , "Take":1 },
         success: function (data) {
 
-            console.log(data);
-
             var formData = JSON.parse(data);
-
-            console.log(formData);
 
             if (formData != "" ) {
 

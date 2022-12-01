@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpay | Mi cuenta</title>
+    <!--Material Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./assets/css/styleDash.css">
+    <link rel="stylesheet" href="./assets/css/estiloaDash.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
+
+</head>
+
+<body class="cuerpo">
+
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./assets/img/Logo nav gold.png">
+
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="Dash.html"><span class="material-icons-sharp">
+                        local_atm</span>
+                    <h3>Comprar</h3>
+                </a>
+
+                <a href="mis_compras.html"><span class="material-icons-sharp">
+                        local_mall</span>
+                    <h3>Mis Compras</h3>
+                </a>
+
+                <a href="mis_ventas.html"><span class="material-icons-sharp">
+                        credit_card</span>
+                    <h3>Mis ventas</h3>
+                </a>
+
+                <a href="ecommerce.html"><span class="material-icons-sharp">
+                        shopping_bag</span>
+                    <h3>Ecommerce</h3>
+                </a>
+
+                <a href="micuenta.html" class="active"><span class="material-icons-sharp">
+                        person_outline</span>
+                    <h3>Cuenta</h3>
+                </a>
+
+                <!-- <a href="preCompra.html"><span class="material-icons-sharp">
+                        inventory</span>
+                    <h3>Pre Compras</h3>
+                </a>
+                <a href="p2p.html"><span class="material-icons-sharp">
+                        local_atm</span>
+                    <h3>P2P</h3>
+                </a>
+
+                <a href="#"><span class="material-icons-sharp">
+                        report_gmailerrorred</span>
+                    <h3>Reportes</h3>
+                </a>
+                <a href="#"><span class="material-icons-sharp">
+                        shopping_basket</span>
+                    <h3>E-Commerce</h3>
+                </a>
+
+                <a href="#"><span class="material-icons-sharp">
+                        settings</span>
+                    <h3>Configuraciones</h3>
+                </a> -->
+
+                <!-- <a href="#"><span class="material-icons-sharp">
+                        history</span>
+                    <h3>Historial</h3>
+                </a> -->
+
+                <a href="index.html"><span class="material-icons-sharp">
+                        logout</span>
+                    <h3>Cerrar Sesion</h3>
+                </a>
+
+            </div>
+
+
+        </aside>
+
+        <!-----------End of Aside------------>
+
+        <div class="form-content">
+            <div>
+                <br>
+                <div style="display: flex; margin-left: 40%;">
+                    <h1 id="cuentaM" style="color: #d79d13; width: 30%;">Mi Cuenta</h1>
+                    <div style="display: flex; margin-left: 39%;">
+                        <h2>Hola:</h2>
+                        <h1 id="name" style="margin-left: 10px; font-size: 20px; color: #d79d13;">Jua</h1>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div>
+                <!-- <img src="./assets/img/Logo nav gold.png" style="width: 300px; margin-left: 370px;"> -->
+                <h2>Menu de opciones</h2>
+                <br>
+                <div class="btnsCuenta">
+                    <button onclick="preventa()" style="background: #d79d13; color: black; font-weight: bold;"
+                        class="btnCuenta">Preventa</button>
+                    <br>
+                    <button onclick="staking()" class="btnCuenta" id="IniciarSesionLogin">Staking</button>
+                    <br>
+                    <button onclick="miWallet()" class="btnCuenta" id="IniciarSesionLogin">Mis Cuentas</button>
+                    <br>
+                    <button type="button" class="btnCuenta" id="IniciarSesionLogin">Enviar Transferencia</button>
+                    <br>
+                    <button type="button" class="btnCuenta" id="IniciarSesionLogin">Mi Perfil</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- End of Main-->
+
+    </div>
+
+    <script>
+
+        function preventa() {
+
+            window.location.href = "preventa.html"
+
+        }
+
+        function staking() {
+
+            window.location.href = "staking.html"
+
+        }
+
+        function miWallet() {
+
+            window.location.href = "wallet.html"
+
+        }
+
+    </script>
+
+    <!-- Fondo Particles-->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/orders.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/particles.min.js"></script>
+
+    <script src="./assets/js/logica/utils/HttpsDashboard.js"></script>
+
+</body>
+
+</html>

@@ -6,8 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallpay | Recuperar Contraseña</title>
     <link rel="stylesheet" href="./assets/css/estilos.css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/logo_pequeño_header.png" />
+    <link rel="stylesheet" href="./assets/css/stilosform.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"
+        integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
 </head>
+
 <body>
     <div id="particles-js"></div>
     <section class="form-main">
@@ -16,16 +40,20 @@
             <div class="circle-2"></div>
             <div class="circle-3"></div>
             <div class="box">
-                <!-----<video height="450px" width="450px" loop autoplay muted>
-                    <source src="animacion_good.webm" type="video/mp4" >
-                   </video>------->
+                <video height="450px" width="450px" loop autoplay muted>
+                    <source src="wallpayvideo.webm" type="video/mp4" >
+                   </video>
                 <h3>Olvidaste tu contraseña?</h3>
                 <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="Email" class="input-control">
+                    <div class="grupo">
+                        <input type="text" name="" id="recoveryPasswordUser" required><span class="barra"></span>
+                        <label for="">User</label>
                     </div>
-                    <br>
-                    <button type="submit" class="btn">Enviar Link</button>
+                    <div class="grupo">
+                        <input type="email" name="" id="recoveryPasswordEmail" required><span class="barra"></span>
+                        <label for="">Email</label>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
                 </form>
                 <p>No tienes una cuenta? <a href="singup.html" class="gradient-text">Crear una cuenta</a></p>  
             </div>

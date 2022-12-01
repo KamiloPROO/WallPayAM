@@ -5,7 +5,6 @@ function CallEndPointPost(url, jsonArgs) {
         data: jsonArgs,
         success: function (data) {
 
-            console.log(data);
 
             if (data.ID === 0){
 
@@ -13,7 +12,12 @@ function CallEndPointPost(url, jsonArgs) {
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Rejected Transaction Please rectify if you have available balance',
-                    
+                }).then((result) => {
+                    if(result.isConfirmed){
+                        window.location.href = URL_API_BASE;
+                        location.replace("preventa.html");
+                        location.href ="preventa.html";   
+                    }   
                 })
 
             }else{

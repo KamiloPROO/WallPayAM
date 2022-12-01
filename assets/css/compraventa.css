@@ -463,6 +463,7 @@ a {
     transition: 0.3s;
     display: block;
     overflow: hidden;
+    border-radius: 10px;
     /* margin-left: 7%; */
     margin-top: 5%;
     padding: 1%;
@@ -475,14 +476,14 @@ a {
   }
   
   .cardsInversion::-webkit-scrollbar-track {
-    background: rgba(163, 162, 159, 0.13);
+    background: transparent;
     border-radius: 10px;         /* color of the tracking area */
   }
   
   .cardsInversion::-webkit-scrollbar-thumb {
-    background-color: rgb(250, 172, 3);    /* color of the scroll thumb */
+    background-color: transparent;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(250, 172, 3);  /* creates padding around scroll thumb */
+    border: transparent;  /* creates padding around scroll thumb */
   }
 
 .melocaramelo{
@@ -496,7 +497,7 @@ a {
     overflow: auto;
     display: block;
     width: 500px ;
-    height: 485px;
+    height: 600px;
     padding: 1%;
     margin-left: 27%;
     /* position: relative; */
@@ -1040,7 +1041,7 @@ STYLE OF PLANS VIEW
     position: relative;
     z-index: 1;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .btnsCuenta{
