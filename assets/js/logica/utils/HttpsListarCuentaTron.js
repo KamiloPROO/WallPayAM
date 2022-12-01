@@ -3,13 +3,19 @@ document.addEventListener('DOMContentLoaded', e => {
     var idcff = localStorage.getItem("idCfLogin");
     var tokeen = localStorage.getItem("tokenLogin");
 
+    var loading = document.getElementById('cargando')
+    
+        
+
     $.ajax({
         type: "GET",
         url: "https://appwollpay.app/Api/GetCuentasTron",
         data: { "IdCf": idcff , "Token": tokeen , "Skip": 1 , "Take":1 },
         success: function (data) {
 
+            loading.style.display = 'none'
             var formData = JSON.parse(data);
+            
 
             if (formData != "" ) {
 

@@ -486,6 +486,22 @@ a {
     border: transparent;  /* creates padding around scroll thumb */
   }
 
+  .cardsInversionCompras::-webkit-scrollbar {
+    width: 12px;
+                  /* width of the entire scrollbar */
+  }
+  
+  .cardsInversion::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;         /* color of the tracking area */
+  }
+  
+  .cardsInversion::-webkit-scrollbar-thumb {
+    background-color: transparent;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: transparent;  /* creates padding around scroll thumb */
+  }
+
 .melocaramelo{
 
     scrollbar-width: thin;
@@ -1066,4 +1082,35 @@ STYLE OF PLANS VIEW
 
 .btnsCuenta{
     margin-right: 25%;
+}
+.btnPublicarCompra{
+    height: 45px;
+    width: 30%;
+    margin-right: 4%;
+    margin-top: 3%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: rgb(3, 9, 90);
+    border: none;
+    color: var(--text-white);
+    position: static;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.cardsInversionCompras {
+
+    overflow: auto;
+    display: block;
+    width: 500px ;
+    height: 550px;
+    padding: 1%;
+    margin-left: 27%;
+    /* position: relative; */
+
 }
