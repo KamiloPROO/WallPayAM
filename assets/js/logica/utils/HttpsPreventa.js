@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', e => {
 
     var idLogin = localStorage.getItem("idPersonaLogin");
+    var loading = document.getElementById('cargando2');
 
     $.ajax({
         type: "POST",
@@ -8,7 +9,8 @@ document.addEventListener('DOMContentLoaded', e => {
         data: { "ID_USUARIO": idLogin },
         success: function (data) {
 
-
+            loading.style.display = 'none'
+            
             for (const datos of data){
 
                 const productList = document.getElementById("product-list");

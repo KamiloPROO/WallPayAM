@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     var idcfLogin = localStorage.getItem("idCfLogin");
     var tokenLogin = localStorage.getItem("tokenLogin");
+    var loading = document.getElementById('cargando2');
 
     $.ajax({
         type: "GET",
@@ -9,7 +10,8 @@ document.addEventListener('DOMContentLoaded', e => {
         data: { "IdCf": idcfLogin, "Token": tokenLogin , "Skip": 1 , "Take":30},
         success: function (data) {
 
-
+ 
+            loading.style.display = 'none'
             var formData = JSON.parse(data);
 
 

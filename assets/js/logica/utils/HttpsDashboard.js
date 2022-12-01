@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', e => {
 
     const nombre = document.getElementById("name");
 
+
     nombre.textContent = numUser;
+
+
 
     // $.ajax({
     //     type: "POST",

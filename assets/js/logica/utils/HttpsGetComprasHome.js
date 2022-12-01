@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', e => {
     var idLogin = localStorage.getItem("idPersonaLogin");
     var idCfUser = localStorage.getItem("idCfLogin");
     var idToken = localStorage.getItem("tokenLogin");
+    var loading = document.getElementById('cargando')
 
 
     $.ajax({
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', e => {
         data: { "ID": idLogin, "IdCf": idCfUser, "Token": idToken, "Skip": 1, "Take": 6, "so": "android", "App": 2 },
         success: function (data) {
 
-
+            loading.style.display = 'none'
 
             var formData = JSON.parse(data);
             console.log(formData);

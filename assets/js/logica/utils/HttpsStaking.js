@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', e => {
 
     var idLogin = localStorage.getItem("idPersonaLogin");
+    var loading = document.getElementById('cargando2');
 
     $.ajax({
         type: "POST",
         url: "http://52.175.225.67:8059/api/stake/listaStakes",
         data: { "ID_USUARIO": idLogin },
         success: function (data) {
+
+            loading.style.display = 'none'
 
             for (const datos of data){
 
