@@ -50,17 +50,26 @@
                         <label for="">User</label>
                     </div>
                     <div class="grupo">
-                        <input type="email" name="" id="recoveryPasswordEmail" required><span class="barra"></span>
-                        <label for="">Email</label>
+                        <input type="password" name="" id="recoveryPassword" required><span class="barra"></span>
+                        <label for="">Password</label>
                     </div>
-                    <button type="submit" class="btn">Submit</button>
+                    <div class="grupo">
+                        <input type="password" name="" id="ConfirmRecoveryPassword" required><span class="barra"></span>
+                        <label for="">Confirm Password</label>
+                    </div>
+                    <button type="button" class="btn" id="recoveryPass">Submit</button>
                 </form>
                 <p>No tienes una cuenta? <a href="singup.html" class="gradient-text">Crear una cuenta</a></p>  
             </div>
         </div>
     </section>
 
+ <script src="./assets/js/logica/routes/routes.js"></script>
  
-    
+ <script src="./assets/js/logica/utils/HttpsRecoveryPassword.js"></script>
+ <script src="./assets/js/logica/business/recoveryPasswordBussiness.js"></script>
+<script src="./assets/js/logica/controller/recoveryPasswordController.js"></script>
+<script src="./assets/js/logica/event/recoveryPasswordEvents.js"></script>
+
 </body>
 </html>
