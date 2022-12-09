@@ -12,9 +12,17 @@ function CallEndPointPost(url, jsonArgs) {
 
             if (metaData.Response === 707){
 
-                window.location.href = URL_API_BASE;
-                location.replace("sinIn.html");
-                location.href = "sinIn.html"; 
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Confirmed',
+                    text: 'we have successfully updated your password',
+                }).then((result) => {
+                    if(result.isConfirmed){
+                        window.location.href = URL_API_BASE;
+                        location.replace("sinIn.html");
+                        location.href ="sinIn.html";   
+                    }   
+                })
 
             }else{
 

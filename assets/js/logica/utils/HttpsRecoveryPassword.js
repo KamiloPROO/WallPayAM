@@ -12,9 +12,17 @@ function CallEndPointPost(url, jsonArgs) {
 
             if (metaData.Response === 707){
 
-                window.location.href = URL_API_BASE;
-                location.replace("verificationCodePassword.html");
-                location.href = "verificationCodePassword.html"; 
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Confirmed',
+                    text: 'We have sent a verification code to your phone number to renew your password',
+                }).then((result) => {
+                    if(result.isConfirmed){
+                        window.location.href = URL_API_BASE;
+                        location.replace("verificationCodePassword.html");
+                        location.href ="verificationCodePassword.html";   
+                    }   
+                })
 
             }else{
 
