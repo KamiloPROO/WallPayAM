@@ -74,12 +74,12 @@ body::before {
     transform: translate(-50%);
 }
 
-body::after {
+/* body::after {
     background-color: var(--violet);
     right: 0;
     top: 0;
     transform: translate(50%);
-}
+} */
 
 a {
     text-decoration: none;
