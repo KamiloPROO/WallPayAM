@@ -1190,3 +1190,34 @@ STYLE OF PLANS VIEW
     border-radius: 10px;
     margin-left: 200px;
 }
+
+.controls{
+    background: transparent;
+    color: #878787;
+}
+
+.controls2{
+    margin-left: 50px;
+    background: transparent;
+    color: #878787;
+}
+
+.controls3{
+    margin-left: 10px;
+    background: transparent;
+    color: #b1afaf;
+}
+
+.wpay{
+    color: #d79d13;
+}
+
+.ust{
+    margin-left: 10px;
+    color: #3f3e3e;
+}
+
+.trx2{
+    margin-left: 10px;
+    color: #3f3e3e;
+}
