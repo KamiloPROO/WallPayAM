@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', e => {
     var idcff = localStorage.getItem("idCfLogin");
     var tokeen = localStorage.getItem("tokenLogin");
 
-    var loading = document.getElementById('cargando')
+    var loading = document.getElementById('cargando');
     
         
 

@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', e => {
         success: function (data) {
  
             loading.style.display = 'none'
-
             var formData = JSON.parse(data);
 
             for ( const compras of formData) {
