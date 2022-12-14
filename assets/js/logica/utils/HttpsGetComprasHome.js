@@ -57,12 +57,11 @@ document.addEventListener('DOMContentLoaded', e => {
                       <b class="tituColVa"> 84.18 USDT</b>
                       <a class="btnetia" type="button" onclick="comprar()" >Comprar</a>
                       </div>
-                      <div style="display: flex">
+                      <div style="display: flex; margin-top: -20px">
                       <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px;">Limite</b>
                       <b class="tituColVa"> Col$ 50.0000.000 - 300.000.000</b>
                       </div>
-                      <br>
-                      <img src="${imagenes}" style="width: 40px; margin-left: 0px;">
+                      <img src="${imagenes}" style="width: 35px; margin-left: 0px;">
                       <h1 class="raya">____________________________________________</h1>
                     </div>
                     </div>

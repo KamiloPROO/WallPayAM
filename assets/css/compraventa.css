@@ -1122,27 +1122,34 @@ STYLE OF PLANS VIEW
     overflow: auto;
     display: block;
     width: 650px ;
-    height: 720px;
+    height: 500px;
     padding: 1%;
     margin-left: 20%;
+    margin-top: -20px;
     /* position: relative; */
 
 }
 
+.controls{
+
+}
+
 .cardInversionMela {
+    /* background: #40992e; */
     width: 139%;
     transition: 0.3s;
     display: block;
     overflow: hidden;
     border-radius: 10px;
     /* margin-left: 7%; */
-    margin-top: 10%;
+    margin-top: 0%;
     padding: 1%;
 
 }
 
 .raya{
     color: #3f3e3e;
+    margin-top: -20px;
 }
 
 .tituColVa{
@@ -1221,3 +1228,78 @@ STYLE OF PLANS VIEW
     margin-left: 10px;
     color: #3f3e3e;
 }
+
+.containerWVender{
+width: 54%;
+/* background: red; */
+margin-left: 21%;
+border-style: solid;
+border-width: 1px;
+border-top-color: transparent;
+border-right-color: transparent;
+border-bottom-color: #5a5c5a;
+border-left-color: transparent;
+overflow: hidden;
+padding: 1%;
+
+
+}
+
+.controls {
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    /* border: 1px solid #fdfdfd; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(114, 113, 113);
+  }
+  .controls1 {
+    width: 40%;
+    background: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    /* border: 1px solid #fdfdfd; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(114, 113, 113);
+  }
+  
+  .controls2 {
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: -100px;
+    margin-bottom: 1px;
+    /* border: 1px solid #fdfdfd; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(114, 113, 113);
+  }
+
+  .cambioDivi{
+    /* width: 100%; */
+    background: #3f3e3e;
+    padding: 5px;
+    border-radius: 4px;
+    /* margin-bottom: 1px; */
+    /* border: 1px solid #fdfdfd; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(197, 195, 195);
+    
+  }
+
+  .divisa{
+    margin-top: 5px;
+    margin-left: 30%;
+    background: #3f3e3e;
+    border-radius: 10px;
+    display: flex;
+    
+  }
+  
