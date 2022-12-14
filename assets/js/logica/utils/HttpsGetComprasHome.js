@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', e => {
                       <a class="cir" >C</a>
                       <b class="coin" >CoinNow</b>
                       </div>
-                      <div style="display: flex">
+                      <div style="display: flex;" >
                       <b class="ordenes" >100 ordenes</b>
                       <b class="rayitaa" >|</b>
                       <b class="ordenes2" >Finalizacion 100%</b>
@@ -53,12 +53,12 @@ document.addEventListener('DOMContentLoaded', e => {
                       </div>
                       <br>
                       <div style="display: flex">
-                      <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px;">Cantidad Cripto</b>
+                      <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px; font-weight: lighter;">Cantidad Cripto</b>
                       <b class="tituColVa"> 84.18 USDT</b>
                       <a class="btnetia" type="button" onclick="comprar()" >Comprar</a>
                       </div>
                       <div style="display: flex; margin-top: -20px">
-                      <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px;">Limite</b>
+                      <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px; font-weight: lighter;">Limite</b>
                       <b class="tituColVa"> Col$ 50.0000.000 - 300.000.000</b>
                       </div>
                       <img src="${imagenes}" style="width: 35px; margin-left: 0px;">

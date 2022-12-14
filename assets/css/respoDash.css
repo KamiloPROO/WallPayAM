@@ -14,463 +14,540 @@
 /* ============Rigth============ */
 
 .right2 {
-    margin-top: 1.4rem;
- }
- 
- .right2 .top {
-    display: flex;
-    justify-content: end;
-    gap: 2rem;
- 
- }
- 
- .right2 .top button {
-    display: none;
- 
- }
- 
- .right2 .theme-toggler {
-    background: var(--color-light);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1.6rem;
-    width: 4.2rem;
-    cursor:pointer;
-    border-radius: var(--border-radius-1);
- }
- 
- .right2 .theme-toggler span {
-    font-size: 1.2rem;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- 
- .right2 .theme-toggler span.active {
-    background: var(--color-primary);
-    color: white;
-    border-radius: var(--border-radius-1);
- }
- 
- .right2 .top .profile {
-    display: flex;
-    gap: 2rem;
-    text-align: right;
- }
- 
- /* ============Recent Updates============ */
- 
- .right2 .recent-updates {
-    margin-top: 1rem;
-    
- }
- 
- .right2 .recent-updates h2 {
-    margin-bottom: 0.8rem;
- }
- 
- 
- .right2 .recent-updates .updates{
-     background: var(--color-white);
-     padding: var(--card-padding);
-     border-radius: var(--card-border-radius);
-     box-shadow: var(--box-shadow);
-     transition: all 300ms ease;
-     
- }
- 
- 
- .right2 .recent-updates .updates:hover {
-    box-shadow: none;
- 
- }
- 
- .right2 .recent-updates .updates .update{
-    display: grid;
-    grid-template-columns:  2.6rem auto;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    
- 
- }
- 
- /* ============Sales Analytics============ */
- 
- .right2 .sales-analytics {
-    margin-top: 2rem;
- }
- 
- .right2 .sales-analytics h2 {
-    margin-bottom: 0.8rem;
- 
- }
- 
- .right2 .sales-analytics .item {
-    background: var(--color-white);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 0.7rem;
-    padding: 1.4rem var(--card-padding);
-    border-radius: var(--border-radius-3);
-    box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
- }
- 
- .right2 .sales-analytics .item:hover {
-    box-shadow: none;
- 
- }
- 
- .right2 .sales-analytics .item .right2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin: 0;
-    width: 100%;
- 
- }
- 
- .right2 .sales-analytics .item .icon {
-    padding: 0.6rem;
-    color: var(--color-white);
-    border-radius: 50%;
-    background:var(--color-primary);
-    display: flex;
- 
- }
- 
- .right2 .sales-analytics .item.offline .icon {
-    background: var(--color-danger);
- 
- }
- .right2 .sales-analytics .item.customers .icon {
-    background: var(--color-success);
- 
- }
- 
- .right2 .sales-analytics .add-product {
-    background-color: transparent;
-    border: 2px dashed var(--color-primary);
-    color: var(--color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- 
- .right2 .sales-analytics .add-product div {
-    display: flex;
-    align-items: center;
-    gap:0.6rem;
- }
- 
- .right2 .sales-analytics .add-product div h3 {
-    font-weight: 600;
- }
- 
- @media (min-width: 991px) {
- 
-    .right .profile .infoR {
-       display: none;
-    }
- 
-    .lobby{
-       display: none;
-    }
-  
-    .video{
-       width: 700px ;
-    }
- 
- }
- 
- /* dashboard */
- 
- 
- 
- @media (max-width: 450px) {
+   margin-top: 1.4rem;
+}
+
+.right2 .top {
+   display: flex;
+   justify-content: end;
+   gap: 2rem;
+
+}
+
+.right2 .top button {
+   display: none;
+
+}
+
+.right2 .theme-toggler {
+   background: var(--color-light);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 1.6rem;
+   width: 4.2rem;
+   cursor: pointer;
+   border-radius: var(--border-radius-1);
+}
+
+.right2 .theme-toggler span {
+   font-size: 1.2rem;
+   width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.right2 .theme-toggler span.active {
+   background: var(--color-primary);
+   color: white;
+   border-radius: var(--border-radius-1);
+}
+
+.right2 .top .profile {
+   display: flex;
+   gap: 2rem;
+   text-align: right;
+}
+
+/* ============Recent Updates============ */
+
+.right2 .recent-updates {
+   margin-top: 1rem;
+
+}
+
+.right2 .recent-updates h2 {
+   margin-bottom: 0.8rem;
+}
+
+
+.right2 .recent-updates .updates {
+   background: var(--color-white);
+   padding: var(--card-padding);
+   border-radius: var(--card-border-radius);
+   box-shadow: var(--box-shadow);
+   transition: all 300ms ease;
+
+}
+
+
+.right2 .recent-updates .updates:hover {
+   box-shadow: none;
+
+}
+
+.right2 .recent-updates .updates .update {
+   display: grid;
+   grid-template-columns: 2.6rem auto;
+   gap: 1rem;
+   margin-bottom: 1rem;
+
+
+}
+
+/* ============Sales Analytics============ */
+
+.right2 .sales-analytics {
+   margin-top: 2rem;
+}
+
+.right2 .sales-analytics h2 {
+   margin-bottom: 0.8rem;
+
+}
+
+.right2 .sales-analytics .item {
+   background: var(--color-white);
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 0.7rem;
+   padding: 1.4rem var(--card-padding);
+   border-radius: var(--border-radius-3);
+   box-shadow: var(--box-shadow);
+   transition: all 300ms ease;
+}
+
+.right2 .sales-analytics .item:hover {
+   box-shadow: none;
+
+}
+
+.right2 .sales-analytics .item .right2 {
+   display: flex;
+   justify-content: space-between;
+   align-items: start;
+   margin: 0;
+   width: 100%;
+
+}
+
+.right2 .sales-analytics .item .icon {
+   padding: 0.6rem;
+   color: var(--color-white);
+   border-radius: 50%;
+   background: var(--color-primary);
+   display: flex;
+
+}
+
+.right2 .sales-analytics .item.offline .icon {
+   background: var(--color-danger);
+
+}
+
+.right2 .sales-analytics .item.customers .icon {
+   background: var(--color-success);
+
+}
+
+.right2 .sales-analytics .add-product {
+   background-color: transparent;
+   border: 2px dashed var(--color-primary);
+   color: var(--color-primary);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.right2 .sales-analytics .add-product div {
+   display: flex;
+   align-items: center;
+   gap: 0.6rem;
+}
+
+.right2 .sales-analytics .add-product div h3 {
+   font-weight: 600;
+}
+
+@media (min-width: 991px) {
+
+   .right .profile .infoR {
+      display: none;
+   }
+
+   .lobby {
+      display: none;
+   }
+
+   .video {
+      width: 700px;
+   }
+
+}
+
+/* dashboard */
+
+
+
+@media (max-width: 450px) {
 
    /* .container{
       width: 50%;
    } */
- 
-   .cuerpo{
+
+   .cuerpo {
       width: 100% !important;
    }
-    /* .cuerpo{
+
+   /* .cuerpo{
        width: 50%;
     } */
-    /* .video{
+   /* .video{
        width: 400px ;
        margin-top: -150px;
     }
   */
-    .todo1{
-       width: 100% !important;
-    }
- 
-     .insights{
+   .todo1 {
+      width: 100% !important;
+   }
+
+   .insights {
       /* padding: 4%; */
       width: 100%;
       /* margin-left: 1px; */
-    }
+   }
 
-    /* .tablaRecents{
+   /* .tablaRecents{
       width: 20% !important;
       margin-left: 10px;
     } */
 
-    .right{
-       width: 96%;
-       margin-left: 4px;
-    }
- 
-    .todo1 .cardsInversion{
-       width: 390px;
-       height: auto;
-    } 
- 
-   .right .top{
-       position: fixed;
-       top: 0;
-       left: 0;
-       align-items: center;
-       padding: 0 0.8rem;
-       height: 4.6rem;
-       background: var(--color-white);
-       width: 100%;
-       margin: 0;
-       z-index: 2;
-       box-shadow: 0 1rem 1rem var(--color-light);
+   .right {
+      width: 96%;
+      margin-left: 4px;
    }
-   .right .top .theme-toggler {
-       width: 4.4rem;
-       position: absolute;
-       left: 66%;
-       display: none;
-       
-   }
- 
-   .right .profile .info {
-       display: none;
-   }
- 
- 
-   .quitarDash{
-    display: none;
-   }
- 
-   .right .top button {
-       display: inline-block;
-       background: transparent;
-       cursor: pointer;
-       color: var(--color-dark);
-       position: absolute;
-       left: 1rem;
-   }
- 
-   .right .top  button span {
-       font-size: 2rem;
- 
-   }
- }
- 
- @media (max-width: 500px) {
- 
-   .cardsInversionCompras {
 
+   .todo1 .cardsInversion {
+      width: 390px;
+      height: auto;
+   }
+
+   .right .top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      padding: 0 0.8rem;
+      height: 4.6rem;
+      background: var(--color-white);
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      box-shadow: 0 1rem 1rem var(--color-light);
+   }
+
+   .right .top .theme-toggler {
+      width: 4.4rem;
+      position: absolute;
+      left: 66%;
+      display: none;
+
+   }
+
+   .right .profile .info {
+      display: none;
+   }
+
+
+   .quitarDash {
+      display: none;
+   }
+
+   .right .top button {
+      display: inline-block;
+      background: transparent;
+      cursor: pointer;
+      color: var(--color-dark);
+      position: absolute;
+      left: 1rem;
+   }
+
+   .right .top button span {
+      font-size: 2rem;
+
+   }
+}
+
+@media (max-width: 500px) {
+
+   .cardsInversionCompras {
       overflow: auto;
       display: block;
-      width: 500px ;
+      width: 470px;
       height: 550px;
       padding: 1%;
       margin-left: 4%;
-  }
+   }
 
-  .btnPublicarCompra{
-   height: 45px;
-   width: 40%;
-   margin-top: -28px;
-   margin-left: -10% !important;
-   font-size: 16px;
-   font-weight: 500;
-   text-transform: capitalize;
-   font-family: inherit;
-   cursor: pointer;
-   border-radius: 25px;
-   user-select: none;
-   background: rgb(3, 9, 90);
-   border: none;
-   color: var(--text-white);
-   position: fixed;
-   z-index: 1;
-   overflow: hidden;
+   .menuWV {
+      display: flex;
+      overflow: hidden;
+      margin-top: 60px;
+      margin-left: -100px;
+   }
+
+   .divisa {
+      width: 80px;
+      margin-top: 5px;
+      margin-left: 300px;
+      position: absolute;
+      background: #3f3e3e;
+      border-radius: 10px;
+      display: flex;
+   }
+
+   .containerWVender {
+      width: 118%;
+      /* background: red; */
+      margin-left: 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: #5a5c5a;
+      border-left-color: transparent;
+      overflow: hidden;
+      padding: 1%;
+
+
+   }
+
+   .comven {
+      margin-left: -120px;
+      display: flex;
+   }
+
+   .nombreee {
+      display: none;
+   }
+
+   .controls {
+      width: 100%;
+      background: transparent;
+      padding: 5px;
+      border-radius: 4px;
+      margin-bottom: 1px;
+      /* border: 1px solid #fdfdfd; */
+      font-family: 'calibri';
+      font-size: 15px;
+      color: rgb(114, 113, 113);
+   }
+
+   .controls1 {
+      width: 55%;
+      background: transparent;
+      padding: 5px;
+      border-radius: 4px;
+      margin-bottom: 1px;
+      /* border: 1px solid #fdfdfd; */
+      font-family: 'calibri';
+      font-size: 15px;
+      color: rgb(114, 113, 113);
+   }
+
+   .controls2 {
+      width: 100%;
+      background: transparent;
+      padding: 5px;
+      border-radius: 4px;
+      margin-left: -100px;
+      margin-bottom: 1px;
+      /* border: 1px solid #fdfdfd; */
+      font-family: 'calibri';
+      font-size: 15px;
+      color: rgb(114, 113, 113);
+   }
+
+   .btnetia {
+      width: 15%;
+      height: 40px;
+      font-size: 20px;
+      background: #020202;
+      color: #d79d13;
+      border: 2px solid;
+      border-radius: 10px;
+      margin-left: 110px;
+   }
+
+   /* .raya{
+      width: 10px !important;
+   } */
+
+   .right2 .top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      padding: 0 0.8rem;
+      height: 4.6rem;
+      background: var(--color-white);
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      box-shadow: 0 1rem 1rem var(--color-light);
+   }
+
+   .right2 .top .theme-toggler {
+      width: 4.4rem;
+      position: absolute;
+      left: 66%;
+      display: none;
+
+   }
+
+   .right2 .profile .info {
+      display: none;
+   }
+
+
+   .quitarDash {
+      display: none;
+   }
+
+   .right2 .top button {
+      display: inline-block;
+      background: transparent;
+      cursor: pointer;
+      color: var(--color-dark);
+      position: absolute;
+      left: 1rem;
+   }
+
+   .right2 .top button span {
+      font-size: 2rem;
+
+   }
 }
 
-   .right2 .top{
-       position: fixed;
-       top: 0;
-       left: 0;
-       align-items: center;
-       padding: 0 0.8rem;
-       height: 4.6rem;
-       background: var(--color-white);
-       width: 100%;
-       margin: 0;
-       z-index: 2;
-       box-shadow: 0 1rem 1rem var(--color-light);
-   }
-   .right2 .top .theme-toggler {
-       width: 4.4rem;
-       position: absolute;
-       left: 66%;
-       display: none;
-       
-   }
- 
-   .right2 .profile .info {
-       display: none;
-   }
- 
- 
-   .quitarDash{
-    display: none;
-   }
- 
-   .right2 .top button {
-       display: inline-block;
-       background: transparent;
-       cursor: pointer;
-       color: var(--color-dark);
-       position: absolute;
-       left: 1rem;
-   }
- 
-   .right2 .top  button span {
-       font-size: 2rem;
- 
-   }
- }
- 
- /* cuenta */
+/* cuenta */
 
- @media (max-width: 500px) {
- 
-    #name {
+@media (max-width: 500px) {
+
+   #name {
       display: none;
-    }
-    
-    #cuentaM{
-      margin-left: 20%;
-    }
+   }
 
-    .btnCuenta{
+   #cuentaM {
+      margin-left: 20%;
+   }
+
+   .btnCuenta {
       width: 100%;
       margin-left: 34%;
-    }
+   }
 
-    .menu{
+   .menu {
       margin-left: 30%;
-    }
+   }
 
- }
- 
-  /* comprar */
+}
 
-  @media (max-width: 500px) {
- 
-  .cardsInversion{
-   margin-left: 19px;
-  }
+/* comprar */
+
+@media (max-width: 500px) {
+
+   .cardsInversion {
+      margin-left: 19px;
+   }
 
 
 
 }
 
- 
- /* wallet */
- 
-  @media (max-width: 500px) {
- 
- .form-content{
-    width: 110%;
- }
- 
- .card{
-    width: 105%;
-    margin-left: 20px;
- }
- 
- .correrBtn{
-    margin-left: -40px;
-    width: 50%;
- }
- 
- .usdt{
-    margin-left: 70%;
-    width: 20%;
- }
- 
- .trx{
-    margin-left: 70%;
-    width: 17%;
- }
- 
- .moversaldos{
-    margin-left: 43%;
- }
- 
- .creado{
-    margin-left: 50%;
- }
- 
- .moverfechas{
-    width: 100%;
-    margin-left: 50px;
-    font-size: 15px !important;
- }
- 
- .moverRefe{
- 
- font-size: 14px !important;
- 
- }
- 
- .right2 .top{
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
-    padding: 0 0.8rem;
-    height: 4.6rem;
-    background: var(--color-white);
-    width: 100%;
-    margin: 0;
-    z-index: 2;
-    box-shadow: 0 1rem 1rem var(--color-light);
- 
- }
- 
- }
- 
- @media (min-width: 768px) {
-    .card{
-       width: 75%;
-    }
- }
- 
- 
- @media (min-width: 1024px) {
-    .card{
-       width: 50%;
-    }
- 
- }
- 
-  /* @media (max-width: 450px) {
+
+/* wallet */
+
+@media (max-width: 500px) {
+
+   .form-content {
+      width: 110%;
+   }
+
+   .card {
+      width: 105%;
+      margin-left: 20px;
+   }
+
+   .correrBtn {
+      margin-left: -40px;
+      width: 50%;
+   }
+
+   .usdt {
+      margin-left: 70%;
+      width: 20%;
+   }
+
+   .trx {
+      margin-left: 70%;
+      width: 17%;
+   }
+
+   .moversaldos {
+      margin-left: 43%;
+   }
+
+   .creado {
+      margin-left: 50%;
+   }
+
+   .moverfechas {
+      width: 100%;
+      margin-left: 50px;
+      font-size: 15px !important;
+   }
+
+   .moverRefe {
+
+      font-size: 14px !important;
+
+   }
+
+   .right2 .top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      padding: 0 0.8rem;
+      height: 4.6rem;
+      background: var(--color-white);
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      box-shadow: 0 1rem 1rem var(--color-light);
+
+   }
+
+}
+
+@media (min-width: 768px) {
+   .card {
+      width: 75%;
+   }
+}
+
+
+@media (min-width: 1024px) {
+   .card {
+      width: 50%;
+   }
+
+}
+
+/* @media (max-width: 450px) {
     .card{
        width: 111%;
        margin-left: 20px;

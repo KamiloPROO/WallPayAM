@@ -1198,6 +1198,13 @@ STYLE OF PLANS VIEW
     margin-left: 200px;
 }
 
+.btnetia:hover{
+    background: #d79d13;
+    color: #0c0c0c;
+    border: 2px solid #0c0c0c ;
+    font-weight: bold;
+}
+
 .controls{
     background: transparent;
     color: #878787;
@@ -1217,16 +1224,17 @@ STYLE OF PLANS VIEW
 
 .wpay{
     color: #d79d13;
+    font-weight: bold;
 }
 
 .ust{
-    margin-left: 10px;
-    color: #3f3e3e;
+    color: #5f5f5f;
+    font-weight: bold;
 }
 
 .trx2{
-    margin-left: 10px;
-    color: #3f3e3e;
+    color: #5f5f5f;
+    font-weight: bold;
 }
 
 .containerWVender{
@@ -1243,6 +1251,10 @@ overflow: hidden;
 padding: 1%;
 
 
+}
+
+.comven{
+    display: flex;
 }
 
 .controls {
@@ -1302,4 +1314,27 @@ padding: 1%;
     display: flex;
     
   }
+
+  .vend{
+    margin-top: 4px;
+    font-size: 25px;
+    margin-left: 5px;
+    color: #7a7a7a;
+  }
   
+  .menuWV{
+   display: flex; 
+   overflow: hidden;
+  }
+
+  .signos{
+    color: #d79d13; 
+    width: 20px; 
+    height: 20px; 
+    font-size: 20px;
+  }
+
+  .nombreee{
+    display: flex; 
+    margin-left: 10%;
+  }
