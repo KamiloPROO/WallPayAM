@@ -1,0 +1,90 @@
+.compraU {
+    display: flex;
+    margin-left: 35%;
+}
+
+.containerComprar2 {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.precio {
+    color: rgb(163, 162, 162);
+    font-size: 20px;
+}
+
+.colorCol {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(127, 255, 138);
+}
+
+.colorSal {
+    font-size: 20px;
+    margin-left: 5px;
+    color: rgb(127, 255, 138);
+}
+
+.limit {
+    color: rgb(163, 162, 162);
+    font-size: 20px;
+}
+
+.colorCol2 {
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.colorSal2 {
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+
+.raramedio {
+    margin-left: 10px;
+}
+
+.containerFlotante {
+    margin-top: 5%;
+    width: 50%;
+    height: 300px;
+    background: rgb(63, 63, 63);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.navi {
+    margin-left: 40px;
+    display: flex;
+}
+
+.crip {
+    
+    margin-left: 70px;
+    color: rgb(168, 168, 168);
+    /* border-width: 1px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #111111;
+    border-left-color: transparent; */
+}
+
+.inputCom{
+    width: 60%;
+    height: 13%;
+    margin-left: 20%;
+    display: flex;
+    background: rgb(119, 76, 76);
+    overflow: hidden;
+}
+
+.inpDiner{
+    margin-left: 3%;
+    width: 50%;
+    margin-top: 1%;
+    height: 80%;
+    background: red;
+}
