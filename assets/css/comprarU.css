@@ -50,7 +50,7 @@
     margin-top: 5%;
     width: 50%;
     height: 300px;
-    background: rgb(63, 63, 63);
+    background: rgb(0, 0, 0, 0.4);
     border-radius: 10px;
     overflow: hidden;
 
@@ -75,10 +75,12 @@
 .inputCom{
     width: 60%;
     height: 13%;
+    margin-top: 4%;
     margin-left: 20%;
     display: flex;
-    background: rgb(119, 76, 76);
+    background: rgba(59, 59, 59, 0.7);
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .inpDiner{
@@ -86,5 +88,83 @@
     width: 50%;
     margin-top: 1%;
     height: 80%;
-    background: red;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    background: transparent;
+}
+
+.colorCol3 {
+    margin-top: 3%;
+    font-size: 17px;
+    margin-left: 10px;
+
+}
+
+.colorCol4 {
+    color: rgb(255, 153, 0);
+    margin-top: 3%;
+    font-size: 17px;
+    margin-left: 10px;
+
+}
+
+.cantidadesTxt{
+    margin-top: 4%;
+    width: 100%;
+    height: 30%;
+}
+
+.canti{
+    margin-top: 2%;
+    margin-left: 20px;
+    color: rgba(95, 94, 94, 0.863);
+    font-size: 20px;
+}
+
+.usrayas{
+    margin-top: 2%;
+    color: rgba(177, 175, 175, 0.863);
+    font-size: 20px;
+    margin-left: 60%;
+}
+
+.coprayitas{
+    margin-top: 2%;
+    color: rgba(253, 253, 253, 0.863);
+    font-size: 20px;
+    margin-left: 60%;
+}
+
+.btnComprarr{
+    height: 50px;
+}
+
+.btnSiuu{
+    margin-top: 1%;
+    height: 80%;
+    width: 80%;
+    font-weight: bold;
+    background: rgb(85, 131, 113);
+    color: #ffff;
+}
+
+.texInservible{
+    margin-left: -20%;
+    margin-top: 5%;
+    display: flex;
+
+    height: 200px;
+}
+
+.info1{
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 50%;
+    height: 180px;
+    
+}
+
+.tituinfo{
+    margin-left: -300px;
 }
