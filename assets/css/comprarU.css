@@ -151,7 +151,7 @@
     color: #ffff;
 }
 
-.btnSiuu:hover{
+.btnSiuu:hover {
     background: #fff;
     color: rgb(85, 131, 113);
 }
@@ -227,7 +227,77 @@
     margin-left: 15%;
 }
 
-.txtDescri{
+.txtDescri {
     font-size: 20px;
-    margin-left: -200px;
+    margin-left: -100px;
+}
+
+@media (max-width: 500px) {
+
+    .compraU {
+        display: flex;
+        margin-left: 50%;
+    }
+
+
+    .containerFlotante {
+        margin-top: 5%;
+        margin-left: -17%;
+        width: 140%;
+        height: 300px;
+        background: rgb(0, 0, 0, 0.4);
+        border-radius: 10px;
+        overflow: hidden;
+
+    }
+
+    .texInservible {
+        width: 140%;
+        margin-left: -15%;
+        margin-top: 5%;
+        display: block;
+        height: 200px;
+    }
+
+    .info1 {
+        margin-top: 1%;
+        margin-left: 40%;
+        width: 50%;
+        height: 180px;
+
+    }
+
+    .tituinfo {
+        font-size: 20px;
+        margin-left: -300px;
+    }
+
+    .info2 {
+
+        width: 200%;
+        margin-left: -150px;
+        margin-top: 10px;
+        display: flex;
+
+    }
+
+    .infor2 {
+        margin-top: 0%;
+        margin-left: -1%;
+        width: 100%;
+        overflow: hidden;
+        height: 180px;
+        padding: 1%;
+        border-style: solid;
+        border-width: 1px;
+        border-top-color: #5a5c5a;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    .txtDescri {
+        font-size: 20px;
+        margin-left: 10px;
+    }
 }
