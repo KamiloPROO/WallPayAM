@@ -14,7 +14,7 @@
     --violet: #d79d13;
     --text-white: hsl(0, 0%, 100%);
     --text-light-gray: hsl(0, 0%, 90%);
-    --body-bg-color: hsl(203, 67%, 2%);
+    --body-bg-color: rgb(27, 27, 25);
     --glass-bg-color: hsl(0, 0%, 100%, 0.5);
     --border-color: hsl(0, 0%, 100%, 0.25);
     --blur: blur(10px);

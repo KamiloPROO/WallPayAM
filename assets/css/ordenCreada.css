@@ -1,66 +1,38 @@
-.compraU {
+.ordeCre {
     display: flex;
     margin-left: 40%;
 }
 
-.containerComprar2 {
+.containerPagavende2 {
     margin-top: 5%;
     margin-left: 20%;
 }
 
-.precio {
+.pagavende {
     color: rgb(163, 162, 162);
     font-size: 20px;
 }
 
-.colorCol {
+.colorTiempo {
     font-size: 20px;
     margin-left: 10px;
-    color: rgb(127, 255, 138);
+    color: rgb(255, 200, 127);
 }
 
-.colorSal {
-    font-size: 20px;
-    margin-left: 5px;
-    color: rgb(127, 255, 138);
-}
-
-.limit {
-    color: rgb(163, 162, 162);
-    font-size: 20px;
-}
-
-.colorCol2 {
-    font-size: 20px;
-    margin-left: 10px;
-
-}
-
-.traerWallet{
-    display: block;
-}
-
-.colorSal2 {
-    font-size: 20px;
-    margin-left: 5px;
-
-}
-
-.raramedio {
-    margin-left: 10px;
-}
-
-.containerFlotante {
-    margin-top: 2%;
+.containerFlotantePaga {
+    margin-top: 5%;
     margin-left: 5%;
     width: 50%;
-    height: 370px;
+    height: 300px;
     background: rgb(0, 0, 0, 0.4);
     border-radius: 10px;
     overflow: hidden;
 
 }
 
+.comprare{
+    color: rgb(85, 131, 113);
+}
 
 .navi {
     margin-left: 40px;
@@ -121,44 +93,85 @@
     height: 30%;
 }
 
-.canti {
+.imporFiat {
+    width: 50%;
     margin-top: 2%;
-    margin-left: 20px;
+    margin-left: -30px;
     color: rgba(95, 94, 94, 0.863);
     font-size: 20px;
 }
 
 .usrayas {
     margin-top: 2%;
-    color: rgba(177, 175, 175, 0.863);
+    color: rgba(255, 254, 254, 0.863);
     font-size: 20px;
-    margin-left: 1%;
+    margin-left: 15%;
+}
+
+.saldofiat{
+    margin-top: 2%;
+    color: rgba(255, 254, 254, 0.863);
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.saldoprecio{
+    margin-top: 2%;
+    color: rgba(184, 184, 184, 0.863);
+    font-size: 17px;
+    margin-left: 2%; 
 }
 
 .coprayitas {
     margin-top: 2%;
-    color: rgba(253, 253, 253, 0.863);
+    color: rgba(184, 184, 184, 0.863);
+    font-size: 17px;
+    margin-left: 20%;
+}
+
+.imprayitas {
+    margin-top: 6%;
+    color: rgba(184, 184, 184, 0.863);
     font-size: 20px;
-    margin-left: 1%;
+    margin-left: 20%;
 }
 
 .btnComprarr {
+    display: flex;
+    margin-top: 70px;
     height: 50px;
 }
 
-.btnSiuu {
+.btnReaPago {
     margin-top: 1%;
     height: 80%;
-    width: 80%;
+    width: 50%;
+    margin-left: 5%;
     border-radius: 5px;
     font-weight: bold;
-    background: rgb(85, 131, 113);
+    background: rgba(255, 187, 0, 0.904);
+    color: rgb(5, 5, 5);
+}
+
+.btnCanPago{
+    margin-top: 1%;
+    height: 80%;
+    width: 40%;
+    margin-left: 3%;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(54, 54, 54);
     color: #ffff;
 }
 
-.btnSiuu:hover {
+.btnReaPago:hover {
     background: #fff;
-    color: rgb(85, 131, 113);
+    color: rgb(255, 102, 0);
+}
+
+.btnCanPago:hover {
+    background: #fff;
+    color: rgb(7, 7, 7);
 }
 
 .texInservible {
@@ -168,17 +181,32 @@
     height: 200px;
 }
 
-.info1 {
+.infOrdenCrea1 {
+
     margin-top: 1%;
-    margin-left: 1%;
+    margin-left: 10%;
     width: 50%;
     height: 180px;
+    
 
 }
 
-.infor2 {
+.chat{
+    margin-left: 20%;
+    color: yellow;
+    font-size: 20px;
+}
+
+.Mensaje1{
+    /* margin-top: 5%;
+    font-size: 20px;*/ 
+    margin-left: 0px;
+    color: #5a5c5a; 
+}
+
+.inforr2 {
     margin-top: 0%;
-    margin-left: -10%;
+    margin-left: -18%;
     width: 50%;
     height: 180px;
     padding: 1%;
@@ -188,6 +216,15 @@
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: #5a5c5a;
+}
+
+.hpta{
+    
+    margin-top: 5%;
+    width: 80%;
+    font-size: 20px;
+    margin-left: -100px;
+    /* background: red; */
 }
 
 .tituinfo {
@@ -235,36 +272,6 @@
 .txtDescri {
     font-size: 20px;
     margin-left: -100px;
-}
-
-.controlsComprar{
-    width: 70%;
-    background: transparent;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 1px;
-    /* border: 1px solid #fdfdfd; */
-    font-family: 'calibri';
-    font-size: 18px;
-    color: rgb(114, 113, 113);
-}
-
-.saldoconverCol{
-    width: 22%;
-    margin-top: 2%;
-    color: rgba(253, 253, 253, 0.863);
-    font-size: 20px;
-    margin-left: 40%;
-    overflow: hidden;
-}
-
-.saldoconverUSD{
-    width: 22%;
-    margin-top: 2%;
-    color: rgba(253, 253, 253, 0.863);
-    font-size: 20px;
-    margin-left: 40%;
-    overflow: hidden;
 }
 
 @media (max-width: 500px) {

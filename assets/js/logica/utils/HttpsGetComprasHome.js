@@ -1,27 +1,55 @@
+function comprar(val) {
+
+    // alert("siuuuu")
+    // window.location.href = "comprar2ronda.html"
+    console.log(val);
+
+    const idHpta = val;
+    localStorage.setItem("IdCompraFinal", idHpta);
+
+    if (idHpta != ""){
+        window.location.href = "comprar2ronda.html"
+    }else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'server under maintenance',
+        })
+    }
+
+}
+
+
+
 document.addEventListener('DOMContentLoaded', e => {
 
     var idLogin = localStorage.getItem("idPersonaLogin");
     var idCfUser = localStorage.getItem("idCfLogin");
     var idToken = localStorage.getItem("tokenLogin");
-    var loading = document.getElementById('cargando')
+    var loading = document.getElementById('cargando');
 
 
     $.ajax({
         type: "POST",
         url: "http://52.175.225.67:8094/Api/GetProductosMonedaVentaHtml",
-        data: { "ID": idLogin, "IdCf": idCfUser, "Token": idToken, "Skip": 1, "Take": 6, "so": "android", "App": 2 },
+        data: { "ID": idLogin, "IdCf": idCfUser, "Token": idToken, "Skip": 1, "Take": 30, "so": "android", "App": 2 },
         success: function (data) {
 
             loading.style.display = 'none'
 
             var formData = JSON.parse(data);
-            console.log(formData);
+
 
             for (const compras of formData) {
 
                 var formData1 = JSON.parse(compras.Json);
 
+                var idDeLaCompra = formData1.Id;
+                localStorage.setItem("sacoid", idDeLaCompra);
+                
+                console.log(idDeLaCompra);
                 console.log(formData1);
+
 
                 for (const img of formData1.MediosPagoImagenes) {
 
@@ -55,7 +83,7 @@ document.addEventListener('DOMContentLoaded', e => {
                       <div style="display: flex">
                       <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px; font-weight: lighter;">Cantidad Cripto</b>
                       <b class="tituColVa"> 84.18 USDT</b>
-                      <a class="btnetia" type="button" onclick="comprar()" >Comprar</a>
+                      <button class="btnetia" type="button" onclick="comprar(val = ${formData1.Id})" id="estamosgod" >Comprar</button>
                       </div>
                       <div style="display: flex; margin-top: -20px">
                       <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px; font-weight: lighter;">Limite</b>

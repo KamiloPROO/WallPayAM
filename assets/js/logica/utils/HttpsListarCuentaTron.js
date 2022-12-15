@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', e => {
                 const nombreUser = document.getElementById('respuestaNombreUser')
                 const respu5 = document.getElementById('respuestaActualizada')
 
+                const refeComp = formData1.Referencia;
+                const idCF = formData1.IdCf;
+
+                localStorage.setItem("referenciaComprar",refeComp);
+                localStorage.setItem("idcfComprar",idCF);
+
+                console.log(refeComp);
+                console.log(idCF);
 
                 refe.textContent = `${formData1.Referencia}`
                 saldoUsdt.textContent = `${formData1.SALDO_USDT}`
