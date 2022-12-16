@@ -136,14 +136,14 @@
                                 <a class="xd">Seleccione cuenta tron</a>
                                 
                             </div>
-                            <select class="controlsComprar">
+                            <select class="controlsComprar" id="selecCuenta">
                                 <option>Seleccione Una Cuenta</option>
                                 <option id="optionCuenta">numero</option>
                                </select>
                         </div>
                         <div class="inputCom">
                             <a class="colorCol3"> COL$ </a>
-                            <input type="number" class="inpDiner" onkeyup="mostrar(this.value)" placeholder="Introduzca la cantidad">
+                            <input type="number" id="inputValorAComprar" class="inpDiner" onkeyup="mostrar(this.value)" placeholder="Introduzca la cantidad">
                             <a class="colorCol4"> TODO </a>
                         </div>
                         <div class="cantidadesTxt">
@@ -264,6 +264,11 @@
      <script src="./assets/js/logica/utils/HttpsGetCompra.js"></script>
     <!--<script src="./assets/js/logica/utils/HttpsDashboard.js"></script> -->
 
-</body>
+    <script src="./assets/js/logica/routes/routes.js"></script>
 
+    <script src="./assets/js/logica/utils/HttpsHacerCompra.js"></script>
+    <script src="./assets/js/logica/business/hacerCompraBussiness.js"></script>
+    <script src="./assets/js/logica/controller/hacerCompraController.js"></script>
+    <script src="./assets/js/logica/event/hacerCompraEvents.js"></script>
+</body>
 </html>

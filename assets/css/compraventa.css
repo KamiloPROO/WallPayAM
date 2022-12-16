@@ -659,6 +659,21 @@ a {
     display: block;
 }
 
+.cardMisCompra{
+    display: flex;
+    width: 100%;
+}
+
+.cardMisCompras{
+    box-shadow: 0 6px 10px 0 rgb(250, 163, 2);
+    transition: 0.3s;
+    width: 100%;
+    height: 40%;
+    padding: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .planess {
     width: 450px;
 }
@@ -1149,8 +1164,15 @@ STYLE OF PLANS VIEW
 }
 
 .tituColVa{
+    width: 50%;
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: -70px;
+}
+
+.tituColVa2{
+    width: 50%;
+    font-size: 18px;
+    margin-left: 0px;
 }
 
 .ordenes{
@@ -1191,7 +1213,7 @@ STYLE OF PLANS VIEW
     color: #d79d13;
     border: 2px solid;
     border-radius: 10px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .btnetia:hover{

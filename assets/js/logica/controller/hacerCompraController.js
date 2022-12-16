@@ -4,12 +4,15 @@ function HacemosCompra() {
     var tokeen = localStorage.getItem("tokenLogin");
     var cuentaidcf = localStorage.getItem("idcfComprar");
     var idProduct = localStorage.getItem("IdCompraFinal");
+    var tasaCamb = localStorage.getItem("TasaCambioK");
 
-    const melo = document.getElementById("selectCategorias").value;
+    const melo = document.getElementById("inputValorAComprar").value;
+
+    const compra =  melo / tasaCamb;
  
      const hacerCompra = {
 
-        Cantidad: melo,
+        Cantidad: compra,
         IdCuentaCompradorCf: cuentaidcf,
         IdProductoMoneda: idProduct,
         IdUsuarioCf: idcff,

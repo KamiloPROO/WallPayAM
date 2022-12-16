@@ -2,11 +2,26 @@ const btnHcompra = document.getElementById("btnHacerCompra")
 
 btnHcompra.addEventListener('click', ()=> {
 
-    const melo = document.getElementById("selectCategorias").value;
+    const melo = document.getElementById("inputValorAComprar").value;
+    const melo2 = document.getElementById("selecCuenta").value;
+    const tasCam = localStorage.getItem("TasaCambioK");
+    
+    
+    const compraXD = melo / tasCam;
     const caMin = localStorage.getItem("CantiMin");
     const caMax = localStorage.getItem("CantiMax");
 
-     if ( melo === null || melo === ""){
+   if (melo2 == "Seleccione Una Cuenta" ){
+
+      Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Seleccione una cuenta de donde hara la compra',
+          
+      })
+
+
+   }else  if ( melo === null || melo === ""){
 
         Swal.fire({
             icon: 'error',
@@ -16,7 +31,7 @@ btnHcompra.addEventListener('click', ()=> {
         })
 
 
-     }else if (melo > caMin){
+     }else if (compraXD < caMin){
 
         Swal.fire({
             icon: 'error',
@@ -26,7 +41,7 @@ btnHcompra.addEventListener('click', ()=> {
         })
 
 
-     }else if (melo < caMax){
+     }else if (compraXD > caMax){
 
       Swal.fire({
           icon: 'error',

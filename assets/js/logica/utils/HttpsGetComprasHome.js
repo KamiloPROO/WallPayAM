@@ -81,13 +81,13 @@ document.addEventListener('DOMContentLoaded', e => {
                       </div>
                       <br>
                       <div style="display: flex">
-                      <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px; font-weight: lighter;">Cantidad Cripto</b>
-                      <b class="tituColVa"> 84.18 USDT</b>
+                      <b style="margin-left: -35px; color: ${formData1.TextColorBody2}; font-size: 18px; width: 32%; font-weight: lighter;">Cantidad Cripto</b>
+                      <b class="tituColVa"> ${formData1.HtmlBody}</b>
                       <button class="btnetia" type="button" onclick="comprar(val = ${formData1.Id})" id="estamosgod" >Comprar</button>
                       </div>
                       <div style="display: flex; margin-top: -20px">
                       <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px; font-weight: lighter;">Limite</b>
-                      <b class="tituColVa"> Col$ 50.0000.000 - 300.000.000</b>
+                      <b class="tituColVa2"> Col$ 50.0000.000 - 300.000.000</b>
                       </div>
                       <img src="${imagenes}" style="width: 35px; margin-left: 0px;">
                       <h1 class="raya">____________________________________________</h1>
