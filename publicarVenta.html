@@ -140,10 +140,9 @@
                                 <div style="display: block;">
                                     <a class="xd">Seleccionar cuenta con los fondos</a>
                                 </div>
-                                <select class="controlsComprar2" id="selecCuenta">
-                                    <option>Seleccione Moneda</option>
-                                    <option>USDT</option>
-                                    <option>WPAY</option>
+                                <select class="controlsComprar2" id="selecCuentaTron">
+                                    <option>Seleccionar Cuenta</option>
+                                    <option id="optionCuenta">numero</option>
                                 </select>
                             </div>
                         </div>
@@ -163,8 +162,7 @@
 
                         <div class="selectTasaDeCambio">
                             <div style="display: block;">
-                                <a class="xd">Tasa de cambio: Valor en COP de cada unidad vendida ( decimales con punto
-                                    )</a>
+                                <a class="xd">Tasa de cambio: Valor en COP de cada unidad vendida</a>
                             </div>
                             <div class="inputTasaCambio">
                                 <a class="txtCopMelo">$COP :</a>
@@ -178,7 +176,7 @@
                                 <div style="display: block;">
                                     <a class="xd">Seleccionar limite de Pago</a>
                                 </div>
-                                <select class="limitePago" id="selecCuenta">
+                                <select class="limitePago" id="selecTiempoHoras">
                                     <option>Seleccionar</option>
                                     <option>1 Hora</option>
                                     <option>2 Horas</option>
@@ -188,17 +186,26 @@
                             </div>
                             <div class="seleMetoPago">
                                 <div style="display: block;">
-                                    <a class="xd">Metodo de pago</a>
+                                    <div style="display: block;">
+                                        <a class="xd">Metodo de pago</a>
+                                    </div>
+                                    <select class="controlsMePago" id="selectMetoPagos" name="selectMetoPagos">
+                                        <option>Seleccione Un Metodo...</option>
+                                    </select>
                                 </div>
-                                <select class="controlsMePago" id="selectCategorias" name="selectCategorias">
-                                    <option>Seleccione Un Metodo...</option>
-                                </select>
+                                <div class="inputNumCuenta">
+                                    <a class="numeC">N° cuenta</a>
+                                    <div class="inpNu">
+                                        <input type="number" id="inputNumCuenta" class="inpDinerNu" placeholder="Introduzca la cantidad">
+                                    </div>
+                                </div>
+
                             </div>
-                           
+
                         </div>
 
                         <div class="btnComprarr">
-                            <button type="button" class="btnSiuu" id="btnHacerCompra">Publicar Venta</button>
+                            <button type="button" class="btnSiuu" id="btnHacerVenta">Publicar Venta</button>
                         </div>
                     </div>
                 </div>
@@ -227,12 +234,12 @@
         <!-- End of Main-->
 
     </div>
-    <!-- <div id="cargando">
+    <div id="cargando">
 
         <lottie-player src="https://lottie.host/b7a7a4e9-b990-4c20-815d-56277221123f/QFWYzTSEkP.json"
             background="transparent" speed="1" loop autoplay>
         </lottie-player>
-    </div> -->
+    </div>
     </div>
 
 
@@ -273,15 +280,15 @@
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/particles.min.js"></script>
 
-    <!-- <script src="./assets/js/logica/utils/HttpsGetCompra.js"></script> -->
+    <script src="./assets/js/logica/utils/HttpsGetMetodosPago.js"></script>
     <!--<script src="./assets/js/logica/utils/HttpsDashboard.js"></script> -->
 
-    <!-- <script src="./assets/js/logica/routes/routes.js"></script>
+    <script src="./assets/js/logica/routes/routes.js"></script>
 
-    <script src="./assets/js/logica/utils/HttpsHacerCompra.js"></script>
-    <script src="./assets/js/logica/business/hacerCompraBussiness.js"></script>
-    <script src="./assets/js/logica/controller/hacerCompraController.js"></script>
-    <script src="./assets/js/logica/event/hacerCompraEvents.js"></script> -->
+    <script src="./assets/js/logica/utils/HttpsPublicarCompra.js"></script>
+    <script src="./assets/js/logica/business/publicarVentaBussiness.js"></script>
+    <script src="./assets/js/logica/controller/publicarVentaController.js"></script>
+    <script src="./assets/js/logica/event/publicarVentaEvents.js"></script>
 </body>
 
 </html>

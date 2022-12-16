@@ -20,4 +20,5 @@ const URL_API_PREVENTAR = URL_API_BASE_PREVENTAR + "/holaaa";
 
 const URL_API_RECOVERY = URL_API_BASE_RECOVERY + "/RecuperarPassword";
 const URL_API_VERIFICAR_RECOVERY = URL_API_BASE_RECOVERY + "/ValidarCodigoRecuperarPassword";
-const URL_API_HACER_COMPRA = URL_API_BASE_HACER_COMPRA + "//AddCompraProductoMoneda";
+const URL_API_HACER_COMPRA = URL_API_BASE_HACER_COMPRA + "/AddCompraProductoMoneda";
+const URL_API_PUBLICAR_VENTA = URL_API_BASE_HACER_COMPRA + "/AddProductoMoneda";

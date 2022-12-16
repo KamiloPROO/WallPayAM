@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
         },
         error: function () {
+            loading.style.display = 'none'
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
