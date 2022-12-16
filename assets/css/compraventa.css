@@ -1386,6 +1386,10 @@ STYLE OF PLANS VIEW
     color: #7a7a7a;
 }
 
+.vend:hover{
+    color: #fdae02;
+}
+
 .menuWV {
     display: flex;
     overflow: hidden;

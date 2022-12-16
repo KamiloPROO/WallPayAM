@@ -1,0 +1,483 @@
+.compraU {
+    display: flex;
+    margin-left: 47%;
+}
+
+.xd {
+    font-size: 20px;
+}
+
+.containerVender2 {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.precio {
+    color: rgb(163, 162, 162);
+    font-size: 20px;
+}
+
+.colorCol {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(127, 255, 138);
+}
+
+.colorSal {
+    font-size: 20px;
+    margin-left: 5px;
+    color: rgb(127, 255, 138);
+}
+
+.limit {
+    color: rgb(163, 162, 162);
+    font-size: 20px;
+}
+
+.colorCol2 {
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.traerWallet {
+    display: block;
+}
+
+.colorSal2 {
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+
+.raramedio {
+    margin-left: 10px;
+}
+
+.containerFlotanteVender {
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 90%;
+    height: 570px;
+    background: rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+
+.navi {
+    margin-left: 40px;
+    display: flex;
+}
+
+.crip {
+
+    margin-left: 70px;
+    color: rgb(168, 168, 168);
+    /* border-width: 1px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #111111;
+    border-left-color: transparent; */
+}
+
+.inputCom {
+    width: 30%;
+    height: 10%;
+    margin-top: 4%;
+    margin-left: 5%;
+    display: flex;
+    background: rgba(59, 59, 59, 0.7);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.inputCom2 {
+    width: 59%;
+    height: 10%;
+    margin-top: 4%;
+    margin-left: 5%;
+    display: flex;
+    background: rgba(59, 59, 59, 0.7);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+
+.inpDiner {
+    margin-left: 2%;
+    width: 72%;
+    margin-top: 3%;
+    height: 80%;
+    font-size: 18px;
+    color: aliceblue;
+    background: transparent;
+}
+
+.inpDiner2 {
+    margin-left: 1%;
+    width: 74%;
+    margin-top: 1%;
+    height: 80%;
+    font-size: 18px;
+    color: aliceblue;
+    background: transparent;
+}
+
+/* input cantida min y cantida max */
+.inputCanMin {
+    width: 34%;
+    height: 10%;
+    margin-top: 4%;
+    margin-left: 15%;
+    display: flex;
+    background: rgba(59, 59, 59, 0.7);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.colorCanMin {
+    width: 60%;
+    background: transparent;
+    margin-top: 0%;
+    font-size: 20px;
+    color: rgb(255, 153, 0);
+
+}
+
+.inpCantMin {
+    margin-left: 0%;
+    width: 57%;
+    margin-top: 2%;
+    height: 80%;
+    font-size: 18px;
+    color: aliceblue;
+    background: transparent;
+}
+
+.inputCanMax {
+    width: 34%;
+    height: 10%;
+    margin-top: 4%;
+    margin-left: 5%;
+    display: flex;
+    background: rgba(59, 59, 59, 0.7);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.colorCanMax {
+    width: 80%;
+    background: transparent;
+    margin-top: 0%;
+    font-size: 20px;
+    color: rgb(255, 153, 0);
+
+}
+
+.selectTasaDeCambio {
+    margin-top: 2%;
+    /* margin-left: 30%; */
+}
+
+.txtCopMelo {
+    background: transparent;
+    width: 30%;
+    color: #f89604;
+    margin-top: 1%;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.inputTasaCambio {
+    width: 25%;
+    height: 40px;
+    background: rgba(59, 59, 59, 0.7);
+    display: flex;
+    margin-left: 37%;
+    border-radius: 10px;
+}
+
+.inputTasaCam {
+    width: 50%;
+    color: #fff;
+    background: transparent;
+    margin-left: 1%;
+    font-size: 19px;
+
+}
+
+.inpCantMax {
+    margin-left: 0%;
+    width: 72%;
+    margin-top: 2%;
+    height: 80%;
+    font-size: 18px;
+    color: aliceblue;
+    background: transparent;
+}
+
+.containerTiDe {
+    display: flex;
+}
+
+.containerTiDe2 {
+    display: flex;
+}
+
+.colorCol3 {
+    margin-top: 1%;
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(255, 153, 0);
+
+}
+
+.colorCol4 {
+    margin-top: 0%;
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(255, 153, 0);
+
+}
+
+.cantidadesTxt {
+    margin-top: 2%;
+    width: 90%;
+    margin-left: 5%;
+    height: 15%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.canti {
+    margin-top: 2%;
+    margin-left: 20px;
+    color: rgba(95, 94, 94, 0.863);
+    font-size: 20px;
+}
+
+.usrayas {
+    margin-top: 2%;
+    color: rgba(177, 175, 175, 0.863);
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.coprayitas {
+    margin-top: 2%;
+    color: rgba(253, 253, 253, 0.863);
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.btnComprarr {
+    height: 50px;
+}
+
+.btnSiuu {
+    margin-top: 1%;
+    height: 80%;
+    width: 80%;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(85, 131, 113);
+    color: #ffff;
+}
+
+.btnSiuu:hover {
+    background: #fff;
+    color: rgb(85, 131, 113);
+}
+
+.texInservible {
+    margin-left: -20%;
+    margin-top: 5%;
+    display: flex;
+    height: 200px;
+}
+
+.info1 {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 50%;
+    height: 180px;
+
+}
+
+.infor2 {
+    margin-top: 0%;
+    margin-left: -10%;
+    width: 50%;
+    height: 180px;
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #5a5c5a;
+}
+
+.tituinfo {
+    font-size: 20px;
+    margin-left: -300px;
+}
+
+.info2 {
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.ventaPa {
+
+    color: slategray;
+    font-size: 18px;
+}
+
+.minu {
+    font-size: 18px;
+    margin-left: 35%;
+}
+
+.apodo {
+    color: slategray;
+    font-size: 18px;
+}
+
+.nomapodo {
+    font-size: 18px;
+    margin-left: 30%;
+}
+
+.metoPa {
+    color: slategray;
+    font-size: 18px;
+}
+
+.metoPago {
+    font-size: 18px;
+    margin-left: 15%;
+}
+
+.txtDescri {
+    font-size: 20px;
+    margin-left: -100px;
+}
+
+.controlsComprar {
+    width: 17%;
+    background: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    margin-bottom: 1px;
+    /* border: 1px solid #fdfdfd; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(114, 113, 113);
+}
+
+.controlsComprar2 {
+    width: 40%;
+    background: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    margin-bottom: 1px;
+    /* border: 1px solid #fdfdfd; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(114, 113, 113);
+}
+
+.saldoconverCol {
+    width: 22%;
+    margin-top: 2%;
+    color: rgba(253, 253, 253, 0.863);
+    font-size: 20px;
+    margin-left: 40%;
+    overflow: hidden;
+}
+
+.saldoconverUSD {
+    width: 22%;
+    margin-top: 2%;
+    color: rgba(253, 253, 253, 0.863);
+    font-size: 20px;
+    margin-left: 40%;
+    overflow: hidden;
+}
+
+@media (max-width: 500px) {
+
+    .compraU {
+        display: flex;
+        margin-left: 50%;
+    }
+
+
+    .containerFlotante {
+        margin-top: 5%;
+        margin-left: -17%;
+        width: 140%;
+        height: 400px;
+        background: rgb(0, 0, 0, 0.4);
+        border-radius: 10px;
+        overflow: hidden;
+
+    }
+
+    .texInservible {
+        width: 140%;
+        margin-left: -15%;
+        margin-top: 5%;
+        display: block;
+        height: 200px;
+    }
+
+    .info1 {
+        margin-top: 1%;
+        margin-left: 40%;
+        width: 50%;
+        height: 180px;
+
+    }
+
+    .tituinfo {
+        font-size: 20px;
+        margin-left: -300px;
+    }
+
+    .info2 {
+
+        width: 200%;
+        margin-left: -150px;
+        margin-top: 10px;
+        display: flex;
+
+    }
+
+    .infor2 {
+        margin-top: 0%;
+        margin-left: -1%;
+        width: 100%;
+        overflow: hidden;
+        height: 180px;
+        padding: 1%;
+        border-style: solid;
+        border-width: 1px;
+        border-top-color: #5a5c5a;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    .txtDescri {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
