@@ -224,7 +224,28 @@
 }
 
 .containerTiDe2 {
+    margin-top: -2%;
     display: flex;
+}
+
+.selecTiemMeto {
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 80%;
+    display: flex;
+    background: transparent;
+}
+
+.seleHora {
+    margin-left: 5%;
+    width: 40%;
+    background: transparent;
+}
+
+.seleMetoPago{
+    margin-left: 5%;
+    width: 40%;
+    background: transparent;
 }
 
 .colorCol3 {
@@ -278,18 +299,18 @@
 }
 
 .btnSiuu {
-    margin-top: 1%;
+    margin-top: 5%;
     height: 80%;
-    width: 80%;
+    width: 50%;
     border-radius: 5px;
     font-weight: bold;
-    background: rgb(85, 131, 113);
+    background: rgb(31, 58, 109);
     color: #ffff;
 }
 
 .btnSiuu:hover {
-    background: #fff;
-    color: rgb(85, 131, 113);
+    background: rgb(5, 99, 241);
+    color: #fff;
 }
 
 .texInservible {
@@ -380,6 +401,33 @@
     font-size: 18px;
     color: rgb(114, 113, 113);
 }
+
+.controlsMePago {
+    width: 70%;
+    background: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    margin-bottom: 1px;
+    /* border: 1px solid #fdfdfd; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(114, 113, 113);
+}
+
+.limitePago {
+    width: 35%;
+    background: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    margin-bottom: 1px;
+    /* border: 1px solid #fdfdfd; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(114, 113, 113);
+}
+
 
 .controlsComprar2 {
     width: 40%;
