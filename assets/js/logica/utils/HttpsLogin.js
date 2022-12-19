@@ -1,11 +1,15 @@
 function CallEndPointPost(url, jsonArgs) {
+
+    var loading = document.getElementById('cargandologin')
+    loading.style.display = 'flex'
+
     $.ajax({
         type: "POST",
         url: url,
         data: jsonArgs,
         success: function (data) {
 
-
+            loading.style.display = 'none'
             var formData = JSON.parse(data);
             console.log(formData);
 

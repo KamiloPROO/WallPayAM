@@ -1,6 +1,7 @@
 function CallEndPointPostPublicarVenta(url, jsonArgs) {
 
-    var loading = document.getElementById('cargando');
+    var loading = document.getElementById('cargando')
+    loading.style.display = 'flex'
 
     $.ajax({
         type: "POST",
