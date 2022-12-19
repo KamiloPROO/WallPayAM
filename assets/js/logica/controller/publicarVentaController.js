@@ -49,6 +49,7 @@ if (selcMetoPago == "Nequi") {
     }
     
     ListMetoSeleccionado.push(metoSeleccionado)
+    console.log( "neq" + ListMetoSeleccionado);
 
 } else if (selcMetoPago == "Bancolombia") {
     var metoSeleccionado = {
@@ -60,6 +61,7 @@ if (selcMetoPago == "Nequi") {
     }
         
     ListMetoSeleccionado.push(metoSeleccionado)
+    console.log("banco" + ListMetoSeleccionado);
 
 } else if (selcMetoPago == "Davivienda") {
     var metoSeleccionado = [{
@@ -81,6 +83,8 @@ if (selcMetoPago == "Nequi") {
 
    var xd = JSON.stringify(ListMetoSeleccionado);
 
+   console.log(xd);
+
     const publicaremosVenta = {
 
         CantidadMaxima: $("#inputCantMaxi").val(),
@@ -90,7 +94,12 @@ if (selcMetoPago == "Nequi") {
         IdTipoMoneda: idMoneda,
         IdUsuarioCf: idcff,
         IsActivo: "false",
-        MediosPago: xd,
+        MediosPago: [{
+            Descripcion: metoSeleccionado.Descripcion,
+            Extra: metoSeleccionado.Extra,
+            Id: metoSeleccionado.Id,
+            Imagen: metoSeleccionado.Imagen
+    }],
         MinutosLimitePago: minutosHora,
         TasaCambio: $("#inputTasaCambio").val(),
         Titulo: $("#inputTitulo").val(),
@@ -99,5 +108,6 @@ if (selcMetoPago == "Nequi") {
 
     }
   
+    console.log(publicaremosVenta);
     publicarSiu(publicaremosVenta)
 }

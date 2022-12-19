@@ -1,0 +1,85 @@
+@media (max-width: 500px) {
+
+  .containerVender2{
+    width: 200%;
+    margin-top: 30px !important;
+    height: 750px !important;
+  }
+
+  .controlsComprar{
+    width: 40% !important;
+  }
+
+  .containerTiDe{
+    display: block !important;
+    margin-left: 10px !important;
+  }
+ 
+  .inputCom{
+    width: 90% !important;
+  }
+
+  .inpDiner{
+    width: 80% !important;
+  }
+
+  .inputCom2{
+    width: 90% !important;
+  }
+  
+  .controlsComprar2{
+    width: 85% !important;
+  }
+
+  .containerTiDe2{
+    display: block !important;
+  }
+
+  .inputCanMin{
+    width: 80% !important;
+    margin-left: 50px !important;
+  }
+
+  .inputCanMax{
+    width: 80% !important;
+    margin-left: 50px !important;
+  }
+
+  .inputTasaCambio{
+    width: 60% !important;
+    margin-left: 20% !important;
+  }
+ 
+  .xd{
+    font-size: 15px !important;
+  }
+
+  .selecTiemMeto{
+    display: block !important;
+  }
+
+  .seleHora{
+    
+    margin-left: 7% !important;
+    width: 90% !important;
+  }
+
+  .seleMetoPago{
+    margin-top: 1% !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+
+  .inpDinerNu{
+    font-size: 13px !important;
+  }
+
+  .containerFlotanteVender{
+    height: 650px !important;
+  }
+
+  .btnSiuu{
+    
+    margin-top: 20px !important;
+  }
+}

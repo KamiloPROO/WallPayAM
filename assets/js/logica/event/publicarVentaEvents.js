@@ -99,7 +99,16 @@ btnPubliVenta.addEventListener('click', () => {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Seleccione cuenta tron de los fondos',
+            text: 'Seleccione un metodo de pago',
+        })
+
+
+    }else if(seleMetPago === "Banco Bogota") {
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Metodo de pago no disponible',
         })
 
 

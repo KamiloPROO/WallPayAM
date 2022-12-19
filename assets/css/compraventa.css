@@ -466,7 +466,7 @@ a {
     /* margin-left: 7%; */
     margin-top: 10%;
     padding: 1%;
-
+    box-shadow: 0 4px 8px 0 rgb(248, 211, 3);
 }
 
 .cardsInversionMisCompras::-webkit-scrollbar {
@@ -871,6 +871,10 @@ a {
 
 .modal-close-plan2 {
     transform: translateY(-200%);
+}
+
+.plan2{
+    background: red;
 }
 
 .modal-plan2>img {
