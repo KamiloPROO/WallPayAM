@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', e => {
                 const element = document.createElement("div")
          
                 element.innerHTML += `
-                <div class="planess">
-                <div class="cardInversion" id="plan2">
+                <div class="cardMisVenta">
+                <div class="cardMisVentas" id="plan2">
                     
                     <div>
                       <br>
@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', e => {
                       <h3 style="margin-left: 0px; color: ${formData1.ColorExplicacion} ;">${formData1.Explicacion}</h3>
                       <br>
                       <h3>${formData1.HtmlHeader}</h3>
-                      <h3 style="margin-left: -260px; color: red ;">${formData1.HtmlBody}</h3>
-                      <b style="margin-left: -230px; color: ${formData1.TextColorBody2};">${formData1.HtmlBody2}</b>
+                      <h3 style="margin-left: -360px; color: red ;">${formData1.HtmlBody}</h3>
+                      <b style="margin-left: -330px; color: ${formData1.TextColorBody2};">${formData1.HtmlBody2}</b>
                     </div>
                 
                 </div>
