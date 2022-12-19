@@ -15,28 +15,28 @@ closeBtn.addEventListener('click', () => {
 
 //change theme//
 
-themeToggler.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme-variables');
+// themeToggler.addEventListener('click', () => {
+//     document.body.classList.toggle('dark-theme-variables');
 
-    themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
-    themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
-})
+//     themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+//     themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+// })
 
 //fill orders in table
 
-Orders.forEach(order => {
-    const tr = document.createElement('tr');
-    const trContent = `    
-    <td>${order.productName}</td>
-    <td>${order.productNumber}</td>
-    <td>${order.paymentStatus}</td>
-    <td class="${order.shipping === 'Decline' ?  'danger' : order.shipping === 'pending' ? 'warning' : 'primary'}" > $ {order.shippingStatus}</td>
-    <td class="primary">Details</td>
-        `;
+// Orders.forEach(order => {
+//     const tr = document.createElement('tr');
+//     const trContent = `    
+//     <td>${order.productName}</td>
+//     <td>${order.productNumber}</td>
+//     <td>${order.paymentStatus}</td>
+//     <td class="${order.shipping === 'Decline' ?  'danger' : order.shipping === 'pending' ? 'warning' : 'primary'}" > $ {order.shippingStatus}</td>
+//     <td class="primary">Details</td>
+//         `;
 
-tr.innerHTML = trContent;
-document.querySelector('table tbody').appendChild(tr);
+// tr.innerHTML = trContent;
+// document.querySelector('table tbody').appendChild(tr);
 
 
 
-})
+// })

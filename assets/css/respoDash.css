@@ -17,6 +17,16 @@
    margin-top: 1.4rem;
 }
 
+.moverHtml{
+   margin-left: -360px; 
+   color: red ;
+}
+
+.moverHtml2{
+   margin-left: -330px;
+}
+
+
 .right2 .top {
    display: flex;
    justify-content: end;
@@ -435,6 +445,26 @@
 /* cuenta */
 
 @media (max-width: 500px) {
+
+   .cardsInversionMisCompras{
+      width: 123%;
+      margin-left: 10px;
+   }
+
+   .cardsInversion{
+      width: 120%;
+      margin-left: 10px;
+   }
+ 
+   .moverHtml{
+      margin-left: -290px; 
+      color: red ;
+   }
+
+   .moverHtml2{
+      margin-left: -240px;
+   }
+   
 
    #name {
       display: none;
