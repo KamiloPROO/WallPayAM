@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', e => {
     var cantiMini = document.getElementById("cantidadMinima");
     var cantiMaxi = document.getElementById("cantidadMaxima");
     var optionNumRefe = document.getElementById("optionCuenta");
+    var medioP = document.getElementById("metodoPagoDes");
   
 
     optionNumRefe.textContent = refeComprar;
@@ -43,6 +44,16 @@ document.addEventListener('DOMContentLoaded', e => {
            localStorage.setItem("TasaCambioK",tasaCambio);
            localStorage.setItem("CantiMin", cantMinima)
            localStorage.setItem("CantiMax", cantMaxima)
+
+           
+           var metPago = formData.MediosPagoHolders[0].Json;
+
+           var metPagoObject = JSON.parse(metPago);
+        
+          
+           const meDescri = metPagoObject.Descripcion;
+           medioP.textContent = meDescri;
+
         },
         error: function () {
             Swal.fire({

@@ -1,0 +1,20 @@
+.imgEcommer{
+    width: 40%; 
+    margin-left: 30%; 
+    margin-top: 5%;
+}
+
+
+@media (max-width: 500px) {
+
+    .imgEcommer{
+        width: 60%; 
+        margin-left: 30%; 
+        margin-top: 5%;
+    }
+
+    .manteni{
+        margin-left: 20%;
+    }
+
+}

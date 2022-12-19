@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', e => {
                 var idDeLaCompra = formData1.Id;
                 localStorage.setItem("sacoid", idDeLaCompra);
                 
-                console.log(idDeLaCompra);
                 console.log(formData1);
 
 
