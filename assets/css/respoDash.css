@@ -17,6 +17,13 @@
    margin-top: 1.4rem;
 }
 
+.cripto{
+   margin-left: -35px;
+   font-size: 18px; 
+   width: 32%; 
+   font-weight: lighter;
+}
+
 .moverHtml{
    margin-left: -360px; 
    color: red ;
@@ -296,10 +303,15 @@
    .cardsInversionCompras {
       overflow: auto;
       display: block;
-      width: 470px;
+      width: 480px;
       height: 550px;
       padding: 1%;
       margin-left: 4%;
+   }
+
+   .cardInversionMela{
+      
+      width: 450px;
    }
 
    .menuWV {
@@ -381,15 +393,33 @@
       color: rgb(114, 113, 113);
    }
 
+   .tituColVa{
+      font-size: 15px;
+      margin-left: 1px;
+   }
+
+   .tituColVa2{
+      margin-top: 3px;
+      font-size: 15px;
+      margin-left: 5px;
+   }
+
+   .cripto{
+      margin-left: -5px;
+      font-size: 18px; 
+      width: 40%; 
+      font-weight: lighter;
+   }
+
    .btnetia {
-      width: 14%;
+      width: 20%;
       height: 40px;
       font-size: 20px;
       background: #020202;
       color: #d79d13;
       border: 2px solid;
       border-radius: 10px;
-      margin-left: -40px;
+      margin-left: 70px;
    }
 
    /* .raya{
@@ -447,8 +477,10 @@
 @media (max-width: 500px) {
 
    .cardsInversionMisCompras{
+      padding: 1% !important;
       width: 123%;
       margin-left: 10px;
+      ;
    }
 
    .cardsInversion{
@@ -457,12 +489,12 @@
    }
  
    .moverHtml{
-      margin-left: -290px; 
+      margin-left: -200px; 
       color: red ;
    }
 
    .moverHtml2{
-      margin-left: -240px;
+      margin-left: -200px;
    }
    
 
