@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "GET",
-        url: "http://52.175.225.67:8094/Api/GetVentasHtml",
+        url: "https://appwollpay.app/Api/GetVentasHtml",
         data: { "IdCf": idcfLogin, "Token": tokenLogin , "Skip": 1 , "Take":30},
         success: function (data) {
 
@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
         },
         error: function () {
+            loading.style.display = 'none'
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',

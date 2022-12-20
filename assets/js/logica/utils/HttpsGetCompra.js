@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "POST",
-        url: "http://52.175.225.67:8094/Api/GetDetalleProductoMonedaVentaHtml",
+        url: "https://appwollpay.app/Api/GetDetalleProductoMonedaVentaHtml",
         data: { "Id": idCompraS, "IdCf": idCfUser, "Token": idToken, "so": "android", "IdApp": 2 },
         success: function (data) {
 

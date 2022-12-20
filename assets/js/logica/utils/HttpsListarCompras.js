@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "GET",
-        url: "http://52.175.225.67:8094/Api/GetComprasHtml",
+        url: "https://appwollpay.app/Api/GetComprasHtml",
         data: { "IdCf": idcfLogin, "Token": tokenLogin , "Skip": 1 , "Take":30},
         success: function (data) {
  

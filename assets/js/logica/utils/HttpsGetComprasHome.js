@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "POST",
-        url: "http://52.175.225.67:8094/Api/GetProductosMonedaVentaHtml",
+        url: "https://appwollpay.app/Api/GetProductosMonedaVentaHtml",
         data: { "ID": idLogin, "IdCf": idCfUser, "Token": idToken, "Skip": 1, "Take": 30, "so": "android", "App": 2 },
         success: function (data) {
 

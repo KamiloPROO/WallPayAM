@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "POST",
-        url: "http://52.175.225.67:8094/Api/GetMediosPago",
+        url: "https://appwollpay.app/Api/GetMediosPago",
         data: { "IdCf": idCfUser, "Token": idToken, "Skip": 1, "Take":10 , "so": "android", "IdApp": 2 },
         success: function (data) {
 
@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', e => {
         //    localStorage.setItem("CantiMax", cantMaxima)
         },
         error: function () {
+            loading.style.display = 'none'
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',

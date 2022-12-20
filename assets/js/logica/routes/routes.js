@@ -5,9 +5,9 @@ const URL_API_BASE_CREAR_TRON = "https://appwollpay.app/Api";
 const URL_API_BASE_STAKEAR = "http://52.175.225.67:8059/api/Stake";
 const URL_API_BASE_PREVENTAR = "http://52.175.225.67:8059/api/Stake";
 
-const URL_API_BASE_RECOVERY = " http://52.175.225.67:8094/Api";
+const URL_API_BASE_RECOVERY = "https://appwollpay.app/Api";
 
-const URL_API_BASE_HACER_COMPRA = "http://52.175.225.67:8094/Api";
+const URL_API_BASE_HACER_COMPRA = "https://appwollpay.app/Api";
 
 
 const URL_STAKEAR = URL_API_BASE_STAKEAR + "/Staking"
