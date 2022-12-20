@@ -12,6 +12,12 @@
      
 } */
 
+.divHistorial::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+
 .containerHisto {
     overflow: hidden;
     margin-top: 5%;
