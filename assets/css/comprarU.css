@@ -267,23 +267,70 @@
     overflow: hidden;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
 
     .compraU {
+        margin-top: 10px;
         display: flex;
         margin-left: 50%;
     }
 
+    .precio{
+        font-size: 17px;
+    }
+
+    .colorCol{
+        font-size: 17px;
+    }
+
+    .colorSal{
+        font-size: 17px;
+    }
+
+    .limit{
+        font-size: 17px;
+    }
+    
+    .colorCol2{
+        font-size: 17px;
+    }
+
+    .colorSal2{
+        font-size: 17px;
+    }
+
+    .canti{
+        font-size: 17px;
+    }
+
+    .saldoconverUSD{
+        font-size: 17px;
+        margin-left: 150px;
+    }
+
+    .usrayas{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+
+    .saldoconverCol{
+        font-size: 17px;
+        margin-left: 150px;
+    }
+
+    .coprayitas{
+        font-size: 17px;
+        margin-left: 10px;
+    }
 
     .containerFlotante {
         margin-top: 5%;
         margin-left: -17%;
         width: 140%;
-        height: 400px;
+        height: 430px;
         background: rgb(0, 0, 0, 0.4);
         border-radius: 10px;
         overflow: hidden;
-
     }
 
     .texInservible {
@@ -292,6 +339,7 @@
         margin-top: 5%;
         display: block;
         height: 200px;
+        overflow: hidden;
     }
 
     .info1 {
