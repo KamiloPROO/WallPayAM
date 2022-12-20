@@ -134,16 +134,17 @@
                         <div style="display: block;">
                             <div style="display: block;">
                                 <a class="xd">Seleccione cuenta tron</a>
-                                
+
                             </div>
                             <select class="controlsComprar" id="selecCuenta">
                                 <option>Seleccione Una Cuenta</option>
                                 <option id="optionCuenta">numero</option>
-                               </select>
+                            </select>
                         </div>
                         <div class="inputCom">
                             <a class="colorCol3"> COL$ </a>
-                            <input type="number" id="inputValorAComprar" class="inpDiner" onkeyup="mostrar(this.value)" placeholder="Introduzca la cantidad">
+                            <input type="number" id="inputValorAComprar" class="inpDiner" onkeyup="mostrar(this.value)"
+                                placeholder="Introduzca la cantidad">
                             <a class="colorCol4"> TODO </a>
                         </div>
                         <div class="cantidadesTxt">
@@ -182,45 +183,47 @@
                         <div class="infor2">
                             <a class="txtDescri"> Descripción de la operación</a>
                             <div class="informa2">
-                                <a class="ventaPa"> Recibo en cuenta de empresa solo titulares NO TERCEROS , debe ser un usuario activo de Binance con buena reputacion me reservo el derecho de admision solicitar cuenta en el chat
+                                <a class="ventaPa"> Recibo en cuenta de empresa solo titulares NO TERCEROS , debe ser un
+                                    usuario activo de Binance con buena reputacion me reservo el derecho de admision
+                                    solicitar cuenta en el chat
                                 </a>
                             </div>
-                           
-                            </div>
-                        </div>
 
+                        </div>
                     </div>
 
                 </div>
-                <br>
 
-                <!-- <div class="cardsInversionCompras" id="product-list">
+            </div>
+            <br>
+
+            <!-- <div class="cardsInversionCompras" id="product-list">
 
                 </div> -->
 
-                <!-- <button onclick="comprar()" style="background: #0500f8; color: white; font-weight: bold; "class="btnPublicarCompra">Publicar Venta</button> -->
+            <!-- <button onclick="comprar()" style="background: #0500f8; color: white; font-weight: bold; "class="btnPublicarCompra">Publicar Venta</button> -->
 
-                <div class="right">
-                    <div class="top">
-                        <button id="menu-btn">
-                            <span class="material-icons-sharp">menu</span>
-                        </button>
-                    </div>
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
                 </div>
-
-
-
             </div>
 
-            <!-- End of Main-->
+
 
         </div>
-        <div id="cargando">
 
-            <lottie-player src="https://lottie.host/b7a7a4e9-b990-4c20-815d-56277221123f/QFWYzTSEkP.json"
-                background="transparent" speed="1" loop autoplay>
-            </lottie-player>
-        </div>
+        <!-- End of Main-->
+
+    </div>
+    <div id="cargando">
+
+        <lottie-player src="https://lottie.host/b7a7a4e9-b990-4c20-815d-56277221123f/QFWYzTSEkP.json"
+            background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+    </div>
     </div>
 
 
@@ -245,15 +248,15 @@
     <script>
         function mostrar(valor) {
 
-          const tasacam = localStorage.getItem("TasaCambioK");
+            const tasacam = localStorage.getItem("TasaCambioK");
 
 
-          document.getElementById("saldoUsdt").innerHTML= valor / tasacam;
-          document.getElementById("saldoCol").innerHTML=valor;
-        
+            document.getElementById("saldoUsdt").innerHTML = valor / tasacam;
+            document.getElementById("saldoCol").innerHTML = valor;
+
 
         }
-    </script> 
+    </script>
 
     <!-- Fondo Particles-->
     <script src="./assets/js/index.js"></script>
@@ -261,7 +264,7 @@
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/particles.min.js"></script>
 
-     <script src="./assets/js/logica/utils/HttpsGetCompra.js"></script>
+    <script src="./assets/js/logica/utils/HttpsGetCompra.js"></script>
     <!--<script src="./assets/js/logica/utils/HttpsDashboard.js"></script> -->
 
     <script src="./assets/js/logica/routes/routes.js"></script>
@@ -271,4 +274,5 @@
     <script src="./assets/js/logica/controller/hacerCompraController.js"></script>
     <script src="./assets/js/logica/event/hacerCompraEvents.js"></script>
 </body>
+
 </html>
