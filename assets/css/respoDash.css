@@ -395,8 +395,10 @@
    }
 
    .tituColVa{
+      width: 60%;
+      height: 10%;
       font-size: 15px;
-      margin-left: 1px;
+      margin-left: -80px;
    }
 
    .tituColVa2{
@@ -406,9 +408,9 @@
    }
 
    .cripto{
-      margin-left: -5px;
+      margin-left: -45px;
       font-size: 18px; 
-      width: 40%; 
+      width: 50%; 
       font-weight: lighter;
    }
 
@@ -420,7 +422,7 @@
       color: #d79d13;
       border: 2px solid;
       border-radius: 10px;
-      margin-left: 70px;
+      margin-left: 0px;
    }
 
    /* .raya{
