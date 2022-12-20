@@ -329,6 +329,7 @@
       background: #3f3e3e;
       border-radius: 10px;
       display: flex;
+      overflow: hidden;
    }
 
    .containerWVender {
