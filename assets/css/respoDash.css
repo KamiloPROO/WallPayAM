@@ -303,7 +303,7 @@
    .cardsInversionCompras {
       overflow: auto;
       display: block;
-      width: 480px;
+      width: 420px;
       height: 550px;
       padding: 1%;
       margin-left: 4%;
@@ -311,20 +311,21 @@
 
    .cardInversionMela{
       
-      width: 450px;
+      width: 420px;
+
    }
 
    .menuWV {
       display: flex;
       overflow: hidden;
       margin-top: 60px;
-      margin-left: -100px;
+      margin-left: -60px;
    }
 
    .divisa {
       width: 80px;
-      margin-top: 5px;
-      margin-left: 300px;
+      margin-top: 10px;
+      margin-left: 250px;
       position: absolute;
       background: #3f3e3e;
       border-radius: 10px;
@@ -346,6 +347,12 @@
       padding: 1%;
 
 
+   }
+
+   
+
+   .vend{
+      font-size: 18px;
    }
 
    .comven {
@@ -401,6 +408,10 @@
       margin-left: -80px;
    }
 
+   .tasaaa{
+      margin-left: 20%;
+   }
+
    .tituColVa2{
       margin-top: 3px;
       font-size: 15px;
@@ -422,9 +433,13 @@
       color: #d79d13;
       border: 2px solid;
       border-radius: 10px;
-      margin-left: 0px;
+      margin-left: -10px;
    }
 
+   .moverfe{
+      margin-left: -250px;
+      font-weight: lighter;
+   }
    /* .raya{
       width: 10px !important;
    } */
