@@ -1,9 +1,10 @@
 @media (max-width: 500px) {
 
   .containerVender2{
-    width: 200%;
+    width: 206% !important;
     margin-top: 30px !important;
     height: 750px !important;
+    margin-left: 10px !important;
   }
 
   .controlsComprar{
@@ -75,7 +76,10 @@
   }
 
   .containerFlotanteVender{
-    height: 650px !important;
+    margin-top: 10%!important;
+    height: 680px !important;
+    width: 100% !important;
+    margin-left: 5px !important; 
   }
 
   .btnSiuu{
