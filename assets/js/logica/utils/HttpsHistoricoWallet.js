@@ -58,8 +58,9 @@ document.addEventListener('DOMContentLoaded', e => {
                 <div class="cardInversionHistorico" id="plan2">
                     
                    <div class="containerHisto" >
-                     <a style="color:${formData1.ColorValor}">${formData1.ValorParse}</a>
-                     <a>${formData1.Fecha}</a>
+                     <a class= "valorparse" style="color:${formData1.ColorValor}">${formData1.ValorParse}</a>
+                     <a class= "saldooo" >${formData1.SaldoParse}</a>
+                     <a class= "fechaaa">${formData1.FechaParse}</a>
                    </div>
                     
                 </div>
