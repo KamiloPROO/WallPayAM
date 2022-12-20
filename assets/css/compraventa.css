@@ -469,6 +469,14 @@ a {
     box-shadow: 0 4px 8px 0 rgb(248, 211, 3);
 }
 
+.tasaaa{
+    margin-left: 40px;
+}
+
+.imgss{
+    margin-left: 40px !important;
+}
+
 .cardsInversionMisCompras::-webkit-scrollbar {
     width: 12px;
     /* width of the entire scrollbar */
@@ -1190,11 +1198,13 @@ STYLE OF PLANS VIEW
     /* background: #333131; */
     overflow: auto;
     display: block;
-    width: 650px;
-    height: 500px;
+    width: 800px;
+    height: 550px;
     padding: 1%;
-    margin-left: 20%;
+    margin-left: 13%;
     margin-top: -20px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0, 0.4);
     /* position: relative; */
 
 }
@@ -1214,7 +1224,7 @@ STYLE OF PLANS VIEW
 
 .cardInversionMela {
     /* background: #40992e; */
-    width: 139%;
+    width: 160%;
     transition: 0.3s;
     display: block;
     overflow: hidden;
@@ -1228,12 +1238,13 @@ STYLE OF PLANS VIEW
 .raya {
     color: #3f3e3e;
     margin-top: -20px;
+    margin-left: 30px;
 }
 
 .tituColVa {
     width: 50%;
     font-size: 18px;
-    margin-left: -70px;
+    margin-left: -120px;
 }
 
 .tituColVa2 {
@@ -1261,6 +1272,10 @@ STYLE OF PLANS VIEW
 .coin {
     margin-left: 10px;
     font-size: 30px;
+}
+
+.moverfe{
+    margin-left: -445px;
 }
 
 .cir {

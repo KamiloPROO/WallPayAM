@@ -65,18 +65,9 @@ document.addEventListener('DOMContentLoaded', e => {
                     
                    <div style="display: flex">
                    <div style="width: 100%">
-                      <div style="display: flex">
-                      <a class="cir" >C</a>
-                      <b class="coin" >CoinNow</b>
-                      </div>
-                      <div style="display: flex;" >
-                      <b class="ordenes" >100 ordenes</b>
-                      <b class="rayitaa" >|</b>
-                      <b class="ordenes2" >Finalizacion 100%</b>
-                      </div>
                       <br>
                       <div style="display: flex">
-                      <h3>${formData1.HtmlHeader}</h3>
+                      <h3 class = "tasaaa" >${formData1.HtmlHeader}</h3>
                       </div>
                       <br>
                       <div style="display: flex">
@@ -84,12 +75,11 @@ document.addEventListener('DOMContentLoaded', e => {
                       <b class="tituColVa"> ${formData1.HtmlBody}</b>
                       <button class="btnetia" type="button" onclick="comprar(val = ${formData1.Id})" id="estamosgod" >Comprar</button>
                       </div>
-                      <div style="display: flex; margin-top: -20px">
-                      <b style="margin-left: 0px; color: ${formData1.TextColorBody2}; font-size: 18px; font-weight: lighter;">Limite</b>
-                      <b class="tituColVa2"> Col$ 50.0000.000 - 300.000.000</b>
-                      </div>
-                      <img src="${imagenes}" style="width: 35px; margin-left: 0px;">
-                      <h1 class="raya">____________________________________________</h1>
+                      <b class= "moverfe" style= " color: ${formData1.TextColorBody2} ">${formData1.HtmlBody2}</b>
+                      <br>
+                      <br>
+                      <img src="${imagenes}" style="width: 35px; margin-left: 0px;" class = "imgss" >
+                      <h1 class="raya">_________________________________________________</h1>
                     </div>
                     </div>
                     

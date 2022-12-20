@@ -60,17 +60,7 @@
                 <div class="sidebar">
                     <a href="Dash.html" class="active"><span class="material-icons-sharp">
                             local_atm</span>
-                        <h3>Comprar</h3>
-                    </a>
-
-                    <a href="mis_compras.html"><span class="material-icons-sharp">
-                            local_mall</span>
-                        <h3>Mis Compras</h3>
-                    </a>
-
-                    <a href="mis_ventas.html"><span class="material-icons-sharp">
-                            credit_card</span>
-                        <h3>Mis ventas</h3>
+                        <h3>P2P</h3>
                     </a>
 
                     <a href="ecommerce.html"><span class="material-icons-sharp">
@@ -127,6 +117,10 @@
                         <h1 id="cuentaM" style="color: #f8f7f4; width: 0%;">Comprar</h1>
                         <h1 style="margin-left: 110px;">|</h1>
                         <a class="vend" type="button" onclick="vender()">Vender</a>
+                        <h1 style="margin-left: 10px;">|</h1>
+                        <a class="vend" type="button" onclick="misCompras()">Mis Compras</a>
+                        <h1 style="margin-left: 10px;">|</h1>
+                        <a class="vend" type="button" onclick="misVentas()">Mis ventas</a>
                     </div>
                     <br>
                     <div style="display: flex;">
@@ -214,6 +208,14 @@
 
     function vender(){
         window.location.href = "publicarVenta.html"
+    }
+
+    function misCompras(){
+        window.location.href = "mis_compras.html"
+    }
+
+    function misVentas(){
+        window.location.href = "mis_ventas.html"
     }
 
     </script>

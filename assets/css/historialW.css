@@ -1,0 +1,16 @@
+.divHistorial{
+    
+    width: 60%;
+    height: 60%; 
+    margin-left: 20%;
+    margin-top: 5%
+ 
+}
+
+.cardInversionHistorico{
+    background: red;
+}
+
+.containerHisto{
+    background: rebeccapurple;
+}
