@@ -45,7 +45,7 @@ if (selcMetoPago == "Nequi") {
         Descripcion: "Nequi",
         Extra: $("#inputNumCuenta").val(),
         Id: 2,
-        Imagen: "http://52.175.225.67:8094//uploads/wallpay/ic_nequi.png"
+        Imagen: "https://appwollpay.app/uploads/wallpay/ic_nequi.png"
     }
     
     ListMetoSeleccionado.push(metoSeleccionado)
@@ -57,7 +57,7 @@ if (selcMetoPago == "Nequi") {
         Descripcion: "Bancolombia",
         Extra: $("#inputNumCuenta").val(),
         Id: 3,
-        Imagen: "http://52.175.225.67:8094//uploads/wallpay/ic_bancolombia.png"
+        Imagen: "https://appwollpay.app/uploads/wallpay/ic_bancolombia.png"
     }
         
     ListMetoSeleccionado.push(metoSeleccionado)
@@ -68,7 +68,7 @@ if (selcMetoPago == "Nequi") {
         Descripcion: "Davivienda",
         Extra: $("#inputNumCuenta").val(),
         Id: 4,
-        Imagen: "http://52.175.225.67:8094//uploads/wallpay/ic_davivienda.png"
+        Imagen: "https://appwollpay.app/uploads/wallpay/ic_davivienda.png"
 }]
     ListMetoSeleccionado.push(metoSeleccionado)
 } else if (selcMetoPago == "Banco de Bogota") {
@@ -76,7 +76,7 @@ if (selcMetoPago == "Nequi") {
         Descripcion: "Banco de Bogota",
         Extra: $("#inputNumCuenta").val(),
         Id: 4,
-        Imagen: "http://52.175.225.67:8094//uploads/wallpay/ic_bancobogota.png"
+        Imagen: "https://appwollpay.app/uploads/wallpay/ic_bancobogota.png"
     }
     ListMetoSeleccionado.push(metoSeleccionado)
 }
