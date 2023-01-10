@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', e => {
     $.ajax({
         type: "POST",
         url: "https://appwollpay.app/Api/GetProductosMonedaVentaHtml",
-        data: { "ID": idLogin, "IdCf": idCfUser, "Token": idToken, "Skip": 1, "Take": 30, "so": "android", "App": 2 },
+        data: { "ID": idLogin, "IdCf": 1*1, "Token": idToken, "Skip": 1, "Take": 30, "so": "android", "App": 2 },
         success: function (data) {
 
             loading.style.display = 'none'
