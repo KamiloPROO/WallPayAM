@@ -14,10 +14,12 @@ function PublicarVentaGod() {
 
         var idMoneda = 1;
         var idTokenMoneda = "tokenUSDT";
+        var idTpMonPro = "1*2"
 
     } else if (seleMoneda == "WPAY") {
         var idMoneda = 3;
         var idTokenMoneda = "tokenWPAY";
+        var idTpMonPro = "3*2"
     };
 
     //    select hora

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpay | Comprar</title>
+    <!--Material Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./assets/css/styleDash.css">
+    <link rel="stylesheet" href="./assets/css/compraventa.css">
+    <link rel="stylesheet" href="./assets/css/cargandoo.css">
+    <link rel="stylesheet" href="./assets/css/respoDash.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/comprarU.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"
+        integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+<body class="cuerpo">
+
+    <div>
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="./assets/img/Logo nav gold.png">
+
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">
+                            close </span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="Dash.html" class="active"><span class="material-icons-sharp">
+                            local_atm</span>
+                        <h3>P2P</h3>
+                    </a>
+
+                    <a href="ecommerce.html"><span class="material-icons-sharp">
+                            shopping_bag</span>
+                        <h3>Ecommerce</h3>
+                    </a>
+
+                    <a href="micuenta.html"><span class="material-icons-sharp">
+                            person_outline</span>
+                        <h3>Cuenta</h3>
+                    </a>
+
+                    <a href="index.html"><span class="material-icons-sharp">
+                            logout</span>
+                        <h3>Cerrar Sesion</h3>
+                    </a>
+
+                </div>
+
+
+            </aside>
+
+            <!-----------End of Aside------------>
+
+            <div class="form-content">
+                <div class="menuWV">
+                    <br>
+                    <div class="compraU">
+                        <h1>Comprar</h1>
+                        <h1 style="margin-left: 5px;">Wpay</h1>
+                    </div>
+                    <br>
+
+                </div>
+
+                <div class="containerComprar2">
+                    <div style="display: flex;">
+                        <a class="precio"> Precio</a>
+                        <a class="colorCol"> COL$ </a>
+                        <a class="colorSal" id="HtmlHeader"> 4,659.00</a>
+                    </div>
+                    <div style="display: flex;">
+                        <a class="limit"> Limit</a>
+                        <a class="colorCol2"> COL$ </a>
+                        <a class="colorSal2" id="cantidadMinima"> 0</a>
+                        <a class="raramedio">-</a>
+                        <a class="colorCol2"> COL$ </a>
+                        <a class="colorSal2" id="cantidadMaxima"> 0</a>
+                    </div>
+                    <div class="containerFlotante">
+                        <div class="navi">
+                            <div style="display: block;">
+                                <h1 class="wpay">Con fiat</h1>
+                            </div>
+                            <div style="display: block;">
+                                <h1 class="crip">Con criptomonedas</h1>
+                            </div>
+                        </div>
+                        <h2>________________________________________</h2>
+                        <div style="display: block;">
+                            <div style="display: block;">
+                                <a class="xd">Seleccione cuenta tron</a>
+
+                            </div>
+                            <select class="controlsComprar" id="selecCuenta">
+                                <option>Seleccione Una Cuenta</option>
+                                <option id="optionCuenta">numero</option>
+                            </select>
+                        </div>
+                        <div class="inputCom">
+                            <a class="colorCol3"> COL$ </a>
+                            <input type="number" id="inputValorAComprar" class="inpDiner" onkeyup="mostrar(this.value)"
+                                placeholder="Introduzca la cantidad">
+                            <a class="colorCol4"> TODO </a>
+                        </div>
+                        <div class="cantidadesTxt">
+                            <div style="display: flex;">
+                                <a class="canti"> Cantidad</a>
+                                <a class="saldoconverUSD" id="saldoUsdt">0</a>
+                                <a class="usrayas"> Wpay</a>
+                            </div>
+                            <div style="display: flex;">
+                                <a class="canti"> Cantidad</a>
+                                <a class="saldoconverCol" id="saldoCol">0</a>
+                                <a class="coprayitas">COP</a>
+                            </div>
+                        </div>
+                        <div class="btnComprarr">
+                            <button type="button" class="btnSiuu" id="btnHacerCompra">Compra sin comisiones</button>
+                        </div>
+                    </div>
+                    <div class="texInservible">
+                        <div class="info1">
+                            <a class="tituinfo"> Informacion comercial</a>
+                            <div class="info2">
+                                <a class="ventaPa"> Ventana de pago</a>
+                                <a class="minu" id="tiempoLimite"> 15 Minutos</a>
+                            </div>
+                            <div class="info2">
+                                <a class="apodo"> Apodo de vendedor</a>
+                                <a class="nomapodo"> Usuario 204</a>
+                            </div>
+                            <div class="info2">
+                                <a class="metoPa"> Metodo de pago del vendedor</a>
+                                <a class="metoPago" id="metodoPagoDes"> Nequi</a>
+                            </div>
+                        </div>
+
+                        <div class="infor2">
+                            <a class="txtDescri"> Descripción de la operación</a>
+                            <div class="informa2">
+                                <a class="ventaPa"> Recibo en cuenta de empresa solo titulares NO TERCEROS , debe ser un
+                                    usuario activo de Binance con buena reputacion me reservo el derecho de admision
+                                    solicitar cuenta en el chat
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+
+            <!-- <div class="cardsInversionCompras" id="product-list">
+
+                </div> -->
+
+            <!-- <button onclick="comprar()" style="background: #0500f8; color: white; font-weight: bold; "class="btnPublicarCompra">Publicar Venta</button> -->
+
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- End of Main-->
+
+    </div>
+    <div id="cargando">
+
+        <lottie-player src="https://lottie.host/b7a7a4e9-b990-4c20-815d-56277221123f/QFWYzTSEkP.json"
+            background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+    </div>
+    </div>
+
+
+    <script>
+
+        function comprar() {
+
+            // window.location.href = "comprar2ronda.html"
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'server under maintenance',
+            })
+
+        }
+
+
+
+    </script>
+
+    <script>
+        function mostrar(valor) {
+
+            const tasacam = localStorage.getItem("TasaCambioK");
+
+
+            document.getElementById("saldoUsdt").innerHTML = valor / tasacam;
+            document.getElementById("saldoCol").innerHTML = valor;
+
+
+        }
+    </script>
+
+    <!-- Fondo Particles-->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/orders.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/particles.min.js"></script>
+
+    <script src="./assets/js/logica/utils/HttpsGetCompra.js"></script>
+    <!--<script src="./assets/js/logica/utils/HttpsDashboard.js"></script> -->
+
+    <script src="./assets/js/logica/routes/routes.js"></script>
+
+    <script src="./assets/js/logica/utils/HttpsHacerCompraWpay.js"></script>
+    <script src="./assets/js/logica/business/hacerCompraWpayBussiness.js"></script>
+    <script src="./assets/js/logica/controller/hacerCompraWpayController.js"></script>
+    <script src="./assets/js/logica/event/hacerCompraWpayEvents.js"></script>
+</body>
+
+</html>

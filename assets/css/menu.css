@@ -9,6 +9,19 @@ nav{
     margin-top: -30px;
     margin-left: 1px;
 }
+
+.navito{
+	
+	margin: 270px auto 0;
+	height: 50px;
+	background: transparent;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    margin-top: -30px;
+    margin-left: 1px;
+}
+
 nav a{
 	font-size: 18px;
 	text-transform: uppercase;
@@ -27,7 +40,7 @@ nav .animation{
 	/* top: 0; */
 	bottom: 0;
 	z-index: 0;
-	background: #d4b70e;
+	background: #0ed481;
 	border-radius: 8px;
 	transition: all .5s ease 0s;
 }
@@ -37,6 +50,7 @@ nav a:nth-child(1){
 nav .start-home, a:nth-child(1):hover~.animation{
 	width: 100px;
 	left: 0;
+	
 }
 nav a:nth-child(2){
 	width: 110px;
@@ -65,4 +79,77 @@ nav a:nth-child(5){
 nav a:nth-child(5):hover~.animation{
 	width: 120px;
 	left: 470px;
+}
+
+.navP2P{
+	display: flex;
+	width: 100%;
+	height: 30%;
+}
+
+.navito a{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+.navito .animation{
+	position: absolute;
+	/* height: 100%; */
+	height: 5px;
+	/* top: 0; */
+	bottom: 0;
+	z-index: 0;
+	background: #d79d13;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+.navito a:nth-child(1){
+	width: 140px;
+}
+.navito .start-home, a:nth-child(1):hover~.animation{
+	width: 140px;
+	left: 0;
+	
+}
+.navito a:nth-child(2){
+	width: 140px;
+}
+.navito a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+.navito a:nth-child(3){
+	width: 140px;
+}
+.navito a:nth-child(3):hover~.animation{
+	width: 140px;
+	left: 210px;
+}
+.navito a:nth-child(4){
+	width: 160px;
+}
+.navito a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+.navito a:nth-child(5){
+	width: 120px;
+}
+.navito a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+
+.navito .wpay {
+	color: #d79d13;
+}
+
+.navito .ust {
+	color: #575757;
 }
