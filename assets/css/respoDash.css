@@ -720,9 +720,9 @@
 
       display: block;
       width: 400px;
-      height: 275px;
+      height: auto;
       padding: 1%;
-      margin-left: 4%;
+      margin-left: 3%;
      
      
    }
@@ -731,7 +731,7 @@
       
       width: 400px;
       height: 248px;
-      
+      overflow: hidden;
 
    }
 
