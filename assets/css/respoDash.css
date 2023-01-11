@@ -300,7 +300,7 @@
 
 @media (max-width: 450px) {
 
-   
+
    .navP2P{
       width: 71% !important;
    
@@ -309,7 +309,7 @@
    .cardsInversionCompras {
       overflow: auto;
       display: block;
-      width: 440px;
+      width: 430px;
       height: 550px;
       padding: 1%;
       margin-left: 4%;
@@ -446,7 +446,7 @@
 
    .moverfe{
       font-size: 15px;
-      margin-left: -240px;
+      margin-left: -230px;
       font-weight: lighter;
    }
    /* .raya{
