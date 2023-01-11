@@ -709,19 +709,29 @@
    
    }
 
+   .planess{
+ 
+      width: 400px;
+      position: static;
+      overflow: hidden;
+   }
+
    .cardsInversionCompras {
-      overflow: auto;
+
       display: block;
       width: 400px;
-      height: 550px;
+      height: 275px;
       padding: 1%;
       margin-left: 4%;
-      
+     
+     
    }
 
    .cardInversionMela{
       
       width: 400px;
+      height: 248px;
+      
 
    }
 
@@ -735,7 +745,7 @@
    .divisa {
       width: 80px;
       margin-top: 10px;
-      margin-left: 250px;
+      margin-left: 240px;
       position: absolute;
       background: #3f3e3e;
       border-radius: 10px;
