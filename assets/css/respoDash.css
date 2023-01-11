@@ -301,14 +301,14 @@
 @media (max-width: 470px) {
 
    .navP2P{
-      width: 61% !important;
+      width: 71% !important;
    
    }
 
    .cardsInversionCompras {
       overflow: auto;
       display: block;
-      width: 360px;
+      width: 440px;
       height: 550px;
       padding: 1%;
       margin-left: 4%;
@@ -317,7 +317,7 @@
 
    .cardInversionMela{
       
-      width: 360px;
+      width: 400px;
 
    }
 
@@ -426,7 +426,7 @@
 
    .cripto{
       margin-left: -45px;
-      font-size: 13px; 
+      font-size: 15px; 
       width: 50%; 
       font-weight: lighter;
    }
@@ -444,8 +444,8 @@
    }
 
    .moverfe{
-      font-size: 13px;
-      margin-left: -220px;
+      font-size: 15px;
+      margin-left: -240px;
       font-weight: lighter;
    }
    /* .raya{
