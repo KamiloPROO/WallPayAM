@@ -300,18 +300,24 @@
 
 @media (max-width: 500px) {
 
+   .navP2P{
+      width: 61% !important;
+   
+   }
+
    .cardsInversionCompras {
       overflow: auto;
       display: block;
-      width: 420px;
+      width: 360px;
       height: 550px;
       padding: 1%;
       margin-left: 4%;
+      
    }
 
    .cardInversionMela{
       
-      width: 420px;
+      width: 360px;
 
    }
 
@@ -404,8 +410,8 @@
    .tituColVa{
       width: 60%;
       height: 10%;
-      font-size: 15px;
-      margin-left: -80px;
+      font-size: 13px;
+      margin-left: -60px;
    }
 
    .tasaaa{
@@ -414,30 +420,32 @@
 
    .tituColVa2{
       margin-top: 3px;
-      font-size: 15px;
-      margin-left: 5px;
+      font-size: 13px;
+      margin-left: 0px;
    }
 
    .cripto{
       margin-left: -45px;
-      font-size: 18px; 
+      font-size: 13px; 
       width: 50%; 
       font-weight: lighter;
    }
 
    .btnetia {
       width: 20%;
-      height: 40px;
-      font-size: 20px;
+      height: 30px;
+      font-size: 15px;
       background: #020202;
       color: #d79d13;
       border: 2px solid;
       border-radius: 10px;
-      margin-left: -10px;
+      margin-left: -15px;
+      overflow: hidden;
    }
 
    .moverfe{
-      margin-left: -250px;
+      font-size: 13px;
+      margin-left: -220px;
       font-weight: lighter;
    }
    /* .raya{
