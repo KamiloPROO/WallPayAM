@@ -298,8 +298,9 @@
    }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 450px) {
 
+   
    .navP2P{
       width: 71% !important;
    
