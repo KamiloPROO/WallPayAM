@@ -735,6 +735,12 @@
 
    }
 
+   .raya{
+    
+    width: 10% !important;
+    margin-left: 0px;
+   }
+
    .menuWV {
       display: flex;
       overflow: hidden;
