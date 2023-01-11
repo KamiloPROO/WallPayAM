@@ -499,6 +499,208 @@
    }
 }
 
+@media (max-width: 500px) {
+
+
+   .navP2P{
+      width: 71% !important;
+   
+   }
+
+   .cardsInversionCompras {
+      overflow: auto;
+      display: block;
+      width: 430px;
+      height: 550px;
+      padding: 1%;
+      margin-left: 4%;
+      
+   }
+
+   .cardInversionMela{
+      
+      width: 400px;
+
+   }
+
+   .menuWV {
+      display: flex;
+      overflow: hidden;
+      margin-top: 60px;
+      margin-left: -60px;
+   }
+
+   .divisa {
+      width: 80px;
+      margin-top: 10px;
+      margin-left: 250px;
+      position: absolute;
+      background: #3f3e3e;
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+   }
+
+   .containerWVender {
+      width: 118%;
+      /* background: red; */
+      margin-left: 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: #5a5c5a;
+      border-left-color: transparent;
+      overflow: hidden;
+      padding: 1%;
+
+
+   }
+
+   
+
+   .vend{
+      font-size: 18px;
+   }
+
+   .comven {
+      margin-left: -120px;
+      display: flex;
+   }
+
+   .nombreee {
+      display: none;
+   }
+
+   .controls {
+      width: 100%;
+      background: transparent;
+      padding: 5px;
+      border-radius: 4px;
+      margin-bottom: 1px;
+      /* border: 1px solid #fdfdfd; */
+      font-family: 'calibri';
+      font-size: 15px;
+      color: rgb(114, 113, 113);
+   }
+
+   .controls1 {
+      width: 55%;
+      background: transparent;
+      padding: 5px;
+      border-radius: 4px;
+      margin-bottom: 1px;
+      /* border: 1px solid #fdfdfd; */
+      font-family: 'calibri';
+      font-size: 15px;
+      color: rgb(114, 113, 113);
+   }
+
+   .controls2 {
+      width: 100%;
+      background: transparent;
+      padding: 5px;
+      border-radius: 4px;
+      margin-left: -100px;
+      margin-bottom: 1px;
+      /* border: 1px solid #fdfdfd; */
+      font-family: 'calibri';
+      font-size: 15px;
+      color: rgb(114, 113, 113);
+   }
+
+   .tituColVa{
+      width: 60%;
+      height: 10%;
+      font-size: 13px;
+      margin-left: -60px;
+   }
+
+   .tasaaa{
+      margin-left: 20%;
+   }
+
+   .tituColVa2{
+      margin-top: 3px;
+      font-size: 13px;
+      margin-left: 0px;
+   }
+
+   .cripto{
+      margin-left: -45px;
+      font-size: 15px; 
+      width: 50%; 
+      font-weight: lighter;
+   }
+
+   .btnetia {
+      width: 20%;
+      height: 30px;
+      font-size: 15px;
+      background: #020202;
+      color: #d79d13;
+      border: 2px solid;
+      border-radius: 10px;
+      margin-left: -15px;
+      overflow: hidden;
+   }
+
+   .moverfe{
+      font-size: 15px;
+      margin-left: -230px;
+      font-weight: lighter;
+   }
+   /* .raya{
+      width: 10px !important;
+   } */
+
+   .right2 .top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      padding: 0 0.8rem;
+      height: 4.6rem;
+      background: var(--color-white);
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      box-shadow: 0 1rem 1rem var(--color-light);
+   }
+
+   .right2 .top .theme-toggler {
+      width: 4.4rem;
+      position: absolute;
+      left: 66%;
+      display: none;
+
+   }
+
+   .right2 .profile .info {
+      display: none;
+   }
+
+
+   .quitarDash {
+      display: none;
+   }
+
+   .right2 .top button {
+      display: inline-block;
+      background: transparent;
+      cursor: pointer;
+      color: var(--color-dark);
+      position: absolute;
+      left: 1rem;
+   }
+
+   .right2 .top button span {
+      font-size: 2rem;
+
+   }
+}
+
+
 /* cuenta */
 
 @media (max-width: 500px) {
