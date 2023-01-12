@@ -306,6 +306,14 @@
    
    }
 
+   .planess{
+ 
+      width: 400px;
+      position: static;
+      overflow: hidden;
+   }
+
+
    .cardsInversionCompras {
       overflow: auto;
       display: block;
@@ -506,6 +514,14 @@
       width: 71% !important;
    
    }
+
+   .planess{
+ 
+      width: 400px;
+      position: static;
+      overflow: hidden;
+   }
+
 
    .cardsInversionCompras {
       overflow: auto;
