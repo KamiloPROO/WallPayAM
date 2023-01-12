@@ -78,7 +78,9 @@ document.addEventListener('DOMContentLoaded', e => {
                       </div>
                       <b class= "moverfe" style= " color: ${formData1.TextColorBody2} ">${formData1.HtmlBody2}</b>
                       <br>
-                      <br>
+                      <div class="EstrellasyImg">
+                      
+                      </div>
                       <img src="${imagenes}" style="width: 35px; margin-left: 0px;" class = "imgss" >
                       <h1 class="raya">_________________________________________________</h1>
                     </div>

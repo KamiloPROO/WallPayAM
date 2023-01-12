@@ -474,7 +474,9 @@ a {
 }
 
 .imgss{
-    margin-left: 40px !important;
+    margin-left: 400px !important;
+    width: 7% !important;
+    height: 5% !important;
 }
 
 .cardsInversionMisCompras::-webkit-scrollbar {
@@ -1244,7 +1246,7 @@ STYLE OF PLANS VIEW
 .tituColVa {
     width: 50%;
     font-size: 18px;
-    margin-left: -110px;
+    margin-left: -30px;
 }
 
 .tituColVa2 {
@@ -1295,7 +1297,7 @@ STYLE OF PLANS VIEW
     color: #d79d13;
     border: 2px solid;
     border-radius: 10px;
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .btnetia:hover {

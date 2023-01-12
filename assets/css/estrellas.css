@@ -1,0 +1,24 @@
+
+label{ color:grey;
+    font-size: 30px;
+}
+
+input[type = "radio"]{ display:none;}
+
+
+.clasificacion{
+    direction: rtl;/* right to left */
+    unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+
+label:hover{color:orange;}
+
+label:hover ~ label{color:orange;}
+
+input[type = "radio"]:checked ~ label{color:orange;}
+
+
+.EstrellasyImg{
+    display: flex;
+    margin-left: 5%;
+}

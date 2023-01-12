@@ -26,8 +26,8 @@ function CallEndPointPost(url, jsonArgs) {
                 localStorage.setItem("tokenLogin", tokenLogin);
                 localStorage.setItem("NombreUser", name);
                 window.location.href = URL_API_BASE;
-                location.replace("micuenta.html");
-                location.href = "micuenta.html";
+                location.replace("Dash.html");
+                location.href = "Dash.html";
 
             } else {
                 Swal.fire({

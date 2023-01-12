@@ -17,19 +17,23 @@
    margin-top: 1.4rem;
 }
 
-.cripto{
+.moverPrimerLinea {
+   margin-left: 110px;
+}
+
+.cripto {
    margin-left: -5px;
-   font-size: 18px; 
-   width: 32%; 
+   font-size: 18px;
+   width: 32%;
    font-weight: lighter;
 }
 
-.moverHtml{
-   margin-left: -360px; 
-   color: red ;
+.moverHtml {
+   margin-left: -360px;
+   color: red;
 }
 
-.moverHtml2{
+.moverHtml2 {
    margin-left: -330px;
 }
 
@@ -301,13 +305,34 @@
 @media (max-width: 450px) {
 
 
-   .navP2P{
+   .navP2P {
       width: 71% !important;
-   
+
    }
 
-   .planess{
- 
+   .clasificacion {
+      margin-top: -30px;
+
+   }
+
+   .imgss {
+      margin-top: 0px;
+      width: 40px !important;
+      margin-left: 150px !important;
+   }
+
+   #cuentaM2 {
+
+      font-size: 20px !important;
+
+   }
+
+   .moverPrimerLinea {
+      margin-left: 90px;
+   }
+
+   .planess {
+
       width: 400px;
       position: static;
       overflow: hidden;
@@ -321,11 +346,11 @@
       height: 550px;
       padding: 1%;
       margin-left: 4%;
-      
+
    }
 
-   .cardInversionMela{
-      
+   .cardInversionMela {
+
       width: 400px;
 
    }
@@ -364,9 +389,9 @@
 
    }
 
-   
 
-   .vend{
+
+   .vend {
       font-size: 18px;
    }
 
@@ -416,27 +441,27 @@
       color: rgb(114, 113, 113);
    }
 
-   .tituColVa{
+   .tituColVa {
       width: 60%;
       height: 10%;
       font-size: 13px;
-      margin-left: -60px;
+      margin-left: -20px !important;
    }
 
-   .tasaaa{
+   .tasaaa {
       margin-left: 20%;
    }
 
-   .tituColVa2{
+   .tituColVa2 {
       margin-top: 3px;
       font-size: 13px;
       margin-left: 0px;
    }
 
-   .cripto{
+   .cripto {
       margin-left: -45px;
-      font-size: 15px; 
-      width: 50%; 
+      font-size: 15px;
+      width: 50%;
       font-weight: lighter;
    }
 
@@ -448,15 +473,16 @@
       color: #d79d13;
       border: 2px solid;
       border-radius: 10px;
-      margin-left: -15px;
+      margin-left: 80px !important;
       overflow: hidden;
    }
 
-   .moverfe{
+   .moverfe {
       font-size: 15px;
-      margin-left: -230px;
+      margin-left: -200px !important;
       font-weight: lighter;
    }
+
    /* .raya{
       width: 10px !important;
    } */
@@ -510,31 +536,52 @@
 @media (max-width: 500px) {
 
 
-   .navP2P{
+   .navP2P {
       width: 71% !important;
-   
+
    }
 
-   .planess{
- 
+   .clasificacion {
+      margin-top: -30px;
+
+   }
+
+   #cuentaM2 {
+
+      font-size: 20px !important;
+
+   }
+
+
+   .imgss {
+      margin-top: 0px;
+      width: 40px !important;
+      margin-left: 150px !important;
+   }
+
+   .planess {
+
       width: 400px;
       position: static;
       overflow: hidden;
    }
 
+   .moverPrimerLinea {
+      margin-left: 90px;
+   }
 
    .cardsInversionCompras {
       overflow: auto;
       display: block;
-      width: 430px;
+      width: 405px;
       height: 550px;
       padding: 1%;
       margin-left: 4%;
-      
+
    }
 
-   .cardInversionMela{
-      
+   .cardInversionMela {
+
       width: 400px;
 
    }
@@ -573,9 +620,9 @@
 
    }
 
-   
 
-   .vend{
+
+   .vend {
       font-size: 18px;
    }
 
@@ -625,27 +672,27 @@
       color: rgb(114, 113, 113);
    }
 
-   .tituColVa{
+   .tituColVa {
       width: 60%;
       height: 10%;
-      font-size: 13px;
-      margin-left: -60px;
+      font-size: 15px;
+      margin-left: -10px;
    }
 
-   .tasaaa{
+   .tasaaa {
       margin-left: 20%;
    }
 
-   .tituColVa2{
+   .tituColVa2 {
       margin-top: 3px;
       font-size: 13px;
       margin-left: 0px;
    }
 
-   .cripto{
+   .cripto {
       margin-left: -45px;
-      font-size: 15px; 
-      width: 50%; 
+      font-size: 15px;
+      width: 50%;
       font-weight: lighter;
    }
 
@@ -657,15 +704,16 @@
       color: #d79d13;
       border: 2px solid;
       border-radius: 10px;
-      margin-left: -15px;
+      margin-left: 50px;
       overflow: hidden;
    }
 
-   .moverfe{
+   .moverfe {
       font-size: 15px;
-      margin-left: -230px;
+      margin-left: -200px;
       font-weight: lighter;
    }
+
    /* .raya{
       width: 10px !important;
    } */
@@ -719,17 +767,41 @@
 @media (max-width: 428px) {
 
 
-   .navP2P{
+   .navP2P {
       width: 101% !important;
-      
-   
    }
 
-   .planess{
- 
+   #cuentaM2 {
+
+      font-size: 17px !important;
+
+   }
+
+   .clasificacion {
+      margin-top: -30px;
+
+   }
+
+   .imgss {
+      margin-top: 0px;
+      width: 40px !important;
+      margin-left: 150px !important;
+   }
+
+   /* b{
+      margin-left: 60px;
+   } */
+
+   .moverPrimerLinea {
+      margin-left: 80px;
+   }
+
+   .planess {
+
       width: 400px;
       position: static;
       overflow: hidden;
+      height: auto;
    }
 
    .cardsInversionCompras {
@@ -739,22 +811,22 @@
       height: auto;
       padding: 1%;
       margin-left: 3%;
-     
-     
    }
 
-   .cardInversionMela{
-      
+   .cardInversionMela {
+
       width: 400px;
       height: 248px;
       overflow: hidden;
 
    }
 
-   .raya{
-    
-    width: 10% !important;
-    margin-left: 0px;
+   .raya {
+
+      /* margin-top: -40px !important; */
+      width: 10% !important;
+      margin-left: 0px;
+
    }
 
    .menuWV {
@@ -791,9 +863,9 @@
 
    }
 
-   
 
-   .vend{
+
+   .vend {
       font-size: 15px;
    }
 
@@ -843,27 +915,28 @@
       color: rgb(114, 113, 113);
    }
 
-   .tituColVa{
+   .tituColVa {
       width: 60%;
       height: 10%;
       font-size: 13px;
-      margin-left: -60px;
+      margin-left: -15px;
    }
 
-   .tasaaa{
+   .tasaaa {
       margin-left: 20%;
    }
 
-   .tituColVa2{
+   /* .tituColVa2 {
       margin-top: 3px;
       font-size: 13px;
-      margin-left: 0px;
-   }
+      margin-left: 80px;
+      color: red;
+   } */
 
-   .cripto{
+   .cripto {
       margin-left: -45px;
-      font-size: 15px; 
-      width: 50%; 
+      font-size: 15px;
+      width: 50%;
       font-weight: lighter;
    }
 
@@ -875,15 +948,16 @@
       color: #d79d13;
       border: 2px solid;
       border-radius: 10px;
-      margin-left: -25px;
+      margin-left: 80px;
       overflow: hidden;
    }
 
-   .moverfe{
+   .moverfe {
       font-size: 15px;
-      margin-left: -230px;
+      margin-left: -190px;
       font-weight: lighter;
    }
+
    /* .raya{
       width: 10px !important;
    } */
@@ -938,27 +1012,27 @@
 
 @media (max-width: 500px) {
 
-   .cardsInversionMisCompras{
+   .cardsInversionMisCompras {
       padding: 1% !important;
       width: 123%;
       margin-left: 10px;
       ;
    }
 
-   .cardsInversion{
+   .cardsInversion {
       width: 120%;
       margin-left: 10px;
    }
- 
-   .moverHtml{
-      margin-left: -200px; 
-      color: red ;
+
+   .moverHtml {
+      margin-left: -200px;
+      color: red;
    }
 
-   .moverHtml2{
+   .moverHtml2 {
       margin-left: -200px;
    }
-   
+
 
    #name {
       display: none;
