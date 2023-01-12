@@ -78,9 +78,25 @@ document.addEventListener('DOMContentLoaded', e => {
                       </div>
                       <b class= "moverfe" style= " color: ${formData1.TextColorBody2} ">${formData1.HtmlBody2}</b>
                       <br>
-                      <br>
+                      <div class="EstrellasyImg"> 
+                      <form id="todo">
+                      <p class="clasificacion">
+                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                      --><label for="radio1">★</label><!--
+                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                      --><label for="radio2">★</label><!--
+                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                      --><label for="radio3">★</label><!--
+                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                    </form>
+
                       <img src="${imagenes}" style="width: 35px; margin-left: 0px;" class = "imgss" >
-                      <h1 class="raya">_________________________________________________</h1>
+
+                      </div><h1 class="raya">_________________________________________________</h1>
                     </div>
                     </div>
                     
