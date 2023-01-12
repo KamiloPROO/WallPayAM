@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', e => {
                       </div>
                       <br>
                       <div style="display: flex">
-                      <b class="cripto" style="color: ${formData1.TextColorBody2};">Cantidad Cripto</b>
                       <b class="tituColVa"> ${formData1.HtmlBody}</b>
                       <button class="btnetia" type="button" onclick="comprar(val = ${formData1.Id})" id="estamosgod" >Comprar</button>
                       </div>
