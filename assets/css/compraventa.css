@@ -1421,13 +1421,37 @@ STYLE OF PLANS VIEW
 .vend {
     margin-top: 4px;
     font-size: 25px;
-    margin-left: 5px;
+    margin-left: 100px;
     color: #7a7a7a;
 }
 
 .vend:hover{
     color: #fdae02;
 }
+
+.vend2 {
+    margin-top: 4px;
+    font-size: 25px;
+    margin-left: 6px;
+    color: #7a7a7a;
+}
+
+.vend2:hover{
+    color: #fdae02;
+}
+
+
+.PublicarVen {
+    margin-top: 4px;
+    font-size: 25px;
+    margin-left: 60px;
+    color: #7a7a7a;
+}
+
+.PublicarVen:hover{
+    color: #fdae02;
+}
+
 
 .menuWV {
     display: flex;

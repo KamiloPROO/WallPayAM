@@ -392,7 +392,12 @@
 
 
    .vend {
-      font-size: 18px;
+      font-size: 25px !important;
+      margin-left: 14% !important;
+   }
+
+   .PublicarVen{
+      margin-left: 5%;
    }
 
    .comven {
