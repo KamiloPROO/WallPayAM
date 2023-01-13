@@ -2,9 +2,24 @@
 
   .containerVender2{
     width: 206% !important;
-    margin-top: 30px !important;
+    margin-top: -220px !important;
     height: 750px !important;
     margin-left: 10px !important;
+  }
+
+  .navComYVenta{
+    display: flex;
+    width: 140% !important;
+    height: 10%;
+    margin-top: 110px;
+  }
+
+  .compraU{
+    width: 85% !important;
+    margin-top: 30% !important;
+    margin-left: 120px !important;
+    position: absolute;
+    
   }
 
   .controlsComprar{

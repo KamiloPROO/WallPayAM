@@ -87,14 +87,14 @@ if (selcMetoPago == "Nequi") {
 
    console.log(xd);
 
-    const publicaremosVentaWallpay = {
+    const publicaremosVenta = {
 
         CantidadMaxima: $("#inputCantMaxi").val(),
         CantidadMinima: $("#inputCantMini").val(),
         Descripcion: $("#inputDescrip").val(),
         IdCuentaOrigenCf: cuentaidcf,
         IdTipoMoneda: idMoneda,
-        IdActividad: 2,
+        IdActividad: 1,
         IdUsuarioCf: idcff,
         IsActivo: "false",
         MediosPago: [{
@@ -112,6 +112,6 @@ if (selcMetoPago == "Nequi") {
 
     }
   
-    console.log(publicaremosVentaWallpay);
-    publicarVentaGod(publicaremosVentaWallpay)
+    console.log(publicaremosVenta);
+    publicarSiu(publicaremosVenta)
 }

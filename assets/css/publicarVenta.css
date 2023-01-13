@@ -1,20 +1,24 @@
 .compraU {
     display: flex;
     margin-left: 47%;
+    
 }
 
 .xd {
     font-size: 20px;
+    
 }
 
 .containerVender2 {
-    margin-top: 2%;
+    margin-top: -18%;
     margin-left: 10%;
+    
 }
 
 .precio {
     color: rgb(163, 162, 162);
     font-size: 20px;
+    
 }
 
 .colorCol {
@@ -37,6 +41,7 @@
 .colorCol2 {
     font-size: 20px;
     margin-left: 10px;
+    
 
 }
 
@@ -62,7 +67,7 @@
     background: rgb(0, 0, 0, 0.4);
     border-radius: 10px;
     overflow: hidden;
-
+    
 }
 
 
@@ -91,6 +96,7 @@
     background: rgba(59, 59, 59, 0.7);
     overflow: hidden;
     border-radius: 5px;
+    
 }
 
 .inputNumCuenta {
@@ -102,6 +108,7 @@
     background: transparent;
     overflow: hidden;
     border-radius: 5px;
+    
 }
 
 .inputCom2 {
@@ -113,17 +120,20 @@
     background: rgba(59, 59, 59, 0.7);
     overflow: hidden;
     border-radius: 5px;
+    
 }
 
 .numeC{
     margin-top: -10px;
     font-size: 20px;
+    
 }
 
 .inpNu{
     border-radius: 10px;
     height: 50%;
     background: rgba(59, 59, 59, 0.7);
+    
 }
 
 .inpDinerNu {
@@ -135,6 +145,7 @@
     font-size: 18px;
     color: aliceblue;
     background: transparent;
+    
 }
 
 .inpDiner {
@@ -145,6 +156,7 @@
     font-size: 18px;
     color: aliceblue;
     background: transparent;
+    
 }
 
 .inpDiner2 {
@@ -155,18 +167,20 @@
     font-size: 18px;
     color: aliceblue;
     background: transparent;
+    
 }
 
 /* input cantida min y cantida max */
 .inputCanMin {
-    width: 34%;
+    width: 37%;
     height: 10%;
     margin-top: 4%;
-    margin-left: 15%;
+    margin-left: 12%;
     display: flex;
     background: rgba(59, 59, 59, 0.7);
     overflow: hidden;
     border-radius: 5px;
+    
 }
 
 .colorCanMin {
@@ -186,17 +200,19 @@
     font-size: 18px;
     color: aliceblue;
     background: transparent;
+    
 }
 
 .inputCanMax {
-    width: 34%;
+    width: 39%;
     height: 10%;
     margin-top: 4%;
-    margin-left: 5%;
+    margin-left: 2%;
     display: flex;
     background: rgba(59, 59, 59, 0.7);
     overflow: hidden;
     border-radius: 5px;
+    
 }
 
 .colorCanMax {
@@ -223,12 +239,13 @@
 }
 
 .inputTasaCambio {
-    width: 25%;
+    width: 28%;
     height: 40px;
     background: rgba(59, 59, 59, 0.7);
     display: flex;
     margin-left: 37%;
     border-radius: 10px;
+    
 }
 
 .inputTasaCam {
@@ -512,7 +529,7 @@
         background: rgb(0, 0, 0, 0.4);
         border-radius: 10px;
         overflow: hidden;
-
+         
     }
 
     .texInservible {
@@ -521,6 +538,7 @@
         margin-top: 5%;
         display: block;
         height: 200px;
+        
     }
 
     .info1 {
