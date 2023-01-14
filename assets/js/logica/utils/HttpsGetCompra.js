@@ -7,15 +7,16 @@ document.addEventListener('DOMContentLoaded', e => {
     var loading = document.getElementById('cargando')
 
 
-    var tiempo = document.getElementById("tiempoLimite");
-    var tasaCam = document.getElementById("HtmlHeader");
-    var cantiMini = document.getElementById("cantidadMinima");
+   
+    var header = document.getElementById("HtmlHeader");
+    var htmlBody2 = document.getElementById("HtmlBody2");
+    var imageMeP = document.getElementById("ImgMeP");
     var cantiMaxi = document.getElementById("cantidadMaxima");
     var optionNumRefe = document.getElementById("optionCuenta");
     var medioP = document.getElementById("metodoPagoDes");
   
 
-    optionNumRefe.textContent = refeComprar;
+    // optionNumRefe.textContent = refeComprar;
     
 
     $.ajax({
@@ -28,18 +29,26 @@ document.addEventListener('DOMContentLoaded', e => {
 
             var formData = JSON.parse(data);
             console.log(formData);
+
+            optionNumRefe.textContent = refeComprar;
+
+            // const header1 = formData.HtmlHeader;
+            // const body2 = formData.HtmlBody2;
             
-           const limTiempo = formData.TiempoLimite;
+        //    const limTiempo = formData.TiempoLimite;
            const tasaCambio = formData.TasaCambio;
            const cantMinima = formData.CantidadMinima;
            const cantMaxima = formData.CantidadMaxima;
-           const cantidadMinima = tasaCambio * cantMinima;
-           const cantidadMaxima = tasaCambio * cantMaxima;
+        //    const cantidadMinima = tasaCambio * cantMinima;
+        //    const cantidadMaxima = tasaCambio * cantMaxima;
 
-            tiempo.textContent = limTiempo; 
-            tasaCam.textContent = tasaCambio;
-            cantiMini.textContent = cantidadMinima;
-            cantiMaxi.textContent = cantidadMaxima;
+            //  header.textContent = header1; 
+            //  htmlBody2.textContent = body2;
+
+            // tiempo.textContent = limTiempo; 
+            // tasaCam.textContent = tasaCambio;
+            // cantiMini.textContent = cantidadMinima;
+            // cantiMaxi.textContent = cantidadMaxima;
             
            localStorage.setItem("TasaCambioK",tasaCambio);
            localStorage.setItem("CantiMin", cantMinima)
@@ -52,7 +61,52 @@ document.addEventListener('DOMContentLoaded', e => {
         
           
            const meDescri = metPagoObject.Descripcion;
-           medioP.textContent = meDescri;
+           const imagenP = metPagoObject.Imagen
+
+        //    imageMeP.textContent = imagenP;
+        //    medioP.textContent = meDescri;
+
+        const productList = document.getElementById("product-list");
+        const element = document.createElement("div")
+
+        element.innerHTML += `
+        <div class="planess">
+        <div class="cardInversionMela" id="plan2">
+            
+           <div style="display: flex">
+           <div style="width: 100%">
+              <br>
+             
+              <h3 class="correrHeader" >${formData.HtmlHeader}</h3>
+              
+              <br>
+              <div class="correrBody">
+              <b class="diseñoBody"> ${formData.HtmlBody}</b>
+              </div>
+              
+              <div class="correrBody2">
+              <b class="diseñoBody2">${formData.HtmlBody2}</b>
+              </div>
+            </div>
+            </div>
+            <br>
+            <div class="mediosDePago">
+                         <h3 class="tituMP">Medios De Pago</h3>
+                         <br>
+                         <div style="display: flex;">
+                            
+                         <img src="${imagenP}" style="width: 35px; margin-left: 0px;" class="imagenMeP" >
+                          
+                         <h2 class="nomMePa">${meDescri}</h2>
+
+                         </div>
+                    </div>
+
+        </div>
+      </div>
+     `;
+
+        productList.appendChild(element)
 
         },
         error: function () {

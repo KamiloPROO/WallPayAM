@@ -1,6 +1,6 @@
 .compraU {
     display: flex;
-    margin-left: 40%;
+    margin-left: 50%;
 }
 
 .containerComprar2 {
@@ -79,10 +79,10 @@
 }
 
 .inputCom {
-    width: 60%;
-    height: 13%;
+    width: 30%;
+    height: 20%;
     margin-top: 4%;
-    margin-left: 20%;
+    margin-left: 35%;
     display: flex;
     background: rgba(59, 59, 59, 0.7);
     overflow: hidden;
@@ -91,7 +91,7 @@
 
 .inpDiner {
     margin-left: 3%;
-    width: 50%;
+    width: 100%;
     margin-top: 1%;
     height: 80%;
     font-size: 20px;
@@ -149,16 +149,16 @@
 .btnSiuu {
     margin-top: 1%;
     height: 80%;
-    width: 80%;
+    width: 40%;
     border-radius: 5px;
     font-weight: bold;
-    background: rgb(85, 131, 113);
+    background: rgb(129, 75, 9);
     color: #ffff;
 }
 
 .btnSiuu:hover {
-    background: #fff;
-    color: rgb(85, 131, 113);
+    background: rgb(238, 155, 2);
+    color: rgb(255, 255, 255);
 }
 
 .texInservible {
@@ -267,8 +267,109 @@
     overflow: hidden;
 }
 
+
+
+
+.TasaCambio{
+    padding: 1%;
+    height: auto;
+    width: auto;
+    /* background: red; */
+}
+
+.DiseñoCompraHtml{
+    width: 50%;
+    background: rgb(0, 0, 0, 0.4);
+    margin-left: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tasC{
+    
+    color: rgb(240, 175, 12) !important;
+}
+
+.correrBody2{
+    margin-right: 70%;
+    
+}
+
+.correrBody{
+    width: 40%;
+    margin-right: 70%;
+    
+}
+
+.correrHeader{
+    width: 50%;
+    margin-right: 70%;
+    font-size: 25px !important;
+    color: rgb(255, 153, 0) !important;
+}
+
+.diseñoBody{
+    font-size: 20px;
+   
+}
+
+
+
+.diseñoBody2    {
+    font-size: 20px;
+  
+}
+
+.mediosDePago{
+
+width: 30%;
+
+}
+
+.tituMP{
+    margin-left: 10%;
+    width: 100%;
+    font-size: 25px !important;
+    color: goldenrod !important;
+}
+
+.imagenMeP{
+    margin-left: 10% !important;
+}
+
+.nomMePa{
+    margin-left: 5px;
+}
+
 @media (max-width: 450px) {
 
+    .DiseñoCompraHtml{
+        width: 110%;
+        background: rgb(0, 0, 0, 0.4);
+        margin-left: 8%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+   .correrHeader{
+    width: 80%;
+   }
+
+    .correrBody2{
+        width: 40%;
+        
+    }
+
+    .correrBody{
+        width: 70%;
+        
+    }
+
+    .mediosDePago{
+
+        width: 50%;
+        
+    }
     .compraU {
         margin-top: 10px;
         display: flex;

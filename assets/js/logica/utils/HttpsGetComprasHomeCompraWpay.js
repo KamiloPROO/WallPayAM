@@ -8,7 +8,7 @@ function comprar(val) {
     localStorage.setItem("IdCompraFinal", idHpta);
 
     if (idHpta != ""){
-        window.location.href = "comprarWpay.html"
+        window.location.href = "realizarCompra.html"
     }else{
         Swal.fire({
             icon: 'error',
