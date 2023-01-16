@@ -78,12 +78,32 @@
     border-left-color: transparent; */
 }
 
+.menos{
+    /* border-radius: 300px; */
+    height: 1% !important;
+    width: 10%;
+    font-size: 25px !important;
+    margin-left: 10px;
+    background: transparent;
+    color: #ffff;
+    /* background-color: darkgoldenrod; */
+}
+
+.mas{
+    width: 10%;
+    font-size: 25px !important;
+    margin-right: 10px; 
+    background: transparent;
+    color: #ffff;
+}
+
 .inputCom {
     width: 30%;
     height: 20%;
     margin-top: 4%;
     margin-left: 35%;
     display: flex;
+    /* background: rebeccapurple; */
     background: rgba(59, 59, 59, 0.7);
     overflow: hidden;
     border-radius: 5px;

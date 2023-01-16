@@ -117,12 +117,17 @@
                     </div>
 
 
+                    <a> Cantidad a comprar</a>
+                    <div style="display: flex;">
 
-                    <div class="inputCom">
-                        <input type="number" id="inputValorAComprar" class="inpDiner" onkeyup="mostrar(this.value)"
-                            placeholder="Introduzca la cantidad">
+                        <div class="inputCom">
+                            <button class="menos" onclick="btnMenos(this)" id="disminuir" value="disminuir">-</button>
+                            <input type="number" id="inputValorAComprar" class="inpDiner" onkeyup="mostrar(this.value)"
+                                placeholder="Introduzca la cantidad">
+                            <button class="mas" onclick="btnMas(this)" id="aumentar" value="aumentar">+</button>
+                        </div>
+
                     </div>
-
                     <div style="display: flex;">
                         <a class="canti"> Recibira</a>
                         <a class="saldoconverCol" id="saldoCol">0</a>
@@ -134,7 +139,7 @@
                     <div class="btnComprarr">
                         <button type="button" class="btnSiuu" id="btnHacerCompra">Vender</button>
                     </div>
-                    
+
                 </div>
 
 
@@ -257,6 +262,78 @@
 
 
     <script>
+        function mostrar(val) {
+
+            const tasacam = localStorage.getItem("TasaCambioK");
+
+            document.getElementById("saldoCol").innerHTML = val * tasacam;
+
+
+        }
+    </script>
+
+    <script>
+
+        var valor = 0;
+
+        function btnMas(boton) {
+
+            var contador = document.getElementById("inputValorAComprar").value;
+            var cantMini = localStorage.getItem("CantiMin");
+            var cantMax = localStorage.getItem("CantiMax");
+            const tasacam = localStorage.getItem("TasaCambioK");
+
+
+            if (contador == "") {
+                valor = cantMini;
+            } else if (contador > cantMax) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: `La Cantidad Insertada Es Mayor A La Cantidad Admitida (cantidad maxima ${cantMax} )`,
+
+                })
+                valor = cantMax;
+            } else if (boton.value == 'aumentar') {
+
+                valor++
+            }
+            ;
+
+
+            document.getElementById("inputValorAComprar").value = valor;
+            document.getElementById("saldoCol").innerHTML = valor * tasacam;
+        }
+
+        function btnMenos(boton) {
+
+            var contador = document.getElementById("inputValorAComprar").value;
+            var cantMini = localStorage.getItem("CantiMin");
+            var cantMax = localStorage.getItem("CantiMax");
+            const tasacam = localStorage.getItem("TasaCambioK");
+
+
+            if (contador == "") {
+                valor = cantMini;
+            } else if (contador < cantMini) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: `La Cantidad Insertada Es Menor A La Cantidad Admitida (cantidad minima ${cantMini} )`,
+
+                })
+                valor = cantMax;
+            } else if (boton.value == 'disminuir') {
+
+                valor--
+            }
+            ;
+
+
+            document.getElementById("inputValorAComprar").value = valor;
+            document.getElementById("saldoCol").innerHTML = valor * tasacam;
+        }
+
 
         function comprar() {
 
@@ -274,16 +351,7 @@
 
     </script>
 
-    <script>
-        function mostrar(valor) {
-
-            const tasacam = localStorage.getItem("TasaCambioK");
-
-            document.getElementById("saldoCol").innerHTML = valor * tasacam;
-
-
-        }
-    </script>
+    
 
     <!-- Fondo Particles-->
     <script src="./assets/js/index.js"></script>
@@ -292,14 +360,15 @@
     <script src="./assets/js/particles.min.js"></script>
 
     <script src="./assets/js/logica/utils/HttpsGetCompra.js"></script>
+    <!-- <script src="./kamilo.js"></script> -->
 
 
-    <!-- <script src="./assets/js/logica/routes/routes.js"></script>
+    <script src="./assets/js/logica/routes/routes.js"></script>
 
     <script src="./assets/js/logica/utils/HttpsHacerCompra.js"></script>
     <script src="./assets/js/logica/business/hacerCompraBussiness.js"></script>
     <script src="./assets/js/logica/controller/hacerCompraController.js"></script>
-    <script src="./assets/js/logica/event/hacerCompraEvents.js"></script> -->
+    <script src="./assets/js/logica/event/hacerCompraEvents.js"></script>
 </body>
 
 </html>

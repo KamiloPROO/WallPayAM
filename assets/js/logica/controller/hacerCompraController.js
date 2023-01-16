@@ -8,7 +8,7 @@ function HacemosCompra() {
 
     const melo = document.getElementById("inputValorAComprar").value;
 
-    const compra =  melo / tasaCamb;
+    const compra =  melo ;
  
      const hacerCompra = {
 

@@ -31,28 +31,31 @@ btnHcompra.addEventListener('click', () => {
         })
 
 
-    } else if (compraXD < caMin) {
+    } else if (melo < caMin) {
+
+        
 
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: `La Cantidad Insertada Es Menor A La Cantidad Admitida (cantidad minima ${caMin * tasCam} COP)`,
+            text: `La Cantidad Insertada Es Menor A La Cantidad Admitida (cantidad minima ${caMin} )`,
 
         })
 
 
-    } else if (compraXD > caMax) {
+    } else if (melo > caMax) {
 
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: `La Cantidad Insertada Es Mayor A La Cantidad Admitida (cantidad maxima ${caMax * tasCam} COP)`,
+            text: `La Cantidad Insertada Es Mayor A La Cantidad Admitida (cantidad maxima ${caMax })`,
 
         })
 
 
     } else {
 
+        
         HacemosCompra();
 
     }
