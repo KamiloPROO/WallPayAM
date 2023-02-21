@@ -40,6 +40,11 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
 </head>
 
 <body class="cuerpo">
@@ -72,6 +77,11 @@
                     <a href="micuenta.html"><span class="material-icons-sharp">
                             person_outline</span>
                         <h3>Cuenta</h3>
+                    </a>
+
+                    <a href="admin.html"><span class="material-icons-sharp">
+                        badge</span>
+                        <h3>Administrador</h3>
                     </a>
 
                     <a href="index.html"><span class="material-icons-sharp">
@@ -123,7 +133,7 @@
                         <h1 style="margin-left: 10px;">|</h1>
                         <a class="vend2" type="button" onclick="misVentas()">Mis ventas</a>
                     </div>
- 
+
                     <div style="display: flex;">
                         <a class="PublicarVen" type="button" onclick="misCompras2()">Publicar Compra</a>
                         <h1 style="margin-left: 10px;">|</h1>
@@ -209,36 +219,36 @@
 
     <script>
 
-    // var estre = document.getElementById("todo");
-    // var lab = document.querySelector("label")
+        // var estre = document.getElementById("todo");
+        // var lab = document.querySelector("label")
 
-    // estre.addEventListener("click", function(e){
+        // estre.addEventListener("click", function(e){
 
-      
 
-    //     lab.style.color = "orange"
 
-    // })
-    
-    function vender(){
-        window.location.href = "publicarCompra.html"
-    }
+        //     lab.style.color = "orange"
 
-    function misCompras(){
-        window.location.href = "mis_compras.html"
-    }
+        // })
 
-    function misVentas(){
-        window.location.href = "mis_ventas.html"
-    }
+        function vender() {
+            window.location.href = "publicarCompra.html"
+        }
 
-    function misCompras2(){
-        window.location.href = "publicarCompra.html"
-    }
+        function misCompras() {
+            window.location.href = "mis_compras.html"
+        }
 
-    function misVentas2(){
-        window.location.href = "publicarVenta.html"
-    }
+        function misVentas() {
+            window.location.href = "mis_ventas.html"
+        }
+
+        function misCompras2() {
+            window.location.href = "publicarCompra.html"
+        }
+
+        function misVentas2() {
+            window.location.href = "publicarVenta.html"
+        }
 
     </script>
 

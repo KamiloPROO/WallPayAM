@@ -398,6 +398,19 @@ a {
 
 }
 
+.cardAdmin {
+    box-shadow: 0 6px 10px 0 rgb(117, 117, 117);
+    transition: 0.3s;
+    display: flex;
+    margin-left: 24%;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+
+}
+
+
 .card2 {
     box-shadow: 0 4px 8px 0 rgb(10, 82, 236);
     transition: 0.3s;
@@ -471,21 +484,25 @@ a {
 
 .cardsInversion::-webkit-scrollbar {
     width: 12px;
-                  /* width of the entire scrollbar */
-  }
-  
-  .cardsInversion::-webkit-scrollbar-track {
-    background: rgba(163, 162, 159, 0.13);
-    border-radius: 10px;         /* color of the tracking area */
-  }
-  
-  .cardsInversion::-webkit-scrollbar-thumb {
-    background-color: rgb(250, 172, 3);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(250, 172, 3);  /* creates padding around scroll thumb */
-  }
+    /* width of the entire scrollbar */
+}
 
-.melocaramelo{
+.cardsInversion::-webkit-scrollbar-track {
+    background: rgba(163, 162, 159, 0.13);
+    border-radius: 10px;
+    /* color of the tracking area */
+}
+
+.cardsInversion::-webkit-scrollbar-thumb {
+    background-color: rgb(250, 172, 3);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid rgb(250, 172, 3);
+    /* creates padding around scroll thumb */
+}
+
+.melocaramelo {
 
     scrollbar-width: thin;
     scrollbar-color: red;
@@ -495,7 +512,7 @@ a {
 
     overflow: auto;
     display: block;
-    width: 500px ;
+    width: 500px;
     height: 485px;
     padding: 1%;
     margin-left: 27%;
@@ -623,13 +640,17 @@ a {
     margin-left: 80%;
 }
 
+.moversaldosTrx {
+    margin-left: 70%;
+}
+
 .moversaldos {
     overflow: hidden;
     width: 25%;
     margin-left: 80%;
 }
 
-.moverUser{
+.moverUser {
     margin-left: -120px;
     font-size: 15px;
 }
@@ -992,11 +1013,12 @@ a {
 }
 
 /* monto a operar */
-.montoOperar{
-    text-align: center; 
-    border-radius: 20px; height: 30px; 
-    color: rgb(250, 249, 249); 
-    background: rgb(87, 86, 86); 
+.montoOperar {
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    color: rgb(250, 249, 249);
+    background: rgb(87, 86, 86);
     font-size: 20px;
 }
 
@@ -1017,7 +1039,7 @@ STYLE OF PLANS VIEW
     padding: 1%;
 }
 
-.cuentaMela{
+.cuentaMela {
     display: flex;
     align-items: center;
     margin-left: 25%;
@@ -1043,6 +1065,68 @@ STYLE OF PLANS VIEW
     margin-bottom: 30px;
 }
 
-.btnsCuenta{
+.btnsCuenta {
     margin-right: 25%;
+}
+
+.containerListAdmin {
+
+    height: 600px;
+    overflow: auto;
+
+}
+
+
+.divTodoAdmin {
+
+    width: 100%;
+    display: flex;
+    margin-left: 5%
+}
+
+.divTRX {
+
+    width: 34%;
+
+}
+
+.divWPAY {
+    width: 33%;
+
+}
+
+.divUSDT {
+    
+    width: 33%;
+
+}
+
+
+
+.usdtAdmin {
+    background-color: green;
+   ;
+}
+
+.wplayAdmin {
+    background-color: rgb(247, 143, 7);
+   
+}
+
+.trxAdmin {
+    background-color: red;
+
+}
+
+.moversaldosTrxAdmin {
+    text-align: center;
+}
+
+.moversaldosAdmin {
+    text-align: center;
+}
+
+.moverfechasAdmin {
+    margin-left: 23%;
+    width: 70%;
 }

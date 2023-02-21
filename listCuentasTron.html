@@ -11,9 +11,10 @@
     <!--STYLESHEET-->
     <link rel="stylesheet" href="./assets/css/styleDash.css">
     <link rel="stylesheet" href="./assets/css/estiloaDash.css">
-    <link rel="stylesheet" href="./assets/css/wallet.css">
+    <!-- <link rel="stylesheet" href="./assets/css/wallet.css"> -->
     <link rel="stylesheet" href="./assets/css/cargandoo.css">
-    <link rel="stylesheet" href="./assets/css/historialW.css">
+    <link rel="stylesheet" href="./assets/css/responListCuentas.css">
+
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -64,23 +65,26 @@
                 </div>
     
                 <div class="sidebar">
+                    
     
                     <a href="Dash.html" ><span class="material-icons-sharp">
                         local_atm</span>
                         <h3>P2P</h3>
                     </a>
     
+ 
+    
                     <a href="ecommerce.html"><span class="material-icons-sharp">
                         shopping_bag</span>
                         <h3>Ecommerce</h3>
                     </a>
     
-                    <a href="micuenta.html" class="active"><span class="material-icons-sharp">
+                    <a href="micuenta.html" ><span class="material-icons-sharp">
                         person_outline</span>
                         <h3>Cuenta</h3>
                     </a>
-
-                    <a href="admin.html"><span class="material-icons-sharp">
+ 
+                    <a href="admin.html" class="active"><span class="material-icons-sharp">
                         badge</span>
                         <h3>Administrador</h3>
                     </a>
@@ -100,14 +104,22 @@
             <div class="form-content">
                 <div>
                     <br>
-                    <h1 id="histori" style="color: #d79d13;">Historial</h1>
+                    <h1 id="cuentaM" style="color: #d79d13;">Listado Cuentas Tron</h1>
+                    <br>
+                    
                 </div>
     
-    
-                <div class="divHistorial" id="divHistorial">
+
+                <div class="containerListAdmin" id="product-list">
+
+        
 
                 </div>
-                
+
+    
+                 
+
+            
                 <div class="right">
                     <div class="top">
                         <button id="menu-btn">
@@ -116,45 +128,64 @@
                     </div>
                 </div>
                 
-                
-                
-                
-    
             </div>
             
         </div>
 
-        <div id="cargando">
+        <!-- <div id="cargando">
+           
             <lottie-player src="https://lottie.host/b7a7a4e9-b990-4c20-815d-56277221123f/QFWYzTSEkP.json" 
             background="transparent" 
             speed="1" 
             loop 
             autoplay>
             </lottie-player>
-        </div>
+        </div> -->
     
     </div>
     
-     
+   <!-- <script>
+
+   function wallet() {
+
+    window.location.href = "historialWallet.html"
+
+   }
+
+   </script>    -->
   
 
-    
+    <script>
+        function copiarNumReferencia(id_elemento) {
+            var aux = document.createElement("input");
+            aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+            document.body.appendChild(aux);
+            aux.select();
+            document.execCommand("copy");
+            document.body.removeChild(aux);
+
+            Swal.fire({
+                  icon: 'success',
+                  title: 'Successfully Copied Reference',
+                })
+        }
+    </script>
     <!-- Fondo Particles-->
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/orders.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/particles.min.js"></script>
 
-    <script src="./copiar.js"></script>
+    <!-- <script src="./copiar.js"></script>
 
-    <!-- <script src="./assets/js/logica/routes/routes.js"></script>
+    <script src="./assets/js/logica/routes/routes.js"></script>
 
     <script src="./assets/js/logica/utils/HttpsCrearCuentaTron.js"></script>
     <script src="./assets/js/logica/business/crearCuentaTronBussiness.js"></script>
     <script src="./assets/js/logica/controller/crearCuentaTronController.js"></script>
     <script src="./assets/js/logica/event/crearTronEvent.js"></script>-->
 
-    <script src="./assets/js/logica/utils/HttpsHistoricoWallet.js"></script> 
+    <script src="./assets/js/logica/utils/HttpsListarCuentasTronAdmin.js"></script> 
 </body>
 
 </html>

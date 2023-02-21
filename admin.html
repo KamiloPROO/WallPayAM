@@ -5,38 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallpay | Mis Compras</title>
+    <title>Wallpay | Mi cuenta</title>
     <!--Material Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <!--STYLESHEET-->
     <link rel="stylesheet" href="./assets/css/styleDash.css">
-    <link rel="stylesheet" href="./assets/css/compraventa.css">
-    <link rel="stylesheet" href="./assets/css/cargandoo.css">
+    <link rel="stylesheet" href="./assets/css/estiloaDash.css">
     <link rel="stylesheet" href="./assets/css/respoDash.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo_pequeño_header.png" />
-
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"
-        integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
-        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
-
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="Last-Modified" content="0">
@@ -71,15 +47,16 @@
                     <h3>Ecommerce</h3>
                 </a>
 
-                <a href="micuenta.html"><span class="material-icons-sharp">
+                <a href="micuenta.html" ><span class="material-icons-sharp">
                         person_outline</span>
                     <h3>Cuenta</h3>
                 </a>
 
-                <a href="admin.html"><span class="material-icons-sharp">
+                <a href="admin.html" class="active"><span class="material-icons-sharp">
                     badge</span>
                     <h3>Administrador</h3>
                 </a>
+
 
                 <a href="index.html"><span class="material-icons-sharp">
                         logout</span>
@@ -96,12 +73,34 @@
         <div class="form-content">
             <div>
                 <br>
-                <h1 id="cuentaM" style="color: #d79d13;">Mis Compras</h1>
+                <div style="display: flex; margin-left: 40%;">
+                    <h1 id="cuentaM" style="color: #d79d13; width: 30%;">Administrador</h1>
+                    <!-- <div style="display: flex; margin-left: 39%;">
+                        <h2>Hola:</h2>
+                        <h1 id="name" style="margin-left: 10px; font-size: 20px; color: #d79d13;">Jua</h1>
+                    </div> -->
+                </div>
+                <br>
+                <br>
+                <br>
                 <br>
             </div>
-
-            <div class="cardsInversionMisCompras" id="product-list">
-
+            <div>
+                <!-- <img src="./assets/img/Logo nav gold.png" style="width: 300px; margin-left: 370px;"> -->
+                <h2 class="menu">Menu de opciones</h2>
+                <br>
+                <div class="btnsCuenta">
+                    <button onclick="ListarCuentasTron()" style="background: #d79d13; color: black; font-weight: bold;"
+                        class="btnCuenta">Listar Cuentas Tron</button>
+                    <br>
+                     <button onclick="ListarHistoricoCuentas()" class="btnCuenta" id="IniciarSesionLogin">Listar Historico Cuenta Tron</button>
+                    <br>
+                    <!--<button onclick="miWallet()" class="btnCuenta" id="IniciarSesionLogin">Mi Cuenta</button>
+                    <br>
+                    <button type="button" class="btnCuenta" id="IniciarSesionLogin">Enviar Transferencia</button>
+                    <br>
+                    <button type="button" class="btnCuenta" id="IniciarSesionLogin">Mi Perfil</button> -->
+                </div>
             </div>
 
             <div class="right">
@@ -118,28 +117,37 @@
 
         <!-- End of Main-->
 
-        <div id="cargando2">
-
-            <lottie-player src="https://lottie.host/b7a7a4e9-b990-4c20-815d-56277221123f/QFWYzTSEkP.json" 
-            background="transparent" 
-            speed="1" 
-            loop 
-            autoplay>
-            </lottie-player>
-        </div>
-
     </div>
 
+    <script>
 
+        function ListarCuentasTron() {
+
+            window.location.href = "listCuentasTron.html"
+
+        }
+
+        function ListarHistoricoCuentas() {
+
+            window.location.href = "listHistoricoAdmin.html"
+
+        }
+
+        // function miWallet() {
+
+        //     window.location.href = "wallet.html"
+
+        // }
+
+    </script>
 
     <!-- Fondo Particles-->
-    <script src="./assets/js/index.js"></script>
+    <!-- <script src="./assets/js/index.js"></script>
     <script src="./assets/js/orders.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/particles.min.js"></script>
 
-    <script src="./assets/js/logica/utils/HttpsListarCompras.js"></script>
-    <!-- <script src="./assets/js/logica/utils/HttpsDashboard.js"></script> -->
+    <script src="./assets/js/logica/utils/HttpsDashboard.js"></script> -->
 
 </body>
 

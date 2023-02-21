@@ -1,0 +1,106 @@
+@media (max-width: 768px) {
+
+    .containerListAdmin{
+
+        width: 100% ;
+        margin-left: 15%;
+        height: 680px;
+
+    }
+
+    .cardAdmin{
+
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 7%;
+
+    }
+
+
+}
+
+
+@media (max-width: 425px) {
+
+    .containerListAdmin{
+        width: 100% ;
+        margin-left: 15%;
+        height: 680px;
+
+    }
+
+    .cardAdmin{
+        width: 95%;
+        margin-left: 2%;
+        margin-top: 7%;
+
+    }
+
+    .moverRefeAdmin{
+
+    font-size: 13px !important;
+
+    }
+
+    .moverfechasAdmin{
+        font-size: 15px !important;
+        margin-right: 4%;
+        width: 100%;
+    }
+
+    .divTodoAdmin{
+
+        margin-left: 1%;
+
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .containerListAdmin{
+        width: 100% ;
+        margin-left: 15%;
+        height: 680px;
+
+    }
+
+    .cardAdmin{
+        width: 95%;
+        margin-left: 2%;
+        margin-top: 7%;
+
+    }
+
+    .moverRefeAdmin{
+
+    font-size: 11px !important;
+
+    }
+
+    .moverfechasAdmin{
+        font-size: 15px !important;
+        margin-right: 4%;
+        width: 100%;
+    }
+
+    .divTodoAdmin{
+
+        margin-left: 1%;
+
+    }
+
+    .moversaldosAdmin{
+        font-size: 15px !important;
+    }
+
+    .moversaldosTrxAdmin{
+        font-size: 15px !important;
+    }
+
+}
+
+
+
+
+
