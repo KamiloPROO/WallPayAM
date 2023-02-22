@@ -502,6 +502,14 @@ a {
     /* creates padding around scroll thumb */
 }
 
+
+.containerListAdmin::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+
+
 .melocaramelo {
 
     scrollbar-width: thin;
@@ -1120,10 +1128,12 @@ STYLE OF PLANS VIEW
 
 .moversaldosTrxAdmin {
     text-align: center;
+   
 }
 
 .moversaldosAdmin {
     text-align: center;
+    overflow: hidden;
 }
 
 .moverfechasAdmin {
