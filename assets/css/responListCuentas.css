@@ -54,6 +54,17 @@
 
     }
 
+    .moversaldosAdmin{
+        overflow: hidden;
+        font-size: 13px !important;
+    }
+
+    .moversaldosTrxAdmin{
+        font-size: 13px !important;
+        overflow: hidden;
+    }
+
+
 }
 
 @media (max-width: 375px) {
@@ -91,11 +102,13 @@
     }
 
     .moversaldosAdmin{
-        font-size: 15px !important;
+        overflow: hidden;
+        font-size: 12px !important;
     }
 
     .moversaldosTrxAdmin{
-        font-size: 15px !important;
+        font-size: 12px !important;
+        overflow: hidden;
     }
 
 }
