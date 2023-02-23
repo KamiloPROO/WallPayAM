@@ -60,15 +60,16 @@
     width: 47%;
     display: block;
     margin-left: 2%;
+    overflow: hidden;
 }
 
-.resCuentaDeS{
+.resCuentaDeS {
 
- font-size: 13px;
+    font-size: 13px;
 
 }
 
-.tituCuentaDe{
+.tituCuentaDe {
     color: darkgoldenrod;
 }
 
@@ -92,77 +93,259 @@
     background: rgba(0, 0, 0, 0.685);
 }
 
-.valorparseAdmin {
 
-    margin-top: 30px;
-    margin-left: 0px;
-    font-size: 15px;
-
-}
-
-.saldoooAdmin {
-
-    color: goldenrod;
-    margin-top: 30px;
-    font-size: 15px;
-    margin-left: 100px;
-}
-
-.fechaaaAdmin {
-
-    width: 34%;
-    margin-top: 30px;
-    font-size: 15px;
-    margin-left: 10px;
-}
-
-@media (max-width: 450px) {
+@media (max-width: 768px) {
 
     #histori {
-        margin-top: 10%;
+        margin-top: 12%;
         margin-left: 100px;
     }
 
     .divHistorialAdmin {
         overflow: auto;
-        width: 100%;
+        width: 118%;
         height: 600px;
-        margin-left: 20%;
-        margin-top: 1%
+        margin-left: 3%;
+        margin-top: 1%;
+
     }
 
     .containerHistoAdmin {
         overflow: hidden;
         margin-top: 5%;
-        height: 100px;
-        width: 90%;
+        height: auto;
+        width: 100%;
         border-radius: 10px;
-        background: rgba(0, 0, 0, 0.685);
-    }
-
-    .valorparseAdmin {
-
-        position: static;
-        margin-top: 1px;
-        margin-left: 0px;
-        font-size: 15px;
 
     }
 
-    .saldoooAdmin {
+    .tituCuentaDe {
 
-        position: static;
-        margin-top: 1px !important;
-        font-size: 15px;
-        margin-left: 20px;
+        font-size: 14px;
+        color: darkgoldenrod;
+
     }
 
-    .fechaaaAdmin {
+    .resCuentaDeS {
 
-        width: 30%;
-        margin-top: 30px;
-        font-size: 15px;
-        margin-left: 40px;
+        font-size: 15px !important;
+
+    }
+
+
+    .cuentaDe {
+
+        width: 100%;
+        display: block;
+        margin-left: 2%;
+        overflow: hidden;
+
+    }
+
+    .cuentaOr {
+
+        width: 100%;
+        display: block;
+        margin-left: 2%;
+        overflow: hidden;
+    }
+
+
+}
+
+
+@media (max-width: 450px) {
+
+    #histori {
+        margin-top: 12%;
+        margin-left: 100px;
+    }
+
+    .divHistorialAdmin {
+        overflow: auto;
+        width: 118%;
+        height: 600px;
+        margin-left: 3%;
+        margin-top: 1%;
+
+    }
+
+    .containerHistoAdmin {
+        overflow: hidden;
+        margin-top: 5%;
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+
+    }
+
+    .tituCuentaDe {
+
+        font-size: 14px;
+        color: darkgoldenrod;
+
+    }
+
+    .resCuentaDeS {
+
+        font-size: 15px !important;
+
+    }
+
+    .divHisAdminPadre {
+
+        display: block;
+        ;
+
+    }
+
+    .cuentaDe {
+
+        width: 100%;
+        display: block;
+        margin-left: 2%;
+        overflow: hidden;
+
+    }
+
+    .cuentaOr {
+
+        width: 100%;
+        display: block;
+        margin-left: 2%;
+        overflow: hidden;
+    }
+
+
+}
+
+
+@media (max-width: 425px) {
+
+    #histori {
+        margin-top: 12%;
+        margin-left: 100px;
+    }
+
+    .divHistorialAdmin {
+        overflow: auto;
+        width: 118%;
+        height: 600px;
+        margin-left: 3%;
+        margin-top: 1%;
+
+    }
+
+    .containerHistoAdmin {
+        overflow: hidden;
+        margin-top: 5%;
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+
+    }
+
+    .tituCuentaDe {
+
+        font-size: 14px;
+        color: darkgoldenrod;
+
+    }
+
+    .resCuentaDeS {
+
+        font-size: 15px !important;
+
+    }
+
+    .divHisAdminPadre {
+
+        display: block;
+        ;
+
+    }
+
+    .cuentaDe {
+
+        width: 100%;
+        display: block;
+        margin-left: 2%;
+        overflow: hidden;
+
+    }
+
+    .cuentaOr {
+
+        width: 100%;
+        display: block;
+        margin-left: 2%;
+        overflow: hidden;
+    }
+
+}
+
+
+
+@media (max-width: 375px) {
+
+    #histori {
+        margin-top: 12%;
+        margin-left: 100px;
+    }
+
+    .divHistorialAdmin {
+        overflow: auto;
+        width: 118%;
+        height: 600px;
+        margin-left: 3%;
+        margin-top: 1%;
+
+    }
+
+    .containerHistoAdmin {
+        overflow: hidden;
+        margin-top: 5%;
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+
+    }
+
+    .tituCuentaDe {
+
+        font-size: 14px;
+        color: darkgoldenrod;
+
+    }
+
+    .resCuentaDeS {
+
+        font-size: 15px !important;
+
+    }
+
+    .divHisAdminPadre {
+
+        display: block;
+        ;
+
+    }
+
+    .cuentaDe {
+
+        width: 100%;
+        display: block;
+        margin-left: 2%;
+        overflow: hidden;
+
+    }
+
+    .cuentaOr {
+
+        width: 100%;
+        display: block;
+        margin-left: 2%;
+        overflow: hidden;
     }
 
 }
