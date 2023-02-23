@@ -37,17 +37,23 @@ document.addEventListener('DOMContentLoaded', e => {
 
             loading.style.display = 'none'
 
+            console.log(data);
+
+            
+
             var formData = JSON.parse(data);
 
-
+    
             for (const compras of formData) {
 
-                var formData1 = JSON.parse(compras.Json);
+                console.log(compras);
 
-                var idDeLaCompra = formData1.Id;
-                localStorage.setItem("sacoid", idDeLaCompra);
+                // var formData1 = JSON.parse(compras.Json);
+
+                // var idDeLaCompra = formData1.Id;
+                // localStorage.setItem("sacoid", idDeLaCompra);
                 
-                console.log(formData1);
+                // console.log(formData1);
 
                 const productList = document.getElementById("divHistorial");
                 const element = document.createElement("div")
@@ -55,16 +61,68 @@ document.addEventListener('DOMContentLoaded', e => {
                 element.innerHTML += `
 
                 <div class="cardInversionHistorico" id="plan2">
-                    
-                   <div class="containerHistoAdmin" >
-                     <a class= "valorparseAdmin" style="color:${formData1.ColorValor}">${formData1.ValorParse}</a>
-                     <a class= "saldoooAdmin" >${formData1.SaldoParse}</a>
-                     <a class= "fechaaaAdmin">${formData1.FechaParse}</a>
-                   </div>
+
+                <div class="containerHistoAdmin">
+
+                    <a class="descripHisAdmin">${compras.hash}</a>
+
+                    <div class="divHisAdminPadre">
+
+
+                        <div class="cuentaDe">
+
+                            <div>
+                                <a class="tituCuentaDe">Cuenta De:</a>
+                            </div>
+
+                            <a class="resCuentaDeS">${compras.CuentaDe}</a>
+
+                        </div>
+
+                        <div class="cuentaOr">
+
+                            <div>
+                                <a class="tituCuentaDe">Cuenta Para:</a>
+                            </div>
+                            <a class="resCuentaDeS">${compras.CuentaOr}</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="divHisAdminPadre2">
+
+
+                        <div class="cuentaDe">
+
+                            <div>
+                                <a class="tituCuentaDe">Saldo:</a>
+                            </div>
+
+                            <a class="resCuentaDe">${compras.Saldo}</a>
+
+                        </div>
+
+                        <div class="cuentaOr">
+
+                            <div>
+                                <a class="tituCuentaDe">Valor:</a>
+                            </div>
+                            <a class="resCuentaDe">${compras.Valor}</a>
+
+                        </div>
+
+                    </div>
+
+                    <a class="descripHisAdmin">${compras.Fecha}</a>
+
                     
                 </div>
 
-             `;
+            </div>
+
+             `
+             ;
 
                 productList.appendChild(element)
 
