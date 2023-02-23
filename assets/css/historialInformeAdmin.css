@@ -1,0 +1,136 @@
+.divHistorialAdmin {
+    overflow: auto;
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    margin-top: 1%
+}
+
+.divBlcok{
+
+    width: 90%;
+    display: block;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+
+
+.txtTotalCuenta {
+
+  color: darkorange;
+}
+
+.tituCuentaDe{
+    color: darkgoldenrod;
+}
+
+/* .cardInversionHistorico{
+
+ height: 100px;
+     
+} */
+
+.divHistorialAdmin::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+
+.containerInfoAdmin {
+    overflow: hidden;
+    margin-top: 5%;
+    width: 60%;
+    margin-left: 20%;
+    height: 180px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.685);
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+
+    .containerInfoAdmin {
+        overflow: hidden;
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2%;
+        height: 180px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.685);
+        display: block;
+    }
+
+    .divHistorialAdmin {
+       margin-left: 7%;
+       width: 110%;
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+
+    .containerInfoAdmin {
+        overflow: hidden;
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2%;
+        height: 180px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.685);
+        display: block;
+    }
+
+    .divHistorialAdmin {
+       margin-left: 7%;
+       width: 110%;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+
+    .containerInfoAdmin {
+        overflow: hidden;
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2%;
+        height: 180px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.685);
+        display: block;
+    }
+
+    .divHistorialAdmin {
+       margin-left: 7%;
+       width: 110%;
+    }
+    
+
+}
+
+
+@media (max-width: 375px) {
+
+    .containerInfoAdmin {
+        overflow: hidden;
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2%;
+        height: 180px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.685);
+        display: block;
+    }
+
+    .divHistorialAdmin {
+       margin-left: 7%;
+       width: 110%;
+    }
+    
+
+}

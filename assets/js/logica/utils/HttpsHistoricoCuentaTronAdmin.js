@@ -64,7 +64,10 @@ document.addEventListener('DOMContentLoaded', e => {
 
                 <div class="containerHistoAdmin">
 
-                    <a class="descripHisAdmin">${compras.hash}</a>
+                    <a class="titudescripHisAdmin">${compras.hash}</a>
+
+                    <a class="tituCuentaDe">Tipo Moneda:</a>
+                    <a class="resTipoMon">${compras.tipoMoneda}</a>
 
                     <div class="divHisAdminPadre">
 
